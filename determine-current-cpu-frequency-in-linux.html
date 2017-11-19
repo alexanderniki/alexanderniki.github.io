@@ -20,17 +20,22 @@
   <meta name="robots" content="" />
 
 
-    <meta name="author" content="Alexander Niki" />
-    <meta name="description" content="" />
+<meta name="author" content="Alexander Niki" />
+<meta name="description" content="Here is a little note about how to determine CPU frequence in Linux. Simple way Open your terminal emulator and type: $cat /proc/cpuinfo | grep MHz After that, you'll see something like cpu MHz : 932.128 cpu MHz : 1000.354 cpu MHz : 998.950 cpu MHz : 858.709 More complex …" />
+<meta name="keywords" content="">
 <meta property="og:site_name" content="alexanderniki.name"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="alexanderniki.name"/>
-<meta property="og:description" content=""/>
+<meta property="og:title" content="Determine current CPU frequency in Linux"/>
+<meta property="og:description" content="Here is a little note about how to determine CPU frequence in Linux. Simple way Open your terminal emulator and type: $cat /proc/cpuinfo | grep MHz After that, you'll see something like cpu MHz : 932.128 cpu MHz : 1000.354 cpu MHz : 998.950 cpu MHz : 858.709 More complex …"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content=""/>
+<meta property="og:url" content="/determine-current-cpu-frequency-in-linux.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-11-19 23:40:00+03:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/alexander-niki.html">
+<meta property="article:section" content="Linux, HowTo"/>
+<meta property="og:image" content="">
 
-  <title>alexanderniki.name &ndash;     Archives
-</title>
+  <title>alexanderniki.name &ndash; Determine current CPU frequency in Linux</title>
 
 </head>
 <body>
@@ -65,17 +70,47 @@
 
 <article class="single">
   <header>
-    <h1>    Archives
-</h1>
+    <h1 id="determine-current-cpu-frequency-in-linux">Determine current CPU frequency in Linux</h1>
+    <p>
+          Posted on Вс 19 Ноябрь 2017 in <a href="/category/linux-howto.html">Linux, HowTo</a>
+
+
+    </p>
   </header>
+
+
   <div>
-    <dl>
-      <dt>Вс 19 Ноябрь 2017</dt>
-      <dd><a href="/determine-current-cpu-frequency-in-linux.html">Determine current CPU frequency in Linux</a></dd>
-      <dt>Пт 03 Декабрь 2010</dt>
-      <dd><a href="/my-first-review.html">My First Review</a></dd>
-    </dl>
+    <p>Here is a little note about how to determine CPU frequence in Linux.</p>
+<h2>Simple way</h2>
+<p>Open your terminal emulator and type:</p>
+<div class="highlight"><pre><span></span>$cat /proc/cpuinfo | grep MHz
+</pre></div>
+
+
+<p>After that, you'll see something like</p>
+<div class="highlight"><pre><span></span>cpu MHz     : 932.128
+cpu MHz     : 1000.354
+cpu MHz     : 998.950
+cpu MHz     : 858.709
+</pre></div>
+
+
+<h2>More complex way</h2>
+<p>First of all, install "cpufrequtils" package. For example, in Ubuntu:</p>
+<div class="highlight"><pre><span></span>$ sudo apt install cpufrequtils
+</pre></div>
+
+
+<p>Then, just use "cpufreq-info" command.</p>
   </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
 </article>
 
     <footer>
