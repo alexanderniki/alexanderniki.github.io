@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name - Design</title><link href="http://alexanderniki.name/" rel="alternate"></link><link href="http://alexanderniki.name/feeds/design.atom.xml" rel="self"></link><id>http://alexanderniki.name/</id><updated>2017-11-20T23:30:00+03:00</updated><entry><title>Typical screen sizes and aspect ratios</title><link href="http://alexanderniki.name/typical-screen-sizes-and-aspect-ratios.html" rel="alternate"></link><published>2017-11-20T23:00:00+03:00</published><updated>2017-11-20T23:30:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-20:/typical-screen-sizes-and-aspect-ratios.html</id><summary type="html">&lt;p&gt;A list of typical screen sizes and aspect ratios&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Wide 16:9&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;16:9 = 1.777&lt;/li&gt;
+&lt;li&gt;2560:1440 = 1.777&lt;/li&gt;
+&lt;li&gt;1920:1080 = 1.777&lt;/li&gt;
+&lt;li&gt;1600:900 = 1.777&lt;/li&gt;
+&lt;li&gt;1366:768 = 1.778&lt;/li&gt;
+&lt;li&gt;1280:720 = 1.777&lt;/li&gt;
+&lt;li&gt;960:540 = 1.777&lt;/li&gt;
+&lt;li&gt;854:480 = 1.779&lt;/li&gt;
+&lt;li&gt;1216:684 = 1.777 (android's navigation drawer)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Wide 16:10&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;16:10 = 1.6&lt;/li&gt;
+&lt;li&gt;2560:1600 = 1.6&lt;/li&gt;
+&lt;li&gt;1920:1200 = 1.6&lt;/li&gt;
+&lt;li&gt;1280:800 = 1.6&lt;/li&gt;
+&lt;li&gt;800:480 = 1.666&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Non-wide 4:3&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;4:3 = 1.333&lt;/li&gt;
+&lt;li&gt;2048:1536 = 1.333&lt;/li&gt;
+&lt;li&gt;1600:1200 = 1333&lt;/li&gt;
+&lt;li&gt;1024:768 = 1.333&lt;/li&gt;
+&lt;li&gt;800:600 = 1.333&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Square&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;1:1 = 1&lt;/li&gt;
+&lt;li&gt;720:720 = 1 (Blackberry Classic 3,5")&lt;/li&gt;
+&lt;li&gt;1440:1440 = 1 (Blackberry Passport 4,5")&lt;/li&gt;
+&lt;li&gt;1080:1080 = 1&lt;/li&gt;
+&lt;/ul&gt;</content><category term="list"></category><category term="reference"></category></entry></feed>
