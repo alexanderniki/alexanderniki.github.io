@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name - Dev</title><link href="http://alexanderniki.name/" rel="alternate"></link><link href="http://alexanderniki.name/feeds/dev.atom.xml" rel="self"></link><id>http://alexanderniki.name/</id><updated>2017-11-23T23:50:00+03:00</updated><entry><title>Enable colors in Mercurial (HG)</title><link href="http://alexanderniki.name/enable-colors-in-mercurial-hg.html" rel="alternate"></link><published>2017-11-23T23:45:00+03:00</published><updated>2017-11-23T23:50:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-23:/enable-colors-in-mercurial-hg.html</id><summary type="html">&lt;p&gt;How to enable colors in Mergurial console output&lt;/p&gt;</summary><content type="html">&lt;h2&gt;What is it&lt;/h2&gt;
+&lt;p&gt;ColorExtension - is a &lt;a href="https://www.mercurial-scm.org/"&gt;Mercurial&lt;/a&gt; extetsion that allows you to highlight some information in console output. The extension ships with Mercurial so there is no need to install it separately.&lt;/p&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;p&gt;To enable ColorExtension, open your hgrc-file and add "color=" to "extensions" section. Like that:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[extensions]&lt;/span&gt;
+&lt;span class="na"&gt;color&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;To override current colors, add "colors" section with color definitions to your hgrc. For example:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[color]&lt;/span&gt;
+&lt;span class="na"&gt;status.modified&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;blue bold underline red_background&lt;/span&gt;
+&lt;span class="na"&gt;status.added&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;green bold&lt;/span&gt;
+&lt;span class="na"&gt;status.removed&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;red bold blue_background&lt;/span&gt;
+&lt;span class="na"&gt;status.deleted&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;cyan bold underline&lt;/span&gt;
+&lt;span class="na"&gt;status.unknown&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;magenta bold underline&lt;/span&gt;
+&lt;span class="na"&gt;status.ignored&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;black bold&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can override colors for other states and actions in the same way.&lt;/p&gt;
+&lt;p&gt;If you want to switch some colors off, place "none" in the config:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;status.clean = none
+status.copied = none
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Default color scheme lives &lt;a href="https://selenic.com/repo/hg-stable/file/436cc9d017c6/hgext/color.py"&gt;here&lt;/a&gt;&lt;/p&gt;</content><category term="mercurial"></category><category term="hg"></category><category term="howto"></category></entry></feed>
