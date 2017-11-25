@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name - Linux</title><link href="http://alexanderniki.name/" rel="alternate"></link><link href="http://alexanderniki.name/feeds/linux.atom.xml" rel="self"></link><id>http://alexanderniki.name/</id><updated>2017-11-20T11:45:00+03:00</updated><entry><title>Create swap file on Linux</title><link href="http://alexanderniki.name/create-swap-file-on-linux.html" rel="alternate"></link><published>2017-11-20T11:30:00+03:00</published><updated>2017-11-20T11:45:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-20:/create-swap-file-on-linux.html</id><summary type="html">&lt;p&gt;How to create swap file on linux&lt;/p&gt;</summary><content type="html">&lt;p&gt;Step-by-step guide about how to create a swap file on Linux. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name - Linux</title><link href="http://alexanderniki.name/" rel="alternate"></link><link href="http://alexanderniki.name/feeds/linux.atom.xml" rel="self"></link><id>http://alexanderniki.name/</id><updated>2017-11-25T21:40:00+03:00</updated><entry><title>Case-insensitive tab-completion in bash</title><link href="http://alexanderniki.name/case-insensitive-tab-completion-in-bash.html" rel="alternate"></link><published>2017-11-25T21:30:00+03:00</published><updated>2017-11-25T21:40:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-25:/case-insensitive-tab-completion-in-bash.html</id><summary type="html">&lt;p&gt;How to make your bash's tab-completion case-insensitive&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Instruction&lt;/h2&gt;
+&lt;p&gt;Making your bash's tab-completion case-insensitive is extremely easy.&lt;/p&gt;
+&lt;p&gt;Create a file named .inputrc in your home directory. &lt;/p&gt;
+&lt;p&gt;After that, place this line in it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set completion-ignore-case on
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That's all basically! Open a new shell and try it out.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But&lt;/strong&gt;. Keep in mind, that this will prevent bash from reading the defaults from /etc/inputrc, breaking things like navigation with ctrl-left/right. &lt;/p&gt;
+&lt;p&gt;To avoid this make sure to add $include /etc/inputrc in your ~/.inputrc&lt;/p&gt;
+&lt;h2&gt;Extra feature&lt;/h2&gt;
+&lt;p&gt;You can make tab completion of file and directory names a little easier by adding in your ~/.inputrc the following line:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set show-all-if-ambiguous on
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This makes it unnecessary to press Tab twice when there is more than one match.&lt;/p&gt;</content><category term="linux"></category><category term="bash"></category><category term="howto"></category></entry><entry><title>Create swap file on Linux</title><link href="http://alexanderniki.name/create-swap-file-on-linux.html" rel="alternate"></link><published>2017-11-20T11:30:00+03:00</published><updated>2017-11-20T11:45:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-20:/create-swap-file-on-linux.html</id><summary type="html">&lt;p&gt;How to create swap file on linux&lt;/p&gt;</summary><content type="html">&lt;p&gt;Step-by-step guide about how to create a swap file on Linux. &lt;/p&gt;
 &lt;p&gt;Before using the guide, login as the Root user. Or use sudo.&lt;/p&gt;
 &lt;h2&gt;Step 1. Create storage file&lt;/h2&gt;
 &lt;p&gt;Type the following command to create 512MB swap file (1024 * 512MB = 524288 block size):&lt;/p&gt;

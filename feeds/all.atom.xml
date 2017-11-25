@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name</title><link href="http://alexanderniki.name/" rel="alternate"></link><link href="http://alexanderniki.name/feeds/all.atom.xml" rel="self"></link><id>http://alexanderniki.name/</id><updated>2017-11-23T23:50:00+03:00</updated><entry><title>Enable colors in Mercurial (HG)</title><link href="http://alexanderniki.name/enable-colors-in-mercurial-hg.html" rel="alternate"></link><published>2017-11-23T23:45:00+03:00</published><updated>2017-11-23T23:50:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-23:/enable-colors-in-mercurial-hg.html</id><summary type="html">&lt;p&gt;How to enable colors in Mercurial console output&lt;/p&gt;</summary><content type="html">&lt;h2&gt;What is it&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name</title><link href="http://alexanderniki.name/" rel="alternate"></link><link href="http://alexanderniki.name/feeds/all.atom.xml" rel="self"></link><id>http://alexanderniki.name/</id><updated>2017-11-25T21:40:00+03:00</updated><entry><title>Case-insensitive tab-completion in bash</title><link href="http://alexanderniki.name/case-insensitive-tab-completion-in-bash.html" rel="alternate"></link><published>2017-11-25T21:30:00+03:00</published><updated>2017-11-25T21:40:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-25:/case-insensitive-tab-completion-in-bash.html</id><summary type="html">&lt;p&gt;How to make your bash's tab-completion case-insensitive&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Instruction&lt;/h2&gt;
+&lt;p&gt;Making your bash's tab-completion case-insensitive is extremely easy.&lt;/p&gt;
+&lt;p&gt;Create a file named .inputrc in your home directory. &lt;/p&gt;
+&lt;p&gt;After that, place this line in it:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set completion-ignore-case on
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That's all basically! Open a new shell and try it out.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But&lt;/strong&gt;. Keep in mind, that this will prevent bash from reading the defaults from /etc/inputrc, breaking things like navigation with ctrl-left/right. &lt;/p&gt;
+&lt;p&gt;To avoid this make sure to add $include /etc/inputrc in your ~/.inputrc&lt;/p&gt;
+&lt;h2&gt;Extra feature&lt;/h2&gt;
+&lt;p&gt;You can make tab completion of file and directory names a little easier by adding in your ~/.inputrc the following line:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set show-all-if-ambiguous on
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This makes it unnecessary to press Tab twice when there is more than one match.&lt;/p&gt;</content><category term="linux"></category><category term="bash"></category><category term="howto"></category></entry><entry><title>Enable colors in Mercurial (HG)</title><link href="http://alexanderniki.name/enable-colors-in-mercurial-hg.html" rel="alternate"></link><published>2017-11-23T23:45:00+03:00</published><updated>2017-11-23T23:50:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-23:/enable-colors-in-mercurial-hg.html</id><summary type="html">&lt;p&gt;How to enable colors in Mercurial console output&lt;/p&gt;</summary><content type="html">&lt;h2&gt;What is it&lt;/h2&gt;
 &lt;p&gt;ColorExtension - is a &lt;a href="https://www.mercurial-scm.org/"&gt;Mercurial&lt;/a&gt; extetsion that allows you to highlight some information in console output. The extension ships with Mercurial so there is no need to install it separately.&lt;/p&gt;
 &lt;h2&gt;Setup&lt;/h2&gt;
 &lt;p&gt;To enable ColorExtension, open your hgrc file and add "color=" to "extensions" section. Like that:&lt;/p&gt;
