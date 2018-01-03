@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name</title><link href="http://alexanderniki.name/" rel="alternate"></link><link href="http://alexanderniki.name/feeds/all.atom.xml" rel="self"></link><id>http://alexanderniki.name/</id><updated>2017-12-08T23:20:00+03:00</updated><entry><title>apiblueprint.org: a good thing for working with REST APIs</title><link href="http://alexanderniki.name/apiblueprintorg-a-good-thing-for-working-with-rest-apis.html" rel="alternate"></link><published>2017-12-08T23:10:00+03:00</published><updated>2017-12-08T23:20:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-12-08:/apiblueprintorg-a-good-thing-for-working-with-rest-apis.html</id><summary type="html">&lt;p&gt;Small markdown-based REST API description "language"&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Apiblueprint&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name</title><link href="http://alexanderniki.name/" rel="alternate"></link><link href="http://alexanderniki.name/feeds/all.atom.xml" rel="self"></link><id>http://alexanderniki.name/</id><updated>2017-12-28T11:45:00+03:00</updated><entry><title>apiblueprint.org: a good thing for working with REST APIs</title><link href="http://alexanderniki.name/apiblueprintorg-a-good-thing-for-working-with-rest-apis.html" rel="alternate"></link><published>2017-12-08T23:10:00+03:00</published><updated>2017-12-08T23:20:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-12-08:/apiblueprintorg-a-good-thing-for-working-with-rest-apis.html</id><summary type="html">&lt;p&gt;Small markdown-based REST API description "language"&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Apiblueprint&lt;/h2&gt;
 &lt;p&gt;Apiblueprint is a small markdown-based "language" for people who work with REST APIs.
 By saying "language" I mean a specification and a set of rules intended for documatating REST APIs.&lt;/p&gt;
 &lt;p&gt;Using apiblueprint rules makes it really easy to read and write API documentation in a standard way. Looks like this:&lt;/p&gt;
@@ -59,7 +59,7 @@ status.copied = none
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Default color scheme lives &lt;a href="https://selenic.com/repo/hg-stable/file/436cc9d017c6/hgext/color.py"&gt;here&lt;/a&gt;&lt;/p&gt;</content><category term="mercurial"></category><category term="hg"></category><category term="howto"></category></entry><entry><title>Typical screen sizes and aspect ratios</title><link href="http://alexanderniki.name/typical-screen-sizes-and-aspect-ratios.html" rel="alternate"></link><published>2017-11-20T23:00:00+03:00</published><updated>2017-12-04T11:45:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-20:/typical-screen-sizes-and-aspect-ratios.html</id><summary type="html">&lt;p&gt;A list of typical screen sizes and aspect ratios&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Wide 16:9&lt;/h2&gt;
+&lt;p&gt;Default color scheme lives &lt;a href="https://selenic.com/repo/hg-stable/file/436cc9d017c6/hgext/color.py"&gt;here&lt;/a&gt;&lt;/p&gt;</content><category term="mercurial"></category><category term="hg"></category><category term="howto"></category></entry><entry><title>Typical screen sizes and aspect ratios</title><link href="http://alexanderniki.name/typical-screen-sizes-and-aspect-ratios.html" rel="alternate"></link><published>2017-11-20T23:00:00+03:00</published><updated>2017-12-28T11:45:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-11-20:/typical-screen-sizes-and-aspect-ratios.html</id><summary type="html">&lt;p&gt;A list of typical screen sizes and aspect ratios&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Wide 16:9&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;16:9 = 1.777&lt;/li&gt;
 &lt;li&gt;3840 x 2160 = 1.777&lt;/li&gt;
@@ -70,6 +70,7 @@ status.copied = none
 &lt;li&gt;1280 x 720 = 1.777&lt;/li&gt;
 &lt;li&gt;960 x 540 = 1.777&lt;/li&gt;
 &lt;li&gt;854 x 480 = 1.779&lt;/li&gt;
+&lt;li&gt;640 x 360 = 1.777&lt;/li&gt;
 &lt;li&gt;1216 x 684 = 1.777 (android's navigation drawer)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Wide 16:10&lt;/h2&gt;
