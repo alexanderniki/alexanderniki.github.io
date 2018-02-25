@@ -7,5 +7,6 @@
 [User stories](documents/user-stories.md)
 [Use cases](documents/use-cases.md)
 [User story maps](documents/story-maps.md)
-[User flow diagram](documents/user-flow-diagram.md)
-
+[User flow diagram](documents/diagram-user-flow.md)
+[Диаграмма "Task Flow Diagram"](documents/diagram-task-flow.md)
+[Диаграмма "Wireflow Diagram"](documents/diagram-wireflow.md)
