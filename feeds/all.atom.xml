@@ -7,31 +7,31 @@
 &lt;p&gt;OK, here goes the list!&lt;/p&gt;
 &lt;h2&gt;Basic editing and writing&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Brackets markdown preview
+&lt;li&gt;Brackets markdown preview&lt;br&gt;
   With this extension you can switch between normal editing mode and &lt;a href="https://daringfireball.net/projects/markdown/"&gt;markdown&lt;/a&gt; preview mode.&lt;/li&gt;
-&lt;li&gt;Word count
+&lt;li&gt;Word count&lt;br&gt;
   Adds counter to the statusbar. Normally, counts all the words in your document. But if you select some text, you'll see amount of words in it.&lt;/li&gt;
-&lt;li&gt;Selected char counter
+&lt;li&gt;Selected char counter&lt;br&gt;
   Like previous one, this extension "lives" in editors's statusbar and shows amount of chars in selected text.&lt;/li&gt;
-&lt;li&gt;Autosave every edit!
+&lt;li&gt;Autosave every edit!&lt;br&gt;
   It does exactly one thing - automatically saves your file by customizable timeout. I set 900ms and it seems convenient.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Development&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Emmet
+&lt;li&gt;Emmet&lt;br&gt;
   Well-known &lt;a href="https://emmet.io/"&gt;thing&lt;/a&gt;. Must have. Just must have if you do a lot of HTML - dramatically improves your productivity.&lt;/li&gt;
-&lt;li&gt;Color highlighter
+&lt;li&gt;Color highlighter&lt;br&gt;
   Highlights colors in CSS and some other style files (like SCSS, SASS ant so on). Very useful thing.&lt;/li&gt;
-&lt;li&gt;Indent guides
+&lt;li&gt;Indent guides&lt;br&gt;
   Shows vertical guides helping you to navigate and see the structude of a file. Especially good fo coding and for writing some lists.&lt;/li&gt;
-&lt;li&gt;Brackets python tools
+&lt;li&gt;Brackets python tools&lt;br&gt;
   Just some usefull tools if you write in python. Improves linting, autocompletion and documenting&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Others:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Beautify
+&lt;li&gt;Beautify&lt;br&gt;
   HTML, XML, JSON, CSS and many more - this extension makes bad document look good and readable.&lt;/li&gt;
-&lt;li&gt;Brackets Preferences
+&lt;li&gt;Brackets Preferences&lt;br&gt;
   Covenient way to edit brackets preferences with normal GUI dialog, not via built-in JSON file.&lt;/li&gt;
 &lt;/ul&gt;</content><category term="adobe"></category><category term="brackets"></category><category term="list"></category></entry><entry><title>apiblueprint.org: a good thing for working with REST APIs</title><link href="http://alexanderniki.name/apiblueprintorg-a-good-thing-for-working-with-rest-apis.html" rel="alternate"></link><published>2017-12-08T23:10:00+03:00</published><updated>2017-12-08T23:20:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2017-12-08:/apiblueprintorg-a-good-thing-for-working-with-rest-apis.html</id><summary type="html">&lt;p&gt;Small markdown-based REST API description "language"&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Apiblueprint&lt;/h2&gt;
 &lt;p&gt;Apiblueprint is a small markdown-based "language" for people who work with REST APIs.
