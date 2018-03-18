@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name - Other</title><link href="http://alexanderniki.name/" rel="alternate"></link><link href="http://alexanderniki.name/feeds/other.atom.xml" rel="self"></link><id>http://alexanderniki.name/</id><updated>2018-03-19T00:30:00+03:00</updated><entry><title>10 useful Brackets extensions for IT generalist</title><link href="http://alexanderniki.name/10-useful-brackets-extensions-for-it-generalist.html" rel="alternate"></link><published>2018-03-19T00:30:00+03:00</published><updated>2018-03-19T00:30:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:alexanderniki.name,2018-03-19:/10-useful-brackets-extensions-for-it-generalist.html</id><summary type="html">&lt;p&gt;A list of useful Abobe Brackets extensions for IT generalist.&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Brackets editor&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://brackets.io/"&gt;Brackets&lt;/a&gt; is an open-source advanced text editor from Adobe Inc. It is written in HTML, CSS, and JS and licensed under MIT license. Brackets is available for downloading on Mac, Windows, and Linux.&lt;/p&gt;
+&lt;p&gt;I like the editor and use it in my everyday life and work. By default, there are no specific extensions installed and you can use the app just like any other basic text editor.&lt;/p&gt;
+&lt;p&gt;Fortunately, Brackets has many extensions, which could make your life easier and more comfortable.&lt;/p&gt;
+&lt;p&gt;In this article I'll list some of my favorive extensions. These are very useful for IT generalists like analysts, technical writers or qa engineers. If you are a developer, it's more likely that you would use other, more specific tools (Idea, PyCharm and so on).&lt;/p&gt;
+&lt;p&gt;OK, here goes the list!&lt;/p&gt;
+&lt;h2&gt;Basic editing and writing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Brackets markdown preview
+  With this extension you can switch between normal editing mode and &lt;a href="https://daringfireball.net/projects/markdown/"&gt;markdown&lt;/a&gt; preview mode.&lt;/li&gt;
+&lt;li&gt;Word count
+  Adds counter to the statusbar. Normally, counts all the words in your document. But if you select some text, you'll see amount of words in it.&lt;/li&gt;
+&lt;li&gt;Selected char counter
+  Like previous one, this extension "lives" in editors's statusbar and shows amount of chars in selected text.&lt;/li&gt;
+&lt;li&gt;Autosave every edit!
+  It does exactly one thing - automatically saves your file by customizable timeout. I set 900ms and it seems convenient.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Development&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Emmet
+  Well-known &lt;a href="https://emmet.io/"&gt;thing&lt;/a&gt;. Must have. Just must have if you do a lot of HTML - dramatically improves your productivity.&lt;/li&gt;
+&lt;li&gt;Color highlighter
+  Highlights colors in CSS and some other style files (like SCSS, SASS ant so on). Very useful thing.&lt;/li&gt;
+&lt;li&gt;Indent guides
+  Shows vertical guides helping you to navigate and see the structude of a file. Especially good fo coding and for writing some lists.&lt;/li&gt;
+&lt;li&gt;Brackets python tools
+  Just some usefull tools if you write in python. Improves linting, autocompletion and documenting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Others:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Beautify
+  HTML, XML, JSON, CSS and many more - this extension makes bad document look good and readable.&lt;/li&gt;
+&lt;li&gt;Brackets Preferences
+  Covenient way to edit brackets preferences with normal GUI dialog, not via built-in JSON file.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="adobe"></category><category term="brackets"></category><category term="list"></category></entry></feed>
