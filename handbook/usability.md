@@ -16,6 +16,7 @@
 - [Закон Хика](usability/hicks-law.md)
 - [Эвристики Якоба Нильсена](usability/nielsen-rules.md)
 - [Читаемость текста](usability/readability.md)
+- [Usability-тестирование](usability/usability-testing.md)
 
 
 ## Истории, примеры, цитаты
