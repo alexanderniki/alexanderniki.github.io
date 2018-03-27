@@ -3,8 +3,7 @@
 
 
 
-## Источники и дополнительная информация
-
+---
 Источники:
 
 - [impactmapping.org](https://www.impactmapping.org/about.html)

@@ -47,6 +47,9 @@
 
 - [Онбординг (onboarding)](ux-design/onboarding.md)
 
-## Источники и дополнительная информация
+
+---
+
+Источники:
 
 - [ru.wikipedia: Опыт взаимодействия](https://ru.wikipedia.org/wiki/Опыт_взаимодействия)

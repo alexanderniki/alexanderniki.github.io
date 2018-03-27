@@ -1,4 +1,4 @@
-# Wireflow
+# Диаграмма Wireflow Diagram
 
 Wireflow:
 
@@ -19,6 +19,8 @@ Wireflow:
 - Точки принятия решений: места, где человек должен выбрать из двух или более вариантов
 
 
-## Источники и дополнительная информация
+---
+
+Источники:
 
 - [uxplanet.org: Task Flows, User Flows, Flowcharts and some new-ish stuff](https://uxplanet.org/ux-glossary-task-flows-user-flows-flowcharts-and-some-new-ish-stuff-2321044d837d)

@@ -1,4 +1,4 @@
-# Диаграмма task flow diagram
+# Диаграмма Task Flow Diagram
 
 Task flow - последовательность шагов, которые выполняются всеми пользователя вашего приложения примерно одинаково с целью достичь какого-то результата (решить какую-то задачу).
 
@@ -7,8 +7,8 @@ Task flow - последовательность шагов, которые вы
 Task flows всегда последовательны и никогда не ветвятся.
 
 
-## Источники и дополнительная информация
 
+---
 Источники:
 
 - [uxplanet.org: Task Flows, User Flows, Flowcharts and some new-ish stuff](https://uxplanet.org/ux-glossary-task-flows-user-flows-flowcharts-and-some-new-ish-stuff-2321044d837d)
