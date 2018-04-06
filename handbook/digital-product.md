@@ -9,7 +9,13 @@
 - [YAGNI - You Aren't Gonna Need It]((digital-product/phylosophy/yagni.md)
 - [Чем хуже, тем лучше](digital-product/phylosophy/worse-is-better.md)
 - [Дизайн-подход MIT](digital-product/phylosophy/mit-design-approach.md)
+- [DRY - Don't Repeat Yourself](digital-product/phylosophy/dry.md)
 
+## Антипаттерны
+
+Что бы ни случилось, просто не делай так никогда.
+
+- [Feature creep](digital-product/phylosophy/feature-creep.md)
 
 ## Принципы
 
