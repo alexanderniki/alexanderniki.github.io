@@ -16,7 +16,8 @@ IxD-дизайнеры отвечают за движущиеся элемент
 
 ## Подразделы
 
-[Аффорданс](interaction-design/affordance.md)
+- [Аффорданс](interaction-design/affordance.md)
+- [Ментальные модели](interaction-design/mental-models.md)
 
 
 **Источники и дополнительная информация**:

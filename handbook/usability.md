@@ -18,6 +18,8 @@
 - [Читаемость текста](usability/readability.md)
 - [Usability-тестирование](usability/usability-testing.md)
 
+- [Монотонность](usability/monotone-ui.md)
+
 
 ## Истории, примеры, цитаты
 
