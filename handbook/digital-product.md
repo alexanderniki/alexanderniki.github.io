@@ -11,6 +11,10 @@
 - [Дизайн-подход MIT](digital-product/phylosophy/mit-design-approach.md)
 - [DRY - Don't Repeat Yourself](digital-product/phylosophy/dry.md)
 
+## Практики
+
+- [Feature cut](digital-product/phylosophy/feature-cut.md)
+
 ## Антипаттерны
 
 Что бы ни случилось, просто не делай так никогда.
