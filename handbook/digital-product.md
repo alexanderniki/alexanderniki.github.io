@@ -26,3 +26,9 @@
 - [Правило одного процента](digital-product/principles/one-percent-rule.md)
 - [Закон (правило, принцип) Парето](digital-product/principles/pareto.md)
 - [Закон Старджона (откровение Старджона)](digital-product/principles/starjohn.md)
+
+
+
+# Разработка и построение продукта
+
+- [Требования](digital-product/requirements.md)
