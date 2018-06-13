@@ -1,0 +1,60 @@
+/*
+* Simple UI components
+*/
+
+.UI_toolbar {
+    height: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.UI_text_field {
+    
+    /* 
+    * use <input> 
+    * example: <input type="text" class="UI_label">some text</input>
+    */
+    
+    height: 40px;
+    font-size: 1em;
+    color: #555;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.UI_label {
+    
+    /* 
+    * use <span> 
+    * example: <span class="UI_label">some text</span>
+    */
+    
+}
+
+.UI_card {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.UI_card_header {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.UI_card_content {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.UI_card_actions {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.UI_card_shadow {
+    height: 2px;
+    background-color: #e0e0e0;
+    
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
