@@ -33,6 +33,7 @@
 - [Пятиуровневая модель проектирования пользовательского опыта](ux-design/ux-5level-model.md)
 - [Цели пользователей](ux-design/ux-user-goals.md)
 - [Опыт: lean back и lean forward](ux-design/lean-back-forward.md)
+- [Ментальные модели](ux-design/ux-mental-models.md)
 
 ## Проблемы и искажения при проектировании
 
