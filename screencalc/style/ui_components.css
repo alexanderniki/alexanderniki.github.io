@@ -2,13 +2,13 @@
 * Simple UI components
 */
 
-.UI_toolbar {
+.ui-toolbar {
     height: 64px;
     padding-left: 16px;
     padding-right: 16px;
 }
 
-.UI_text_field {
+.ui-text-field {
     
     /* 
     * use <input> 
@@ -22,7 +22,7 @@
     padding-right: 16px;
 }
 
-.UI_label {
+.ui-label {
     
     /* 
     * use <span> 
@@ -31,30 +31,32 @@
     
 }
 
-.UI_card {
+.ui-card {
     margin-top: 8px;
     margin-bottom: 8px;
+    
+    padding: 8px 8px 0px 8px;
 }
 
-.UI_card_header {
+/*.ui-card-header {
     margin-left: 16px;
     margin-right: 16px;
 }
 
-.UI_card_content {
+.ui-card-content {
     margin-left: 16px;
     margin-right: 16px;
 }
 
-.UI_card_actions {
+.ui-card-actions {
     margin-left: 16px;
     margin-right: 16px;
-}
+}*/
 
-.UI_card_shadow {
+.ui-card-shadow {
     height: 2px;
     background-color: #e0e0e0;
     
-    margin-top: 8px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }

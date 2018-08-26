@@ -2,7 +2,7 @@ class StringResources {}
 
 class Russian extends StringResources {
     
-    construct() {
+    constructor() {
         
     }
     
@@ -10,7 +10,7 @@ class Russian extends StringResources {
 
 class English extends StringResources {
     
-    construct() {
+    constructor() {
         
     }
     

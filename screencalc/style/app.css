@@ -1,13 +1,7 @@
 #app_bar {
-    align-items: center;
-    z-index: 1;
-}
-
-#nav_bar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    /*justify-content: center;*/
     
     z-index: 1;
     position: sticky;
@@ -16,11 +10,12 @@
 
 #tab_bar {}
 
-#main_menu_area {
+#main-menu-area {
     z-index: 2;
     position: fixed;
     width: 100%;
     min-height: 224px;
+    /*height: 100%;*/
     /*padding-top: 16px;*/
     
     display: none;
@@ -30,11 +25,12 @@
     align-items: center;
 }
 
-#btn_closemenu {
+#btn_closemenu {}
 
-}
+.navigation-main {}
 
-#main_menu {
+#main-menu {
+    position: relative;
     text-align: left;
     line-height: 3.0;
     margin-left: 16px;

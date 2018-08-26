@@ -1,9 +1,8 @@
-class MyCalculatorApp {
+class CalculatorApp {
     
     constructor() {
         
-        //let app_menu = new AppMenu();
-        let main_menu = new MainMenu();
+        let main_menu = new Navigation();
         
     }
     
@@ -109,7 +108,7 @@ class MyCalculatorApp {
 
 
 function main() {
-    my_calc = new MyCalculatorApp();
+    my_calc = new CalculatorApp();
     my_calc.calculateCardMaxWidth();
     
     /**
