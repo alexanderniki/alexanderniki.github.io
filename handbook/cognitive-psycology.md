@@ -8,3 +8,5 @@
 [Соотношение "Сигнал/Шум" в UI](cognitive-psycology/sig-noise.md)
 [Эффект фон Ресторфф](cognitive-psycology/restorff-effect.md)
 [Эффект Эббингауза](cognitive-psycology/ebbinghaus-edge-effect.md)
+
+[Переутомление](cognitive-psycology/overwork.md)

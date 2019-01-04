@@ -15,7 +15,7 @@
 - [Закон Фиттса](usability/fitts-law.md)
 - [Закон Хика](usability/hicks-law.md)
 - [Эвристики Якоба Нильсена](usability/nielsen-rules.md)
-- [Читаемость текста](usability/readability.md)
+- [Читаемость текста](usability/text-readability.md)
 - [Usability-тестирование](usability/usability-testing.md)
 
 - [Монотонность](usability/monotone-ui.md)
