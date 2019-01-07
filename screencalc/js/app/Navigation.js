@@ -59,6 +59,9 @@ class Navigation {
         this.btnConvertor.addEventListener("click", this.showConvertor);
         this.btnConvertor.addEventListener("click", this.close.bind(this));
         
+        this.appContent = document.getElementById("app-content");
+        this.appContent.addEventListener("click", this.close.bind(this));
+        
         this.applyDefaultState();
         return this;
         
