@@ -34,6 +34,7 @@
 - [Цели пользователей](ux-design/ux-user-goals.md)
 - [Опыт: lean back и lean forward](ux-design/lean-back-forward.md)
 - [Ментальные модели](ux-design/ux-mental-models.md)
+- [Закон общей области](ux-design/ux-law-common-region.md)
 
 ## Проблемы и искажения при проектировании
 
