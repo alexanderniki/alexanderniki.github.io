@@ -11,3 +11,4 @@
 [Закон Прэгнанц](cognitive-psycology/cognitive-pragnanz-effect.md)
 
 [Переутомление](cognitive-psycology/overwork.md)
+[Клиповая культура](cognitive-psycology/cognitive-clip-culture.md)
