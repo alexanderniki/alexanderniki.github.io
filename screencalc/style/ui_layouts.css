@@ -1,0 +1,13 @@
+/*
+* Flexbox based Qt5-like layout system
+*/
+
+.hbox-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.vbox-layout {
+    display: flex;
+    flex-direction: column;
+}

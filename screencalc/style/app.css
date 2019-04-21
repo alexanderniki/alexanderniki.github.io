@@ -1,0 +1,67 @@
+#app_bar {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+#tab_bar {}
+
+#main-menu-area {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    min-height: 224px;
+    /*height: 100%;*/
+    /*padding-top: 16px;*/
+    
+    display: none;
+}
+
+#main_menu_toolbar {
+    align-items: center;
+}
+
+#btn_closemenu {}
+
+.navigation-main {}
+
+#main-menu {
+    position: relative;
+    text-align: left;
+    line-height: 3.0;
+    margin-left: 16px;
+}
+
+#input_form_rescalc {
+    flex-wrap: wrap;
+}
+
+.border_light {
+    border: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+}
+
+@media screen and (min-width: 600px) {
+    
+    #app-content {
+        margin: 0 auto;
+        width: 480px;
+        z-index: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    #app-content {
+        margin: 0 auto;
+        width: 320px;
+        z-index: 0;
+    }
+
+}

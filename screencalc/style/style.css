@@ -1,0 +1,37 @@
+body {
+    font-size: 16px;
+    font-family: monospace;
+    line-height: 1.5;
+    
+    margin: 0;
+}
+
+a {
+    color: #cfd8dc;
+    text-decoration: none;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #909090;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #707070;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #505050;
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
+}

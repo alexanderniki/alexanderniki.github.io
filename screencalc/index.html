@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no" />
+    
+    <link href="style/style.css" rel="stylesheet" />
+    <link href="style/app.css" rel="stylesheet" />
+    <link href="style/ui_layouts.css" rel="stylesheet" />
+    <link href="style/ui_components.css" rel="stylesheet" />
+    <link href="style/ui_colors.css" rel="stylesheet" />
+    
+    <script src="js/app/index.js"></script>
+    <script src="js/app/Navigation.js"></script>
+    <script src="js/controllers/AndroidResourceCalculator.js"></script>
+    <script src="js/controllers/AndroidScaleCalculator.js"></script>
+    <script src="js/controllers/UnitConvertor.js"></script>
+    <script src="js/models/Control.js"></script>
+    <script src="js/models/Display.js"></script>
+    
+    <title>DPI calculator</title>
+    
+</head>
+<body onload="main()">
+   
+   <div class="vbox-layout ui-primary-color" id="app">
+        
+        <div class="hbox-layout ui-toolbar ui-primary-bg ui-secondary-color" id="app_bar">
+            <a href="#" id="btn_showmenu">[=]</a>
+            DPI calculator
+        </div>
+        
+        <div class="ui-primary-bg vbox-layout" id="main-menu-area">
+            <div class="hbox-layout ui-toolbar" id="main_menu_toolbar">
+                <a href="#" class="" id="btn_closemenu">[x]</a>
+            </div>
+            <div>
+                <nav class="vbox-layout navigation-main" id="main-menu">
+                    <ul>
+                        <li><a href="#" id="nav_display">Display</a></li>
+                        <li><a href="#" id="nav_resource">Resource</a></li>
+                        <li><a href="#" id="nav_convertor">Convertor</a></li>
+                        <li><a href="#" id="btn_settings">Settings</a></li>
+                        <li><a href="#" id="btn_about">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="vbox-layout" id="app-content">
+            
+            <section class="vbox-layout ui-card border_light" id="section_displayprop">
+                
+                <div class="ui-card-header">
+                    <h1>Display</h1>
+                    <h2>Calculate display properties</h2>
+                </div>
+                
+                <div class="ui-card-content">
+                    <div class="vbox-layout" id="input_form_displayprop">
+
+                        Width, px.:
+                        <input type="text" name="x" id="x" class="border_light ui-text-field">
+
+                        Height, px.:
+                        <input type="text" name="y" id="y" class="border_light ui-text-field">
+
+                        Diagonal, in.:
+                        <input type="text" name="diag" id="diag" class="border_light ui-text-field">
+
+                    </div>
+
+                    <div class="vbox-layout" id="">
+
+                        <h3>Result</h3>
+
+                        DPI:
+                        <span id="dpi_result">0</span>
+
+                        Android screen density:
+                        <span id="density_result">0</span>
+
+                        Aspect ratio:
+                        <span id="aspectratio_result">0</span>
+
+                        Screen area, sq. inch:
+                        <span id="screenarea_result">0</span>
+
+                        The display is probably a:
+                        <span id="displayType_result"></span>
+
+                    </div>
+                </div>
+                <div class="ui-card-shadow"></div>
+            </section>
+                
+            <section class="vbox-layout ui-card border_light" id="section_rescalc">
+                
+                <div class="ui-card-header">
+                    <h1>Resource calculator</h1>
+                    <h2>Calculate resources</h2>
+                </div>
+                
+                <div class="ui-card-content">
+                    <div class="hbox-layout" id="input_form_rescalc">
+
+                        Value:
+                        <input type="text" name="" id="dp_input" class="border_light ui-text-field">
+
+                        <select class="border_light" id="list_density_types" >
+                            <option value="LDPI">LDPI</option>
+                            <option selected value="MDPI">MDPI</option>
+                            <option value="HDPI">HDPI</option>
+                            <option value="XHDPI">XHDPI</option>
+                            <option value="XXHDPI">XXHDPI</option>
+                            <option value="XXXHDPI">XXXHDPI</option>
+                        </select>
+
+                        <button id="calculate_button" class="border_light">Calculate</button>
+
+                    </div>
+
+                    <div class="vbox-layout" id="">
+
+                        <span class="ui-label">LDPI, px:</span>
+                        <span id="ldpi"></span> 
+
+                        <span class="ui-label">MDPI, px:</span>
+                        <span id="mdpi"></span>
+
+                        <span class="ui-label">HDPI, px:</span>
+                        <span id="hdpi"></span>
+
+                        <span class="ui-label">XHDPI, px:</span>
+                        <span id="xhdpi"></span>
+
+                        <span class="ui-label">XXHDPI, px:</span>
+                        <span id="xxhdpi"></span>
+
+                        <span class="ui-label">XXXHDPI, px:</span>
+                        <span id="xxxhdpi"></span>
+
+                    </div>
+                </div>
+                
+                <div class="ui-card-shadow"></div>
+                
+            </section>
+
+            
+            
+            <section id="section_convertor">
+                
+                <div class="vbox-layout ui-card border_light">
+                    
+                    <div class="ui-card-header">
+                        <h1>Convertor</h1>
+                        <h2>Convert pixels to physical size</h2>
+                    </div>
+                        
+                    <div class="vbox-layout ui-card-content">
+                        Pixels:
+                        <input type="text" name="" id="px_input" class="border_light ui-text-field">
+                        Screen DPI:
+                        <input type="text" name="" id="dpi_input" class="border_light ui-text-field">
+                        Physical result:
+                        <span id="size_result">0</span>
+                    </div>
+                        
+                    <div class="hbox-layout ui-card-actions">
+                        <button id="btn_calculate_size" class="border_light">Calculate</button>
+                    </div>
+                        
+                    <div class="ui-card-shadow"></div>
+                    
+                </div>
+                
+                    
+                <div class="vbox-layout ui-card border_light">
+                    
+                    <div class="ui-card-header">
+                        <h1>Scale calculator</h1>
+                        <h2>Calculate px by dpi and dp size for Android</h2>
+                    </div>
+                        
+                    <div class="vbox-layout ui-card-content">
+                        Size, dp:
+                        <input type="text" name="" id="size_calc_dp" class="border_light ui-text-field">
+                        DPI:
+                        <input type="text" name="" id="screen_dpi" class="border_light ui-text-field">
+                        Result: 
+                        <span id="real_size"></span>
+                    </div>
+                        
+                    <div class="hbox-layout ui-card-actions">
+                        <button id="calculate_realsize_button" class="border_light">Calculate</button>
+                    </div>
+                
+                    <div class="ui-card-shadow"></div>
+                            
+                </div>
+                
+                
+            </section>
+            
+    </div>
+    
+</body>
+</html>
