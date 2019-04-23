@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name - app</title><link href="https://www.alexanderniki.name/" rel="alternate"></link><link href="https://www.alexanderniki.name/feeds/app.atom.xml" rel="self"></link><id>https://www.alexanderniki.name/</id><updated>2019-04-21T13:40:00+03:00</updated><subtitle>alexanderniki</subtitle><entry><title>Journee - simple crossplatform journal/diary app</title><link href="https://www.alexanderniki.name/journee-simple-crossplatform-journaldiary-app" rel="alternate"></link><published>2019-04-21T13:30:00+03:00</published><updated>2019-04-21T13:40:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:www.alexanderniki.name,2019-04-21:/journee-simple-crossplatform-journaldiary-app</id><summary type="html">&lt;p&gt;Crossplatrofm electron based diary&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Sometimes writing diaries could be very useful. Dumping thoughts, learning new languages, analyzing your own life or just jotting down daily things. That's where some kind of journal could be really handy.&lt;/p&gt;
-&lt;p&gt;I tried nubmer of dirrefent tools and approaches.&lt;/p&gt;
+&lt;p&gt;I tried number of different tools and approaches.&lt;/p&gt;
 &lt;p&gt;These were:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;plain text files&lt;/li&gt;
