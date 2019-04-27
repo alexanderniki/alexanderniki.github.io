@@ -10,25 +10,6 @@
 - способность продукта быть понимаемым, изучаемым, используемым и привлекательным для пользователя в заданных условиях
 
 
-## Подразделы
-
-- [Закон Фиттса](usability/usability-law-fitts.md)
-- [Закон Хика](usability/usability-law-hicks.md)
-- [Эвристики Якоба Нильсена](usability/usability-nielsen-rules.md)
-- [Читаемость текста](usability/usability-text-readability.md)
-- [Порог Доэрти](usability/usability-doherty-threshold.md)
-- [Эффект взаимосвязи эстетики и удобства](usability/usability-aesthetic-effect.md)
-- [Закон близости](usability/usability-law-proximity.md)
-- [Закон сходства](usability/usability-law-similarity.md)
-- [Закон единообразной связи](usability/usability-law-connection.md)
-- [Эффект порядкового номера (Эббингауза)](usability/usability-effect-serial-pos.md)
-
-- [Usability-тестирование](usability/usability-testing.md)
-
-- [Монотонность](usability/usability-monotone-ui.md)
-- [Модальность](usability/usability-modal-ui.md)
-
-
 ## Истории, примеры, цитаты
 
 ### Dr. Philip Hodgson
