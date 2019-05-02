@@ -68,19 +68,19 @@ The Product Handbook  - это справочник по созданию циф
 ## Usability
 
 - [Usability](usability-about.md)
-- [Закон Фиттса](usability/usability-law-fitts.md)
-- [Закон Хика](usability/usability-law-hicks.md)
-- [Эвристики Якоба Нильсена](usability/usability-nielsen-rules.md)
-- [Читаемость текста](usability/usability-text-readability.md)
-- [Порог Доэрти](usability/usability-doherty-threshold.md)
-- [Эффект взаимосвязи эстетики и удобства](usability/usability-aesthetic-effect.md)
-- [Закон близости](usability/usability-law-proximity.md)
-- [Закон сходства](usability/usability-law-similarity.md)
-- [Закон единообразной связи](usability/usability-law-connection.md)
-- [Эффект порядкового номера (Эббингауза)](usability/usability-effect-serial-pos.md)
-- [Usability-тестирование](usability/usability-testing.md)
-- [Монотонность](usability/usability-monotone-ui.md)
-- [Модальность](usability/usability-modal-ui.md)
+- [Закон Фиттса](usability-law-fitts.md)
+- [Закон Хика](usability-law-hicks.md)
+- [Эвристики Якоба Нильсена](usability-nielsen-rules.md)
+- [Читаемость текста](usability-text-readability.md)
+- [Порог Доэрти](usability-doherty-threshold.md)
+- [Эффект взаимосвязи эстетики и удобства](usability-aesthetic-effect.md)
+- [Закон близости](usability-law-proximity.md)
+- [Закон сходства](usability-law-similarity.md)
+- [Закон единообразной связи](usability-law-connection.md)
+- [Эффект порядкового номера (Эббингауза)](usability-effect-serial-pos.md)
+- [Usability-тестирование](usability-testing.md)
+- [Монотонность](usability-monotone-ui.md)
+- [Модальность](usability-modal-ui.md)
 
 
 ## UX design
