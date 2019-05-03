@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name - app</title><link href="https://www.alexanderniki.name/" rel="alternate"></link><link href="https://www.alexanderniki.name/feeds/app.atom.xml" rel="self"></link><id>https://www.alexanderniki.name/</id><updated>2019-04-21T13:40:00+03:00</updated><subtitle>alexanderniki</subtitle><entry><title>Journee - simple crossplatform journal/diary app</title><link href="https://www.alexanderniki.name/journee-simple-crossplatform-journaldiary-app" rel="alternate"></link><published>2019-04-21T13:30:00+03:00</published><updated>2019-04-21T13:40:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:www.alexanderniki.name,2019-04-21:/journee-simple-crossplatform-journaldiary-app</id><summary type="html">&lt;p&gt;Crossplatrofm electron based diary&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Intro&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>alexanderniki.name - app</title><link href="https://www.alexanderniki.name/" rel="alternate"></link><link href="https://www.alexanderniki.name/feeds/app.atom.xml" rel="self"></link><id>https://www.alexanderniki.name/</id><updated>2019-04-21T13:40:00+03:00</updated><subtitle>alexanderniki</subtitle><entry><title>Journee - simple crossplatform journal/diary app</title><link href="https://www.alexanderniki.name/articles/journee-diary-app.html" rel="alternate"></link><published>2019-04-21T13:30:00+03:00</published><updated>2019-04-21T13:40:00+03:00</updated><author><name>Alexander Niki</name></author><id>tag:www.alexanderniki.name,2019-04-21:/articles/journee-diary-app.html</id><summary type="html">&lt;p&gt;Crossplatrofm electron based diary&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Intro&lt;/h2&gt;
 &lt;p&gt;Sometimes writing diaries could be very useful. Dumping thoughts, learning new languages, analyzing your own life or just jotting down daily things. That's where some kind of journal could be really handy.&lt;/p&gt;
 &lt;p&gt;I tried number of different tools and approaches.&lt;/p&gt;
 &lt;p&gt;These were:&lt;/p&gt;
@@ -12,7 +12,7 @@
 &lt;p&gt;And finally I found Journee - very simple, yet nice tool. And I decided to give it a try.&lt;/p&gt;
 &lt;h2&gt;About the app&lt;/h2&gt;
 &lt;p&gt;Journee is just a simple opensource journal/diary app.&lt;/p&gt;
-&lt;p&gt;It is written with Electron/JS and avalable for both Linux and Windown OSes.&lt;/p&gt;
+&lt;p&gt;It is written with Electron/JS and avalable for both Linux and Windows OSes.&lt;/p&gt;
 &lt;p&gt;Official website: &lt;a href="https://adueck.github.io/journee/"&gt;https://adueck.github.io/journee/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Journee stores its data in plain text files in your filesystem. So you could easily sync it between computers with Dropbox, Google Drive, etc.&lt;/p&gt;
 &lt;h2&gt;Using Journee&lt;/h2&gt;

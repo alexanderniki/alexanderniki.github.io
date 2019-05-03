@@ -44,26 +44,24 @@
     <meta name="msapplication-TileColor" content="#333333">
 
 <meta name="author" content="Alexander Niki" />
-<meta name="description" content="Small markdown-based REST API description &#34;language&#34;" />
-<meta name="keywords" content="rest, api, markdown, blueprint">
+<meta name="description" content="How to determine current CPU frequency on Linux" />
+<meta name="keywords" content="linux, howto">
 
 <meta property="og:site_name" content="alexanderniki.name"/>
-<meta property="og:title" content="apiblueprint.org: a good thing for working with REST APIs"/>
-<meta property="og:description" content="Small markdown-based REST API description &#34;language&#34;"/>
+<meta property="og:title" content="Determine current CPU frequency on Linux"/>
+<meta property="og:description" content="How to determine current CPU frequency on Linux"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://www.alexanderniki.name/apiblueprintorg-a-good-thing-for-working-with-rest-apis"/>
+<meta property="og:url" content="https://www.alexanderniki.name/articles/linux-cpu-freq.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2017-12-08 23:10:00+03:00"/>
-<meta property="article:modified_time" content="2017-12-08 23:20:00+03:00"/>
+<meta property="article:published_time" content="2017-11-19 23:40:00+03:00"/>
+<meta property="article:modified_time" content="2017-11-19 23:40:00+03:00"/>
 <meta property="article:author" content="https://www.alexanderniki.name/author/alexander-niki.html">
-<meta property="article:section" content="Links"/>
-<meta property="article:tag" content="rest"/>
-<meta property="article:tag" content="api"/>
-<meta property="article:tag" content="markdown"/>
-<meta property="article:tag" content="blueprint"/>
+<meta property="article:section" content="Linux"/>
+<meta property="article:tag" content="linux"/>
+<meta property="article:tag" content="howto"/>
 <meta property="og:image" content="">
 
-  <title>alexanderniki.name &ndash; apiblueprint.org: a good thing for working with REST APIs</title>
+  <title>alexanderniki.name &ndash; Determine current CPU frequency on Linux</title>
 
 </head>
 <body>
@@ -77,9 +75,9 @@
 <p>alexanderniki</p>
       <nav>
         <ul class="list">
-          <li><a href="https://www.alexanderniki.name/pages/about.html#about">About</a></li>
-          <li><a href="https://www.alexanderniki.name/pages/cv.html#cv">CV</a></li>
-          <li><a href="https://www.alexanderniki.name/pages/projects.html#projects">Projects</a></li>
+          <li><a href="https://www.alexanderniki.name/pages/about.html">About</a></li>
+          <li><a href="https://www.alexanderniki.name/pages/cv.html">CV</a></li>
+          <li><a href="https://www.alexanderniki.name/pages/projects.html">Projects</a></li>
 
         </ul>
       </nav>
@@ -110,9 +108,9 @@
 <article class="single">
   <header>
       
-    <h1 id="apiblueprintorg-a-good-thing-for-working-with-rest-apis">apiblueprint.org: a good thing for working with REST APIs</h1>
+    <h1 id="linux-cpu-freq">Determine current CPU frequency on Linux</h1>
     <p>
-          Posted on Пт 08 декабря 2017 in <a href="https://www.alexanderniki.name/category/links.html">Links</a>
+          Posted on Вс 19 ноября 2017 in <a href="https://www.alexanderniki.name/category/linux.html">Linux</a>
 
 
     </p>
@@ -120,25 +118,33 @@
 
 
   <div>
-    <h2>Apiblueprint</h2>
-<p>Apiblueprint is a small markdown-based "language" for people who work with REST APIs.
-By saying "language" I mean a specification and a set of rules intended for documatating REST APIs.</p>
-<p>Using apiblueprint rules makes it really easy to read and write API documentation in a standard way. Looks like this:</p>
-<div class="highlight"><pre><span></span># GET /message
-+ Response 200 (text/plain)
-
-        Hello World!
+    <p>Here is a little note about how to determine current CPU frequency in Linux.</p>
+<h2>Simple way</h2>
+<p>Open your terminal emulator and type:</p>
+<div class="highlight"><pre><span></span>$ cat /proc/cpuinfo <span class="p">|</span> grep MHz
 </pre></div>
 
 
-<p>Take a look at it here: <a href="https://apiblueprint.org">apiblueprint.org</a></p>
+<p>After that, you'll see something like</p>
+<div class="highlight"><pre><span></span>cpu MHz     : 932.128
+cpu MHz     : 1000.354
+cpu MHz     : 998.950
+cpu MHz     : 858.709
+</pre></div>
+
+
+<h2>More complex way</h2>
+<p>First of all, install "cpufrequtils" package. For example, in Ubuntu:</p>
+<div class="highlight"><pre><span></span>$ sudo apt install cpufrequtils
+</pre></div>
+
+
+<p>Then, just use "cpufreq-info" command.</p>
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="https://www.alexanderniki.name/tag/rest.html">rest</a>
-      <a href="https://www.alexanderniki.name/tag/api.html">api</a>
-      <a href="https://www.alexanderniki.name/tag/markdown.html">markdown</a>
-      <a href="https://www.alexanderniki.name/tag/blueprint.html">blueprint</a>
+      <a href="https://www.alexanderniki.name/tag/linux.html">linux</a>
+      <a href="https://www.alexanderniki.name/tag/howto.html">howto</a>
     </p>
   </div>
 
