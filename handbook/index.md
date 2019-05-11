@@ -34,6 +34,7 @@ The Product Handbook  - это справочник по созданию циф
 **Технологии разработки и построения продукта**
     
 - [Требования](product-tech-requirements.md)
+- [Jobs To Be Done](product-tech-jtbd.md)
 
 
 ## Основы когнитивной психологии
