@@ -15,6 +15,7 @@ The Product Handbook  - это справочник по созданию циф
 - [Чем хуже, тем лучше](product-phylosophy-worse-is-better.md)
 - [Дизайн-подход MIT](product-phylosophy-mit-design-approach.md)
 - [DRY - Don't Repeat Yourself](product-phylosophy-dry.md)
+- [UNPHAT](product-phylosophy-unphat.md)
 
 **Практики**
     
