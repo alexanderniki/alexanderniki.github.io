@@ -15,14 +15,21 @@ The Product Handbook  - это справочник по созданию циф
 - [Чем хуже, тем лучше](product-phylosophy-worse-is-better.md)
 - [Дизайн-подход MIT](product-phylosophy-mit-design-approach.md)
 - [DRY - Don't Repeat Yourself](product-phylosophy-dry.md)
+- [UNPHAT](product-phylosophy-unphat.md)
 
 **Практики**
     
--   [Feature cut](product-phylosophy-feature-cut.md)
+- [Feature cut](product-phylosophy-feature-cut.md)
+  Избавление от лишних ненужных возможностей
+- [Feature freeze](product-practice-feature-freeze.md)
+  Временный запрет на разработку новых функциональных возможностей в проекте
+- [Canary rollout - канареечный релиз](product-practice-canary-rollout.md)
+  Релиз на очень небольшую группу пользователей
 
 **Антипаттерны**
     
 - [Feature creep](product-phylosophy-feature-creep.md)
+  Неконтролируемое опасное разрастание функций продукта
 
 **Принципы**
     
@@ -33,6 +40,7 @@ The Product Handbook  - это справочник по созданию циф
 **Технологии разработки и построения продукта**
     
 - [Требования](product-tech-requirements.md)
+- [Jobs To Be Done](product-tech-jtbd.md)
 
 
 ## Основы когнитивной психологии
@@ -48,6 +56,8 @@ The Product Handbook  - это справочник по созданию циф
 - [Закон Прэгнанц](cognitive-pragnanz-effect.md)
 - [Переутомление](cognitive-overwork.md)
 - [Клиповая культура](cognitive-clip-culture.md)
+- [Усвояемость](cognitive-comprehensibility.md)
+  Насколько легко человек понимает, как устроен интерфейс
 
 
 ## Промышленный дизайн и техническая эстетика
@@ -73,7 +83,9 @@ The Product Handbook  - это справочник по созданию циф
 - [Эвристики Якоба Нильсена](usability-nielsen-rules.md)
 - [Читаемость текста](usability-text-readability.md)
 - [Порог Доэрти](usability-doherty-threshold.md)
+  Комфортное для пользователя время отклика системы
 - [Эффект взаимосвязи эстетики и удобства](usability-aesthetic-effect.md)
+  Красивое кажется более удобным
 - [Закон близости](usability-law-proximity.md)
 - [Закон сходства](usability-law-similarity.md)
 - [Закон единообразной связи](usability-law-connection.md)
@@ -127,7 +139,8 @@ The Product Handbook  - это справочник по созданию циф
 
 ## Исследование и оценка UI
 
-[Типовые профили качества UI](ui-research-quality-profiles.md)
+- [Типовые профили качества UI](ui-research-quality-profiles.md)
+- [Сложность пользовательского интерфейса](ui-complexity.md)
 
 **Методы исследования UI**
 
@@ -165,5 +178,5 @@ The Product Handbook  - это справочник по созданию циф
 
 **Чеклисты и шпаргалки**
 
-[Тестирование требований к мобильным приложениям](other-checklist-mobile-req-testing.md)
+- [Тестирование требований к мобильным приложениям](other-checklist-mobile-req-testing.md)
 
