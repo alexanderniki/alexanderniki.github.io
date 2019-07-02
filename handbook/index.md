@@ -27,7 +27,9 @@ The Product Handbook  - это справочник по созданию циф
   Релиз на очень небольшую группу пользователей
 
 **Антипаттерны**
-    
+
+Потому что мало знать "как надо". Нужно еще знать "как точно не надо".
+
 - [Feature creep](product-phylosophy-feature-creep.md)
   Неконтролируемое опасное разрастание функций продукта
 
@@ -136,6 +138,7 @@ The Product Handbook  - это справочник по созданию циф
 
 - [Композиция](ui-design-composition.md)
 - [Визуальная коммуникация](ui-design-visual-communication.md)
+- [Контраст в типографике](ui-design-typography-contrast.md)
 
 ## Исследование и оценка UI
 
