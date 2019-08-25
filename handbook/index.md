@@ -38,6 +38,8 @@ The Product Handbook  - это справочник по созданию циф
 - [Правило одного процента](product-principle-one-percent-rule.md)
 - [Закон (правило, принцип) Парето](product-principle-pareto.md)
 - [Закон Старджона (откровение Старджона)](product-principle-starjohn.md)
+- [Принцип Оберона](product-principle-oberon.md)
+  Проектирование систем с нуля так, что их можно понять
 
 **Технологии разработки и построения продукта**
     
