@@ -1,11 +1,13 @@
 # The Product Handbook
 
 The Product Handbook  - это справочник по созданию цифровых продуктов.
+
+Использование этого справочника предполагает, что бизнес-проблема уже сформулирована и бизнес-требования к разрабатываемому новому продукту уже существуют.
  
 
 ## Создание digital-продуктов
 
-**Философия**
+### Философия
 
 - [Кайдзен](product-phylosophy-kaizen.md)
 - [Философия Python](product-phylosophy-python.md)
@@ -17,31 +19,26 @@ The Product Handbook  - это справочник по созданию циф
 - [DRY - Don't Repeat Yourself](product-phylosophy-dry.md)
 - [UNPHAT](product-phylosophy-unphat.md)
 
-**Практики**
+### Практики
     
-- [Feature cut](product-phylosophy-feature-cut.md)
-  Избавление от лишних ненужных возможностей
-- [Feature freeze](product-practice-feature-freeze.md)
-  Временный запрет на разработку новых функциональных возможностей в проекте
-- [Canary rollout - канареечный релиз](product-practice-canary-rollout.md)
-  Релиз на очень небольшую группу пользователей
+- [Feature cut](product-phylosophy-feature-cut.md) - Избавление от лишних ненужных возможностей
+- [Feature freeze](product-practice-feature-freeze.md) - Временный запрет на разработку новых функциональных возможностей в проекте
+- [Canary rollout - канареечный релиз](product-practice-canary-rollout.md) - Релиз на очень небольшую группу пользователей
 
-**Антипаттерны**
+### Антипаттерны
 
 Потому что мало знать "как надо". Нужно еще знать "как точно не надо".
 
-- [Feature creep](product-phylosophy-feature-creep.md)
-  Неконтролируемое опасное разрастание функций продукта
+- [Feature creep](product-phylosophy-feature-creep.md) - Неконтролируемое опасное разрастание функций продукта
 
-**Принципы**
+### Принципы
     
 - [Правило одного процента](product-principle-one-percent-rule.md)
 - [Закон (правило, принцип) Парето](product-principle-pareto.md)
 - [Закон Старджона (откровение Старджона)](product-principle-starjohn.md)
-- [Принцип Оберона](product-principle-oberon.md)
-  Проектирование систем с нуля так, что их можно понять
+- [Принцип Оберона](product-principle-oberon.md) - Проектирование систем с нуля так, что их можно понять
 
-**Технологии разработки и построения продукта**
+### Технологии разработки и построения продукта
     
 - [Требования](product-tech-requirements.md)
 - [Jobs To Be Done](product-tech-jtbd.md)
@@ -60,21 +57,20 @@ The Product Handbook  - это справочник по созданию циф
 - [Закон Прэгнанц](cognitive-pragnanz-effect.md)
 - [Переутомление](cognitive-overwork.md)
 - [Клиповая культура](cognitive-clip-culture.md)
-- [Усвояемость](cognitive-comprehensibility.md)
-  Насколько легко человек понимает, как устроен интерфейс
+- [Усвояемость](cognitive-comprehensibility.md) - Насколько легко человек понимает, как устроен интерфейс
 
 
 ## Промышленный дизайн и техническая эстетика
 
-**Промышленный дизайн**
+### Промышленный дизайн
 
 - [Промышленный дизайн](industrial-design-about.md)
 
-**Техническая эстетика**
+### Техническая эстетика
 
 - [Техническая эстетика](aesthetics-tech-about.md)
 
-**Эргономика**
+### Эргономика
 
 - [Эргономика](ergonomics-about.md)
 
@@ -86,10 +82,8 @@ The Product Handbook  - это справочник по созданию циф
 - [Закон Хика](usability-law-hicks.md)
 - [Эвристики Якоба Нильсена](usability-nielsen-rules.md)
 - [Читаемость текста](usability-text-readability.md)
-- [Порог Доэрти](usability-doherty-threshold.md)
-  Комфортное для пользователя время отклика системы
-- [Эффект взаимосвязи эстетики и удобства](usability-aesthetic-effect.md)
-  Красивое кажется более удобным
+- [Порог Доэрти](usability-doherty-threshold.md) - Комфортное для пользователя время отклика системы
+- [Эффект взаимосвязи эстетики и удобства](usability-aesthetic-effect.md) - Красивое кажется более удобным
 - [Закон близости](usability-law-proximity.md)
 - [Закон сходства](usability-law-similarity.md)
 - [Закон единообразной связи](usability-law-connection.md)
@@ -101,7 +95,7 @@ The Product Handbook  - это справочник по созданию циф
 
 ## UX design
 
-**Основные понятия**
+### Основные понятия
 
 - [Что такое пользовательский опыт](ux-about.md)
 - [Пятиуровневая модель проектирования пользовательского опыта](ux-5level-model.md)
@@ -110,7 +104,7 @@ The Product Handbook  - это справочник по созданию циф
 - [Ментальные модели](ux-mental-models.md)
 - [Закон общей области](ux-law-common-region.md)
 
-**Проблемы и искажения при проектировании**
+### Проблемы и искажения при проектировании
 
 - [Эффект ложного консенсуса](ux-problem-false-consensus.md)
 - [Проектирование под себя](ux-problem-design-for-self.md)
@@ -118,7 +112,7 @@ The Product Handbook  - это справочник по созданию циф
 - [Проблема "пластилинового" пользователя](ux-problem-flexible-user.md)
 - [Закон Джейкоба](ux-jacobs-law.md)
 
-**Элементы приложений**
+### Элементы приложений
 
 - [Онбординг (onboarding)](ux-onboarding.md)
 
@@ -138,16 +132,18 @@ The Product Handbook  - это справочник по созданию циф
 
 ## UI design
 
+- [Проектирование (дизайн) пользовательского интерфейса](ui-design-about.md)
 - [Композиция](ui-design-composition.md)
 - [Визуальная коммуникация](ui-design-visual-communication.md)
 - [Контраст в типографике](ui-design-typography-contrast.md)
+
 
 ## Исследование и оценка UI
 
 - [Типовые профили качества UI](ui-research-quality-profiles.md)
 - [Сложность пользовательского интерфейса](ui-complexity.md)
 
-**Методы исследования UI**
+### Методы исследования UI
 
 - [Eyetracking](ui-research-method-eyetracking.md)
 - [GOMS-анализ](ui-research-method-goms.md)
@@ -181,7 +177,7 @@ The Product Handbook  - это справочник по созданию циф
 - [Сайты и блоги](other-sites-links.md)
 - [Дизайн-системы и гайды](other-design-guide-list.md)
 
-**Чеклисты и шпаргалки**
+### Чеклисты и шпаргалки
 
 - [Тестирование требований к мобильным приложениям](other-checklist-mobile-req-testing.md)
 
