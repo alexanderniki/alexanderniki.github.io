@@ -123,6 +123,8 @@ The Product Handbook  - это справочник по созданию циф
 - [Проектирование взаимодействия](ixd-about.md)
 - [Аффорданс](ixd-affordance.md)
 - [Ментальные модели](ixd-mental-models.md)
+- [Согласованность интерфейса](ixd-ui-consistency.md)
+- [Естественность интерфейса](ixd-ui-natural.md)
 
 
 ## Информационная архитектура
@@ -157,7 +159,7 @@ The Product Handbook  - это справочник по созданию циф
 ## Документы и артефакты
 
 - [Customer journey map](doc-customer-journey-map.md) // todo
-- [Impact maps](doc-impact-maps.md) // todo
+- [Impact maps](doc-impact-maps.md)
 - [Personas / Персонажи](doc-personas-common.md)
 - [Job stories](doc-job-stories.md) // todo
 - [User stories](doc-user-stories.md)
