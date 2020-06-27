@@ -122,8 +122,8 @@
 <p>Before using the guide, login as the Root user. Or use sudo.</p>
 <h2>Step 1. Create storage file</h2>
 <p>Type the following command to create 512MB swap file (1024 * 512MB = 524288 block size):</p>
-<div class="highlight"><pre><span></span>dd if=/dev/zero of=/swapfile bs=1024 count=524288
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">dd if=/dev/zero of=/swapfile bs=1024 count=524288</span>
+</code></pre></div>
 
 
 <p>Where</p>
@@ -135,35 +135,35 @@
 </ul>
 <h2>Step 2. Set up a Linux swap area</h2>
 <p>Type the following command to set up a Linux swap area in a file:</p>
-<div class="highlight"><pre><span></span># mkswap /swapfile
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err"># mkswap /swapfile</span>
+</code></pre></div>
 
 
 <p>Setup correct file permission for security reasons, enter:</p>
-<div class="highlight"><pre><span></span># chown root:root /swapfile
-# chmod 0600 /swapfile
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err"># chown root:root /swapfile</span>
+<span class="err"># chmod 0600 /swapfile</span>
+</code></pre></div>
 
 
 <p>A world-readable swap file is a huge local vulnerability. The above command makes sure only root user can read/write to the file. Finally, activate /swapfile swap space immediately, enter:</p>
-<div class="highlight"><pre><span></span># swapon /swapfile
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err"># swapon /swapfile</span>
+</code></pre></div>
 
 
 <p>To activate /swapfile after Linux system reboot, add entry to /etc/fstab file. Open this file using a text editor such as nano:</p>
-<div class="highlight"><pre><span></span># nano /etc/fstab
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err"># nano /etc/fstab</span>
+</code></pre></div>
 
 
 <p>Append the following line:</p>
-<div class="highlight"><pre><span></span>/swapfile swap swap defaults 0 0
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">/swapfile swap swap defaults 0 0</span>
+</code></pre></div>
 
 
 <h2>Step 3. Verify swap is activated</h2>
 <p>Simply use the free command:</p>
-<div class="highlight"><pre><span></span>$ free -m
-</pre></div>
+<div class="highlight"><pre><span></span><code>$ free -m
+</code></pre></div>
   </div>
   <div class="tag-cloud">
     <p>

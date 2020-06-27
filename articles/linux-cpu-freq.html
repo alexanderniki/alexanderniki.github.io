@@ -121,22 +121,22 @@
     <p>Here is a little note about how to determine current CPU frequency in Linux.</p>
 <h2>Simple way</h2>
 <p>Open your terminal emulator and type:</p>
-<div class="highlight"><pre><span></span>$ cat /proc/cpuinfo <span class="p">|</span> grep MHz
-</pre></div>
+<div class="highlight"><pre><span></span><code>$ cat /proc/cpuinfo <span class="p">|</span> grep MHz
+</code></pre></div>
 
 
 <p>After that, you'll see something like</p>
-<div class="highlight"><pre><span></span>cpu MHz     : 932.128
-cpu MHz     : 1000.354
-cpu MHz     : 998.950
-cpu MHz     : 858.709
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">cpu MHz     : 932.128</span>
+<span class="err">cpu MHz     : 1000.354</span>
+<span class="err">cpu MHz     : 998.950</span>
+<span class="err">cpu MHz     : 858.709</span>
+</code></pre></div>
 
 
 <h2>More complex way</h2>
 <p>First of all, install "cpufrequtils" package. For example, in Ubuntu:</p>
-<div class="highlight"><pre><span></span>$ sudo apt install cpufrequtils
-</pre></div>
+<div class="highlight"><pre><span></span><code>$ sudo apt install cpufrequtils
+</code></pre></div>
 
 
 <p>Then, just use "cpufreq-info" command.</p>

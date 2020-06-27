@@ -123,27 +123,27 @@
 <p>ColorExtension - is a <a href="https://www.mercurial-scm.org/">Mercurial</a> extetsion that allows you to highlight some information in console output. The extension ships with Mercurial so there is no need to install it separately.</p>
 <h2>Setup</h2>
 <p>To enable ColorExtension, open your hgrc file and add "color=" to "extensions" section. Like that:</p>
-<div class="highlight"><pre><span></span><span class="k">[extensions]</span>
+<div class="highlight"><pre><span></span><code><span class="k">[extensions]</span>
 <span class="na">color</span> <span class="o">=</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>To override current colors, add "colors" section with color definitions to your hgrc. For example:</p>
-<div class="highlight"><pre><span></span><span class="k">[color]</span>
+<div class="highlight"><pre><span></span><code><span class="k">[color]</span>
 <span class="na">status.modified</span> <span class="o">=</span> <span class="s">blue bold underline red_background</span>
 <span class="na">status.added</span> <span class="o">=</span> <span class="s">green bold</span>
 <span class="na">status.removed</span> <span class="o">=</span> <span class="s">red bold blue_background</span>
 <span class="na">status.deleted</span> <span class="o">=</span> <span class="s">cyan bold underline</span>
 <span class="na">status.unknown</span> <span class="o">=</span> <span class="s">magenta bold underline</span>
 <span class="na">status.ignored</span> <span class="o">=</span> <span class="s">black bold</span>
-</pre></div>
+</code></pre></div>
 
 
 <p>You can override colors for other states and actions in the same way.</p>
 <p>If you want to switch some colors off, place "none" in the config:</p>
-<div class="highlight"><pre><span></span>status.clean = none
-status.copied = none
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">status.clean = none</span>
+<span class="err">status.copied = none</span>
+</code></pre></div>
 
 
 <p>Default color scheme lives <a href="https://selenic.com/repo/hg-stable/file/436cc9d017c6/hgext/color.py">here</a></p>
