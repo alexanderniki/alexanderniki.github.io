@@ -2,8 +2,7 @@
 
 «90 процентов чего угодно — ерунда» («Ninety percent of everything is crud», «Ninety percent of everything is crap»).
 
-
-## Источники и дополнительная информация
+---
 
 **Источники**:
 
