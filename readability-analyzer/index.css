@@ -27,6 +27,7 @@ h1 {
     font-weight: normal;
     font-size: 1.5em;
     color: #909090;
+    line-height: 2em;
 }
 
 
@@ -79,6 +80,8 @@ section {
     color: #f0f0f0;
     
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*
