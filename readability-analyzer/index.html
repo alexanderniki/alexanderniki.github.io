@@ -7,6 +7,8 @@
         <meta name="theme-color" content="#424242" />
         
         <link href="index.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Light"/>
         
         <script src="StrQualityUtils.js"></script>
         <script src="main.js"></script>
@@ -16,18 +18,18 @@
     
     <body onload="main()">
        
-        <div class="toolbar">
+        <!--<div class="toolbar">
             <span class="layout-hbox">Readability analyzer</span>
-        </div>
+        </div>-->
         
         <div class="layout-vbox main-content">
         
             <section>
 
-                <h1>Анализ удобочитаемости текста</h1>
+                <h1>Анализ удобочитаемости</h1>
+                <h2>Текст</h2>
                 
                 <div>
-                    <h2>Текст</h2>
                     <form>
                         <p><textarea id="text-area"></textarea></p>
                         <p><input type="button" value="Рассчитать" id="button-calc" onclick="calcTextProperties()"></p>
