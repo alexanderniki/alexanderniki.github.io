@@ -85,4 +85,4 @@
 
 Источники:
 
-- [https://bradfrost.com/blog/post/atomic-web-design/](bradfrost.com: Atomic web design)
+- [bradfrost.com: Atomic web design](https://bradfrost.com/blog/post/atomic-web-design/)
