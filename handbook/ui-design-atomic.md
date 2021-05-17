@@ -83,6 +83,10 @@
 
 ---
 
+Связанные понятия:
+
+- [Component Driven User Interface](ui-design-component-driven)
+
 Источники:
 
 - [bradfrost.com: Atomic web design](https://bradfrost.com/blog/post/atomic-web-design/)
