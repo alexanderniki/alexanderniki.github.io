@@ -30,8 +30,8 @@ a {
 }
 
 header {
-    background: linear-gradient(90deg, #0081C2, #03BD8B);
-    /*background-color: #303030;*/
+    /*background: linear-gradient(90deg, #0081C2, #03BD8B);*/
+    background-color: #303040;
     /*background-image: url("header.jpg");*/
     background-position: center top;
     background-repeat: no-repeat;
