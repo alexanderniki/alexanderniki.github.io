@@ -61,6 +61,18 @@ main {
     max-width: 50em;
 }
 
+footer {
+    background-color: #505060;
+    color: #FAFAFA;
+    position: absolute;
+    width: 100%;
+}
+
+.main-footer {
+    margin: 0 auto;
+    max-width: 50em;
+}
+
 /* Make Google Maps responsive */
 
 .map-responsive {
