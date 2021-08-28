@@ -39,35 +39,59 @@
 
         <h1>Описание</h1>
 
-        <h1>Характеристики</h1>
+        <section>
+            <h1>Характеристики</h1>
 
-        <ul>
-            <li>Тип: <strong>Beach break</strong> / Reef break / Point break</li>
-            <li>Направление волны: <strong>Левая</strong> / Правая / Не известно</li>
-            <li>Дно: Песок</li>
-            <li>Сложность: <strong>Начинающий</strong> / Продвинутый / Эксперт</li>
-            <li>Уровень загруженности: <strong>Низкий</strong> / Средний / Высокий / Не известно</li>
-            <li>Угрозы: нет</li>
-            <li>Качество волн: Низкое / <strong>Среднее</strong> / Высокое</li>
-        </ul>
+            <ul>
+                <li>Тип: <strong>Beach break</strong> / Reef break / Point break</li>
+                <li>Направление волны: <strong>Левая</strong> / Правая / Не известно</li>
+                <li>Дно: Песок</li>
+                <li>Сложность: <strong>Начинающий</strong> / Продвинутый / Эксперт</li>
+                <li>Уровень загруженности: <strong>Низкий</strong> / Средний / Высокий / Не известно</li>
+                <li>Угрозы: нет</li>
+                <li>Качество волн: Низкое / <strong>Среднее</strong> / Высокое</li>
+            </ul>
 
-        <p>Спот работает при южном ветре</p>
+            <p>Спот работает при южном ветре</p>
+        </section>
 
-        <h1>Расположение</h1>
-        <p>Координаты: (60.301528, 28.849028)</p>
-        <div class="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.6976476772566!2d28.84683931663736!3d60.301527982009524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDE4JzA1LjUiTiAyOMKwNTAnNTYuNSJF!5e0!3m2!1sru!2sru!4v1624995561919!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <section>
+            <h1>Расположение</h1>
+
+            <p>Координаты: (60.301528, 28.849028)</p>
+            
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.6976476772566!2d28.84683931663736!3d60.301527982009524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDE4JzA1LjUiTiAyOMKwNTAnNTYuNSJF!5e0!3m2!1sru!2sru!4v1624995561919!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
         
+        <section>
             <h1>Фотографии</h1>
+            <div id="gallery">
+                <div class="main-img">
+                    <img src="media/spot-bigsands-photo-1.jpg" id="current">
+                </div>
+                <div class="images">
+                    <img src="media/spot-bigsands-photo-1.jpg" class="img">
+                    <img src="media/spot-bigsands-photo-2.jpg" class="img">
+                    <img src="media/spot-bigsands-photo-3.jpg" class="img">
+                    <img src="media/spot-bigsands-photo-4.jpg" class="img">
+                </div>
+            </div>
+            <script src="gallery.js"></script>
+        </section>
 
-        <h1>Дополнительно</h1>
-        <p>Основное правило - не заезжать на песок. На песке очень легко застрять.</p>
-        <p>Относительно простой способ проехать к споту: едем прямо вниз, паркуемся и по берегу идем влево. За высокой дюной в лесу может стоять автобус с прокатом досок. Сам спот - напротив этой дюны.</p>
-        <img src="media/spot-bigsands-way.jpg" alt="Маршрут до пляжа на споте" width="100%" height="100%">
+        <section>
+            <h1>Дополнительно</h1>
+            <p>Основное правило - не заезжать на песок. На песке очень легко застрять.</p>
+            <p>Относительно простой способ проехать к споту: едем прямо вниз, паркуемся и по берегу идем влево. За высокой дюной в лесу может стоять автобус с прокатом досок. Сам спот - напротив этой дюны.</p>
+            <img src="media/spot-bigsands-way.jpg" alt="Маршрут до пляжа на споте" width="100%" height="100%">
+        </section>
 
-        <h1>Другие споты</h1>
-        <spotlist-component></spotlist-component>
+        <section>
+            <h1>Другие споты</h1>
+            <spotlist-component></spotlist-component>
+        </section>
 
     </main>
 

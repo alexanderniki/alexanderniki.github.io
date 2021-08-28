@@ -37,32 +37,53 @@
 
     <main>
 
-        <h1>Описание</h1>
+        <section>
+            <h1>Описание</h1>
+            <p>Благоустроенный спот на берегу Ладожского озера. Есть пляж, видовые рестораны и парковка.</p>
+        </section>
 
-        <h1>Характеристики</h1>
+        <section>
+            <h1>Характеристики</h1>
 
-        <ul>
-            <li>Тип: <strong>Beach break</strong> / Reef break / Point break</li>
-            <li>Направление волны: Левая / Правая / <strong>Не известно</strong></li>
-            <li>Дно: Песок</li>
-            <li>Сложность: <strong>Начинающий</strong> / Продвинутый / Эксперт</li>
-            <li>Уровень загруженности: Низкий / <strong>Средний</strong> / Высокий / Не известно</li>
-            <li>Угрозы: Камни в воде</li>
-            <li>Качество волн: Низкое / <strong>Среднее</strong> / Высокое</li>
-        </ul>
+            <ul>
+                <li>Тип: <strong>Beach break</strong> / Reef break / Point break</li>
+                <li>Направление волны: Левая / Правая / <strong>Не известно</strong></li>
+                <li>Дно: Песок</li>
+                <li>Сложность: <strong>Начинающий</strong> / Продвинутый / Эксперт</li>
+                <li>Уровень загруженности: Низкий / <strong>Средний</strong> / Высокий / Не известно</li>
+                <li>Угрозы: Камни в воде</li>
+                <li>Качество волн: Низкое / <strong>Среднее</strong> / Высокое</li>
+            </ul>
+        </section>
 
-        <h1>Расположение</h1>
-        <p>Координаты: (60.118084,31.085118)</p>
-        <div class="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.7837461042984!2d31.082929316104316!3d60.11808398194176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDA3JzA1LjEiTiAzMcKwMDUnMDYuNCJF!5e0!3m2!1sru!2sru!4v1624995130674!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <section>
+            <h1>Расположение</h1>
+            <p>Координаты: (60.118084,31.085118)</p>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.7837461042984!2d31.082929316104316!3d60.11808398194176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDA3JzA1LjEiTiAzMcKwMDUnMDYuNCJF!5e0!3m2!1sru!2sru!4v1624995130674!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
 
-        <h1>Фотографии</h1>
+        <section>
+            <h1>Фотографии</h1>
+            <div id="gallery">
+                <div class="main-img">
+                    <img src="media/spot-lighthouse-photo-1.jpg" id="current">
+                </div>
+                <div class="images">
+                    <img src="media/spot-lighthouse-photo-1.jpg" class="img">
+                    <img src="media/spot-lighthouse-photo-2.jpg" class="img">
+                    <img src="media/spot-lighthouse-photo-3.jpg" class="img">
+                    <img src="media/spot-lighthouse-photo-4.jpg" class="img">
+                </div>
+            </div>
+            <script src="gallery.js"></script>
+        </section>
 
-        <h1>Дополнительно</h1>
-
-        <h1>Другие споты</h1>
-        <spotlist-component></spotlist-component>
+        <section>
+            <h1>Другие споты</h1>
+            <spotlist-component></spotlist-component>
+        </section>
         
 
     </main>
