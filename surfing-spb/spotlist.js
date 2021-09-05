@@ -22,10 +22,10 @@ class Spotlist extends HTMLElement {
             <li><a href="spot-lighthouse.html">Маяк</a></li>
             <li><a href="spot-bigsands.html">Большие пески</a></li>
             <li><a href="spot-motor.html">Бухта Моторная</a></li>
+            <li><a href="spot-battery.html">Батарейная бухта</a></li>
             <!--<li>Мыс Флотский</li>
             <li>Спот "Парковка"</li>
             <li>Липово</li>
-            <li><a href="spot-battery.html">Батарейная бухта</a></li>
             <li><a href="">Бухта Желтая</a></li>-->
         </ul>
         `
