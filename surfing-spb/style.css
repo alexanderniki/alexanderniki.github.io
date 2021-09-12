@@ -7,6 +7,13 @@
     --color-primary-dark: #303030;
     --color-primary-light: #F0F0F0;
     --color-accent-primary: #4FC4FA;
+
+    --color-light: #FAFAFA;
+    --color-dark: #1C1C1C;
+    --color-grayscale-100: #1C1C1C;
+    --color-grayscale-200: #575757;
+    --color-grayscale-300: #707070;
+    --color-grayscale-400: #292929;
   }
   
 
