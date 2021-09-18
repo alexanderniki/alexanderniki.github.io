@@ -4,16 +4,24 @@
     /* 
      * COLORS 
      */
-    --color-primary-dark: #303030;
-    --color-primary-light: #F0F0F0;
-    --color-accent-primary: #4FC4FA;
+    --color-primary-dark: #303040;
+    --color-primary-light: #fafafa;
+    --color-accent-primary: #4fc4fA;
 
     --color-light: #FAFAFA;
     --color-dark: #1C1C1C;
-    --color-grayscale-100: #1C1C1C;
+    --color-grayscale-100: #373746;
     --color-grayscale-200: #575757;
     --color-grayscale-300: #707070;
     --color-grayscale-400: #292929;
+
+    --color-grayscale-t25: #464652;
+    --color-grayscale-l25: #646470;
+
+    --color-accent-primary-s75: #14313F;
+    --color-accent-primary-s50: #28627D;
+    --color-accent-primary-s25: #3B93BC;
+
   }
   
 
@@ -24,8 +32,9 @@ body {
 
     font-family: "Ubuntu", sans-serif;
     line-height: 1.5;
+    font-size: 18px;
 
-    color: var(--color-primary-dark);
+    color: var(--color-accent-primary-s50);
     background-color: var(--color-primary-light);
 }
 
@@ -35,7 +44,7 @@ h2 {
 }
 
 h1, h2, strong {
-  color: var(--color-primary-dark);
+  color: var(--color-accent-primary-s25);
 }
 
 a {
@@ -43,8 +52,8 @@ a {
 }
 
 header {
-    /*background: linear-gradient(90deg, #0081C2, #03BD8B);*/
-    background-color: var(--color-primary-dark);
+    background: linear-gradient(90deg, #14313F, #28627D);
+    /*background-color: var(--color-accent-primary-s75);*/
     /*background-image: url("header.jpg");*/
     background-position: center top;
     background-repeat: no-repeat;
@@ -73,7 +82,7 @@ main {
 }
 
 footer {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-accent-primary-s75);
     color: var(--color-primary-light);
     position: absolute;
     width: 100%;
