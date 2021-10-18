@@ -4,9 +4,9 @@
     /* 
      * COLORS 
      */
-    --color-primary-dark: #212121; /* Material design light-blue 900 */
-    --color-primary-dark-variant: #616161; /* Material design light-blue 700 */
-    --color-primary-light: #fafafa;
+    --color-primary-dark: #313B46; 
+    --color-primary-dark-variant: #4B5B6D;
+    --color-primary-light: #FEFEFE;
     --color-accent-primary: #03A9F4; /* Material design light-blue 500 */
   }
   
