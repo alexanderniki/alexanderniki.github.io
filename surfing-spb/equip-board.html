@@ -11,6 +11,7 @@
     <meta name="author" content="Alexander Niki (www.alexanderniki.name)">
     <meta name=”robots” content="index, follow">
 
+    <link id="theme" rel="stylesheet" type="text/css" href="theme-light.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Google Analytics -->
@@ -26,11 +27,12 @@
     <script src="footer.js"></script>
     <script src="spotlist.js"></script>
     <script src="equiplist.js"></script>
+    <script src="utils.js"></script>
 
     <title>Серфинг в санкт-Петербурге. Доска</title>
 </head>
 
-<body>
+<body onload="getCurrentTheme()">
 
     <header>
         <section class="spot-header">

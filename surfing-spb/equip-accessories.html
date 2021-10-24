@@ -12,6 +12,7 @@
     <meta name=”robots” content="index, follow">
 
 
+    <link id="theme" rel="stylesheet" type="text/css" href="theme-light.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Google Analytics -->
@@ -27,7 +28,8 @@
     <script src="footer.js"></script>
     <script src="spotlist.js"></script>
     <script src="equiplist.js"></script>
-
+    <script src="utils.js"></script>
+    
     <title>Серфинг в санкт-Петербурге. Аксесуары</title>
     
     <script type="application/ld+json">
@@ -63,7 +65,7 @@
     
 </head>
 
-<body>
+<body onload="getCurrentTheme()">
 
     <header>
         <section class="spot-header">

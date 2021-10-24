@@ -3,7 +3,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#313b46" />
+    <meta name="theme-color" content="#303038" />
+    <link id="theme" rel="stylesheet" type="text/css" href="theme-light.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Google Analytics -->
@@ -19,11 +20,12 @@
     <script src="footer.js"></script>
     <script src="spotlist.js"></script>
     <script src="equiplist.js"></script>
+    <script src="utils.js"></script>
 
     <title>Серфинг в Санкт-Петербурге</title>
 </head>
 
-<body>
+<body onload="getCurrentTheme()">
 
     <header>
         <section class="main-header">

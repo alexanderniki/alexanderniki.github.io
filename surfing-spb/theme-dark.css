@@ -1,0 +1,10 @@
+:root {
+    /* 
+     * COLORS 
+     */
+    --color-primary-dark: #303038; 
+    --color-primary-dark-variant: #e0e0e8;
+    --color-primary-light: #42424E;
+    --color-accent-primary: #03A9F4; /* Material design light-blue 500 */
+  }
+  

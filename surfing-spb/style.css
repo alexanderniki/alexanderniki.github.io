@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 
-:root {
+/*:root {
     /* 
      * COLORS 
      */
-    --color-primary-dark: #313B46; 
-    --color-primary-dark-variant: #4B5B6D;
+    /*--color-primary-dark: #303038; 
+    --color-primary-dark-variant: #42424E;
     --color-primary-light: #FEFEFE;
-    --color-accent-primary: #03A9F4; /* Material design light-blue 500 */
-  }
-  
+    --color-accent-primary: #03A9F4; /* Material design light-blue 500*/
+  /*}  */
 
 body {
     margin: 0;

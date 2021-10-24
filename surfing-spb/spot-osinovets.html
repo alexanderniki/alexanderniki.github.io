@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#313b46" />
     <meta charset="utf-8">
 
+    <link id="theme" rel="stylesheet" type="text/css" href="theme-light.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- Google Analytics -->
@@ -21,11 +22,12 @@
     <script src="footer.js"></script>
     <script src="spotlist.js"></script>
     <script src="equiplist.js"></script>
+    <script src="utils.js"></script>
 
     <title>Серфинг в санкт-Петербурге. Спот Осиновец</title>
 </head>
 
-<body>
+<body onload="getCurrentTheme()">
 
     <header>
         <section class="spot-header">
@@ -35,7 +37,7 @@
         
     </header>
 
-    <main>
+    <main onload="getCurrentTheme()">
 
         <h1>Описание</h1>
         <p>Спот не для новичков - надо уметь хорошо грести, ловить волны на лайнапе. У берега - камни. Огромный плюс спота - от машины до воды около 20 метров. Спот близко, все видно.</p>
