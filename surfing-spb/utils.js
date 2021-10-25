@@ -30,9 +30,7 @@ function setTheme(value) {
     // using href attribute.
     // https://www.geeksforgeeks.org/how-to-switch-between-multiple-css-stylesheets-using-javascript/
 
-    var sheets = document
-        .getElementsByTagName('link');
-
+    var sheets = document.getElementsByTagName('link');
     sheets[0].href = value;
 }
 
