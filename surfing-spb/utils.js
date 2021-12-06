@@ -50,3 +50,24 @@ function getCurrentTheme() {
     }
     
 }
+
+
+function setBrowserDecodation() {
+    
+    // set Chrome toolbar color
+}
+
+
+function copyToClipboard() {
+
+    // Copy location
+    // Taken from https://www.educative.io/edpresso/how-to-read-from-and-write-to-the-clipboard-in-javascript
+
+    let copyText = document.getElementById("spot-location");
+    
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(copyText.innerText); // .then(() => alert("Copied"))
+      } else {
+        console.log("Clipboard is not supported");
+      }
+}
