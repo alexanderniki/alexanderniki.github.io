@@ -164,7 +164,4 @@ h5 {
 #copy-location { /* Button */
     background-color: var(--color-primary-light);
     border-width: 0px;
-
-    /*padding-left: 1em;
-    padding-right: 1em;*/
-}x
+}
