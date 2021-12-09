@@ -58,15 +58,11 @@ function setBrowserDecodation() {
 }
 
 
-function copyToClipboard() {
-
-    // Copy location
-    // Taken from https://www.educative.io/edpresso/how-to-read-from-and-write-to-the-clipboard-in-javascript
-
-    let copyText = document.getElementById("spot-location");
+function copyToClipboard(element) {
+    let copyText = document.getElementById(element);
     
     if (navigator.clipboard) {
-        navigator.clipboard.writeText(copyText.innerText); // .then(() => alert("Copied"))
+        navigator.clipboard.writeText(copyText.innerText).then(() => alert("Координаты скопированы"));
       } else {
         console.log("Clipboard is not supported");
       }
