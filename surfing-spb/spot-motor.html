@@ -29,10 +29,14 @@
     <script src="equiplist.js"></script>
     <script src="utils.js"></script>
 
+    <script>
+        getCurrentTheme();
+    </script>
+
     <title>Серфинг в санкт-Петербурге. Спот Бухта Моторная</title>
 </head>
 
-<body onload="getCurrentTheme()">
+<body>
 
     <header>
         <section class="spot-header">
@@ -43,56 +47,139 @@
     </header>
 
     <main>
+        <!-- FLEX APP LAYOUT -->
 
-        <section>
-            <h1>Описание</h1>
-            <p>Песчаный пляж, сосновый лес.</p>
-        </section>
+        <section class="uix--layout-hbox--wrapped">
 
-        <section>
-            <h1>Характеристики 
-                <a href="reference-spots.html"><span class="icon-help caption">?</span></a>
-            </h1>
-
-            <ul>
-                <li>Тип: Не известно</li>
-                <li>Направление волны: Не известно</li>
-                <li>Дно: Песок</li>
-                <li>Сложность: Не известно</li>
-                <li>Уровень загруженности: Низкий</li>
-                <li>Угрозы: Камни (не много)</li>
-                <li>Качество волн: Не известно</li>
-            </ul>
-        </section>
-
-        <section>
-            <h1>Расположение</h1>
-            
-            <p>
-                Координаты: <span id="spot-location">60.975885,30.292147</span>
-                <button id="copy-location" onclick="copyToClipboard('spot-location')">
-                    <img src="https://img.icons8.com/material-outlined/16/000000/copy.png"/>
-                </button>
-            </p>
-            
-            <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1080.9749692581074!2d30.2938898331941!3d60.97564776426804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDU4JzMzLjIiTiAzMMKwMTcnMzEuNyJF!5e0!3m2!1sen!2sru!4v1628201916669!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Описание</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <p>Песчаный пляж, сосновый лес.</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Характеристики</span> 
+                    <a href="reference-spots.html" class="decoration-none"><span class="icon-help caption2">?</span></a>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <ul class="uix-card--list">
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Тип:</div>
+                                    <div class="uix-card--list-item--primary-text">Не известно</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Направление волны:</div>
+                                    <div class="uix-card--list-item--primary-text">Не известно</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Дно:</div>
+                                    <div class="uix-card--list-item--primary-text">Песок</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Сложность:</div>
+                                    <div class="uix-card--list-item--primary-text">Не известно</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Уровень загруженности:</div>
+                                    <div class="uix-card--list-item--primary-text">Низкий</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                <div class="uix-card--list-item--overline caption3">Угрозы:</div>
+                                <div class="uix-card--list-item--primary-text">Камни (не много)</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                <div class="uix-card--list-item--overline caption3">Качество волн:</div>
+                                <div class="uix-card--list-item--primary-text">Не известно</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="uix--layout-hbox--wrapped">
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Расположение</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <p>
+                            Координаты: <span id="spot-location">60.975885,30.292147</span>
+                            <button id="copy-location" onclick="copyToClipboard('spot-location')">
+                                <img src="https://img.icons8.com/material-outlined/16/000000/copy.png"/>
+                            </button>
+                        </p>
+                        
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1080.9749692581074!2d30.2938898331941!3d60.97564776426804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDU4JzMzLjIiTiAzMMKwMTcnMzEuNyJF!5e0!3m2!1sen!2sru!4v1628201916669!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="uix--layout-hbox--wrapped">
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Галерея</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        N/A
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section>
-            <h1>Фотографии</h1>
+        <section class="uix--layout-hbox--wrapped">
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Транспорт</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <p>Автомобиль.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Правила поведения</span>
+                    <hr>
+                    <div class="uix-card--main caption" id="">
+                        N/A
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section>
-            <h1>Дополнительно</h1>
+        <section class="uix--layout-hbox--wrapped">
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Дополнительно</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        N/A
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section>
+        <section class="section-info">
             <h1>Другие споты</h1>
             <spotlist-component></spotlist-component>
         </section>
-        
 
     </main>
 

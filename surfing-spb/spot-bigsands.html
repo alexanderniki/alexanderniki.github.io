@@ -30,10 +30,14 @@
     <script src="equiplist.js"></script>
     <script src="utils.js"></script>
 
+    <script>
+        getCurrentTheme();
+    </script>
+
     <title>Серфинг в санкт-Петербурге. Спот Большие пески</title>
 </head>
 
-<body onload="getCurrentTheme()">
+<body>
 
     <header>
         <section class="spot-header">
@@ -45,68 +49,150 @@
 
     <main>
 
-        <section>
-            <h1>Описание</h1>
-            <p>Спот в бухте.</p>
-        </section>
+        <!-- FLEX APP LAYOUT -->
 
-        <section>
-            <h1>Характеристики 
-                <a href="reference-spots.html"><span class="icon-help caption">?</span></a>
-            </h1>
+        <section class="uix--layout-hbox--wrapped">
 
-            <ul>
-                <li>Тип: Beach break</li>
-                <li>Направление волны: Левая</li>
-                <li>Дно: Песок</li>
-                <li>Сложность: Начинающий</li>
-                <li>Уровень загруженности: Низкий</li>
-                <li>Угрозы: нет</li>
-                <li>Качество волн: Среднее</li>
-            </ul>
-
-            <p>Спот работает при южном ветре</p>
-        </section>
-
-        <section>
-            <h1>Расположение</h1>
-
-            <p>
-                Координаты: <span id="spot-location">60.301528, 28.849028</span>
-                <button id="copy-location" onclick="copyToClipboard('spot-location')">
-                    <img src="https://img.icons8.com/material-outlined/16/000000/copy.png"/>
-                </button>
-            </p>
-            
-            <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.6976476772566!2d28.84683931663736!3d60.301527982009524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDE4JzA1LjUiTiAyOMKwNTAnNTYuNSJF!5e0!3m2!1sru!2sru!4v1624995561919!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
-        
-        <section>
-            <h1>Фотографии</h1>
-            <div id="gallery">
-                <div class="main-img">
-                    <img src="media/spot-bigsands-photo-1.jpg" id="current">
-                </div>
-                <div class="images">
-                    <img src="media/spot-bigsands-photo-1.jpg" class="img">
-                    <img src="media/spot-bigsands-photo-2.jpg" class="img">
-                    <img src="media/spot-bigsands-photo-3.jpg" class="img">
-                    <img src="media/spot-bigsands-photo-4.jpg" class="img">
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Описание</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <p>Спот в бухте.</p>
+                        <p>Спот работает при южном ветре</p>
+                    </div>
                 </div>
             </div>
-            <script src="gallery.js"></script>
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Характеристики</span> 
+                    <a href="reference-spots.html" class="decoration-none"><span class="icon-help caption2">?</span></a>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <ul class="uix-card--list">
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Тип:</div>
+                                    <div class="uix-card--list-item--primary-text">Beach break</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Направление волны:</div>
+                                    <div class="uix-card--list-item--primary-text">Левая</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Дно:</div>
+                                    <div class="uix-card--list-item--primary-text">Песок</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Сложность:</div>
+                                    <div class="uix-card--list-item--primary-text">Начинающий</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                    <div class="uix-card--list-item--overline caption3">Уровень загруженности:</div>
+                                    <div class="uix-card--list-item--primary-text">Низкий</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                <div class="uix-card--list-item--overline caption3">Угрозы:</div>
+                                <div class="uix-card--list-item--primary-text">Камни в канале у пирса</div>
+                            </li>
+                            <li class="uix-card--list-item">
+                                <div class="uix-card--list-item--overline caption3">Качество волн:</div>
+                                <div class="uix-card--list-item--primary-text">Среднее</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="uix--layout-hbox--wrapped">
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Расположение</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <p>
+                            Координаты: <span id="spot-location">60.301528, 28.849028</span>
+                            <button id="copy-location" onclick="copyToClipboard('spot-location')">
+                                <img src="https://img.icons8.com/material-outlined/16/000000/copy.png"/>
+                            </button>
+                        </p>
+                        
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.6976476772566!2d28.84683931663736!3d60.301527982009524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDE4JzA1LjUiTiAyOMKwNTAnNTYuNSJF!5e0!3m2!1sru!2sru!4v1624995561919!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="uix--layout-hbox--wrapped">
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Галерея</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <div id="gallery">
+                            <div class="main-img">
+                                <img src="media/spot-bigsands-photo-1.jpg" id="current">
+                            </div>
+                            <div class="images">
+                                <img src="media/spot-bigsands-photo-1.jpg" class="img">
+                                <img src="media/spot-bigsands-photo-2.jpg" class="img">
+                                <img src="media/spot-bigsands-photo-3.jpg" class="img">
+                                <img src="media/spot-bigsands-photo-4.jpg" class="img">
+                            </div>
+                        </div>
+                        <script src="gallery.js"></script>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section>
-            <h1>Дополнительно</h1>
-            <p>Основное правило - не заезжать на песок. На песке очень легко застрять.</p>
-            <p>Относительно простой способ проехать к споту: едем прямо вниз, паркуемся и по берегу идем влево. За высокой дюной в лесу может стоять автобус с прокатом досок. Сам спот - напротив этой дюны.</p>
-            <img src="media/spot-bigsands-way.jpg" alt="Маршрут до пляжа на споте" width="100%" height="100%">
+        <section class="uix--layout-hbox--wrapped">
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Транспорт</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <p>Автомобиль.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Правила поведения</span>
+                    <hr>
+                    <div class="uix-card--main caption" id="">
+                        N/A
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section>
+        <section class="uix--layout-hbox--wrapped">
+
+            <div class="uix-card" id="">
+                <div class="uix-card--container">
+                    <span class="uix-card--title" id="">Дополнительно</span>
+                    <hr>
+                    <div class="uix-card--main" id="">
+                        <p>Основное правило - не заезжать на песок. На песке очень легко застрять.</p>
+                        <p>Относительно простой способ проехать к споту: едем прямо вниз, паркуемся и по берегу идем влево. За высокой дюной в лесу может стоять автобус с прокатом досок. Сам спот - напротив этой дюны.</p>
+                        <img src="media/spot-bigsands-way.jpg" alt="Маршрут до пляжа на споте" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-info">
             <h1>Другие споты</h1>
             <spotlist-component></spotlist-component>
         </section>
