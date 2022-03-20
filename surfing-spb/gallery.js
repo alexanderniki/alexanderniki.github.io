@@ -20,3 +20,31 @@ imgs.forEach(img => {
   e.target.style.opacity = opacity; 
   });
 });
+
+/*
+ * Modal fullscreen popup window
+ * Taken from: https://www.w3schools.com/howto/howto_css_modal_images.asp
+ */
+
+// Get the modal
+var modal = document.getElementById("gallery-modal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("current");
+var modalImg = document.getElementById("gallery-image");
+/* Don't need caption right now */
+// var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    /* Don't need caption right now */
+    // captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("uix-button--close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
