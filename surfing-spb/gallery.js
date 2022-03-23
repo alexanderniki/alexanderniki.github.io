@@ -37,6 +37,7 @@ var modalImg = document.getElementById("gallery-image");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
+    document.body.style.overflow = "hidden";
     /* Don't need caption right now */
     // captionText.innerHTML = this.alt;
 }
@@ -46,5 +47,6 @@ var span = document.getElementsByClassName("uix-button--close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+    modal.style.display = "none";
+    document.body.style.overflow = "scroll";
 }
