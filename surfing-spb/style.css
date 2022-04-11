@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 
+/*@media (max-width: 400px) {
+    main {
+        padding: 16px 16px;
+        background-color: #0000F0;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+    main {
+        padding: 16px 32px;
+        background-color: #000000; 
+    }
+}*/
+
 body {
     margin: 0;
     padding: 0;
@@ -31,7 +45,8 @@ header h1 {
     font-weight: 300;
     width: 100%;
 
-    margin: 0px;
+    /*margin: 0px;*/
+    margin-top: 16px;
 }
 
 .main-header {
@@ -51,8 +66,6 @@ main {
     margin: 0 auto;
     max-width: 1440px;
     padding: 8px 8px;
-
-
 }
 
 footer {
@@ -247,7 +260,6 @@ h5 {
  * ICONS
  */
 .icon-help {
-
     padding-left: 8px;
     padding-right: 9px;
     padding-top: 4px;
@@ -256,6 +268,20 @@ h5 {
     border-style: solid;
     border-width: 1px;
     border-radius: 32px;
+    border-color: var(--color-helper-3);
+    background-color: var(--color-helper-3);
+    color: var(--color-on-surface);
+}
+
+.uix--icon--back {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
     border-color: var(--color-helper-3);
     background-color: var(--color-helper-3);
     color: var(--color-on-surface);
