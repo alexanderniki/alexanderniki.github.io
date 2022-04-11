@@ -149,7 +149,7 @@ h5 {
     min-width: 328px;
 
     border: 1px;
-    border-radius: 4px;
+    border-radius: 12px;
     border-color: var(--color-helper-2);
     border-style: solid;
 
