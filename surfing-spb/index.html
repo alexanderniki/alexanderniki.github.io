@@ -1,111 +1,166 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#303038" />
-
-    <link id="theme" rel="stylesheet" type="text/css" href="theme-light.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- Google Analytics -->
-    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109923788-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-109923788-1');
-    </script>-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UG-TG3808C32Z"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UG-TG3808C32Z');
-    </script>
-
-    <!-- Components -->
-    <script src="footer.js"></script>
-    <script src="spotlist.js"></script>
-    <script src="equiplist.js"></script>
-    <script src="utils.js"></script>
-
-    <title>Серфинг в Санкт-Петербурге</title>
-</head>
-
-<body onload="getCurrentTheme()">
-
-    <header>
-        <section class="main-header">
-            <h1>Серфинг в Санкт-Петербурге</h1>
-        </section>
-    </header>
-
-    <main>
-
-        <section>
-            <h1>Споты</h1>
-            <p>Места для серфинга в Санкт-Петербурге</p>
-            <spotlist-component></spotlist-component>
-
-            <p>При катании на спотах залива, нужно учитывать одну особенность. 
-                На рассвете волны всегда меньше прогноза. Ночью в прогнозе может стоять 3 метра, а фактически будет волна 1 метр, в лучшем случае - полтора. 
-                Увеличение волн до прогнозного состояния происходит через 2-3 часа после рассвета. 
-                Поэтому нет никакого смысла приезжать на рассвете, только если нужны именно небольшие волны и/или надо днем на работу.</p>
-        </section>
-        
-
-        <section>
-            <h1>Экипировка</h1>
-            <p>Подбор экипировки очень индивидуален. Все зависит от уровня подготовки, восприятия температуры и конкретного прогноза.</p>
-            <p>Ниже даны общие рекомендации, от которых можно отталкиваться при поиске "своей" экипировки.</p>
-            <equiplist-component></equiplist-component>
-        </section>
-        
-        <section>
-            <h1>Общение</h1>
-
-            <p>В основном, все общение ведется в нескольких Telegram-чатах:</p>
-
-            <ol>
-                <li>
-                    <p>Telegram-канал <a href="https://t.me/spbsurfclub">@SPBSURFCLUBNEWS</a></p>
-                    <p class="caption">Посты может публиковать только админ. Частота публикаций - от нуля до 5-6 в день прогноза. Основные темы: прогнозы, каталки в С-Пб, фото и видео, главные серфновости по миру. Канал дублируется в <a href="https://chat.whatsapp.com/G6AnejWyH5nKwRsToN4S12">Whatsapp</a>.</p>
-                </li>
-                <li>
-                    <p>К каналу прикреплен чат <a href="https://t.me/spbsurfclub_chat">@SPBSURFCLUB</a></p>
-                    <p class="caption">Здесь можно общаться и задавать вопросы. Основные темы для обсуждения: споты, каталки Петербурга, Бали, Шри-Ланки и др., доски и гидрокостюмы.</p>
-                </li>
-                <li>
-                    <p>Канал "Сёрфинг"<a href="https://t.me/surfing_ru">@surfing_ru</a></p>
-                    <p  class="caption">Что происходит с сёрфингом в России и в мире. Автор: участник расширенного состава сборной России Игорь Вечканов.</p>
-                </li>
-                <li>
-                    <p>Чат "Чат русского сёрфинга" <a href="https://t.me/surfing_chat">@surfing_chat</a></p>
-                    <p class="caption">Прикреплен к каналу "Сёрфинг".</p>
-                </li>
-                <li>
-                    <p>Чат для поиска попутчиков на спот <a href="https://t.me/naspot">@naspot</a></p>
-                    <p class="caption">Можно найти компанию в поездку, новые знакомства и т.д. Не забывайте, что владельцу транспорта важно, если вы добавите ему денег на бензин.</p>
-                </li>
-            </ol>
-            
-        </section>
-        
-        <!--<h1>Школы и прокат</h1>
-
-        <h2>Onego Surf</h2>
-        https://onego.surf/
-
-        Школа серфинга и прокат досок. -->
-
     
-    </main>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
 
-    <footer>
-        <footer-component></footer-component>
-    </footer>
+        <!-- Styles -->
+        <link id="theme" rel="stylesheet" type="text/css" href="dist/theme-light.css">
+        <link rel="stylesheet" type="text/css" href="dist/style.css">
 
-</body>
+        <!-- Scripts -->
+        <script src=dist/data.js"></script>
+        <script src="dist/app.js"></script>
+
+        <!-- Init -->
+        <script>getCurrentTheme();</script>
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UG-TG3808C32Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UG-TG3808C32Z');
+        </script>
+
+        <title>Серфинг с Санкт-Петербурге</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="uix-toolbar-main" id="">
+                <span class="headline-4">volna.guide</span>
+            </div>
+            <div class="page-header" id="page-header--container--main">
+                <span class="title">Серфинг</span>
+                <span class="headline-4">Санкт-Петербург</span>
+            </div>
+        </header>
+
+        <main>
+            <section id="main-spots">
+                <h1 class="typography-bold">Споты</h1>
+                <h2 class="uix-grid--title">Финский залив</h2>
+                <div class="uix-layout--grid--wrapped">
+                    <div class="uix-card--spot--minimal uix-card--link--overall" onclick="location.href='spot-atlantis.html'">
+                        <span class="headline-5 typography-bold">Атлантис</span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                    <div class="uix-card--spot--minimal uix-card--link--overall" onclick="location.href='spot-battery.html'">
+                        <span class="headline-5 typography-bold">Бухта Батарейная</span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                    <div class="uix-card--spot--minimal uix-card--link--overall" onclick="location.href='spot-bigsands.html'">
+                        <span class="headline-5 typography-bold">Большие пески</span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                    <div class="uix-card--spot--minimal uix-state--disabled">
+                        <span class="headline-5 typography-bold">Бухта Желтая</span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                    <div class="uix-card--spot--minimal uix-state--disabled">
+                        <span class="headline-5 typography-bold">Мыс Флотский</span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                </div>
+
+                <h2 class="uix-grid--title">Ладожское озеро</h2>
+                <div class="uix-layout--grid--wrapped">
+                    <div class="uix-card--spot--minimal uix-card--link--overall" onclick="location.href='spot-lighthouse.html'">
+                        <span class="headline-5 typography-bold">Маяк</span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                    <div class="uix-card--spot--minimal uix-card--link--overall" onclick="location.href='spot-osinovets.html'">
+                        <span class="headline-5 typography-bold">Осиновец</span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                    <div class="uix-card--spot--minimal uix-card--link--overall" onclick="location.href='spot-motor.html'">
+                        <span class="headline-5 typography-bold">Бухта Моторная</span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                </div>
+                
+                <h2 class="uix-grid--title">Другие споты</h2>
+                <div class="uix-layout--hbox--wrapped">
+                    <div class="uix-card--spot--minimal uix-state--disabled">
+                        <span class="headline-5 typography-bold">Порог в Кингисеппе</span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="main-rent">
+                <h1 class="typography-bold">Прокаты, школы, инструкторы</h1>
+                <div class="uix-layout--grid--wrapped">
+                    <div class="uix-card--rent">
+                        <div class="uix-layout--vbox bottom">
+                            <span class="caption typography-uppercase">Прокат</span>
+                            <span class="headline-5 typography-bold">Onego Surfing</span>
+                            <span class="body-1">Доски (софт, хард), гидрокостюмы, лиши</span>
+                        </div>
+                    </div>
+                    <div class="uix-card--rent">
+                        <div class="uix-layout--vbox bottom">
+                            <span class="caption typography-uppercase">Школа</span>
+                            <span class="headline-5 typography-bold">Onego Surfing</span>
+                            <span class="body-1">Уроки серфинга на флэте и на волнах</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="main-other">
+                <h1 class="typography-bold">Другое</h1>
+                <div class="uix-layout--grid--wrapped">
+                    <div class="uix-card--other--minimal uix-state--disabled" id="card-equip">
+                        <span class="headline-5 typography-bold">Экипировка</span>
+                        <span class="body-1">
+                            <ul>
+                                <li>Вещи</li>
+                                <li>Советы</li>
+                            </ul>
+                        </span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                    <div class="uix-card--other--minimal uix-state--disabled" id="card-communication">
+                        <span class="headline-5 typography-bold">Общение</span>
+                        <span class="body-1">
+                            <ul>
+                                <li>Telegram</li>
+                                <li>WhatsApp</li>
+                                <li>и другие способы общаться</li>
+                            </ul>
+                        </span>
+                        <span class="headline-5 typography-bold" id="uix-card-minimal--align-right">→</span>
+                    </div>
+                </div>
+            </section>
+        
+        </main>
+
+        <footer>
+            <div class="uix-layout--hbox--wrapped"  id="footer--container--main">
+                <span>
+                    Контакты:
+                    <ul>
+                        <li>Telegram/WhatsApp: @alexanderniki</li>
+                        <li>Instagram: @alexanderniki</li>
+                        <li>inbox@alexanderniki.name</li>
+                    </ul>
+                </span>
+                <!--<span>
+                    Проект:
+                    <ul>
+                        <li><a href="">О проекте</a></li>
+                        <li><a href="">Помочь проекту</a></li>
+                    </ul>
+                </span>-->
+            </div>
+            <span>Made with ❤ in Russia</span>
+        </footer>
+        
+    </body>
 
 </html>
