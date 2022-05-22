@@ -231,6 +231,11 @@ h6 {
     text-transform: uppercase;
 }
 
+.typography-button {
+    font-size: 1rem;
+    line-height: 100%;
+}
+
 
 /* CUSTOM ELEMENTS */
 #main-spots h1, #main-rent h1, #main-other h1 {
@@ -245,24 +250,58 @@ a {
     text-decoration: none;
 }
 
-.uix-button--back {
-    border-radius: var(--space-300);
+.uix-card--link--overall {
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    padding-left: var(--space-200);
-    padding-right: var(--space-200);;
-    padding-top: 6px;
-    padding-bottom: var(--space-100);;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: var(--space-300);
+.uix-button--circle {
+    width: var(--space-600);
+    height: var(--space-600);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid;
+    border-radius: var(--space-400);
+    box-sizing: border-box;
+}
+
+.uix-button--circle--s {
+    width: var(--space-400);
+    height: var(--space-400);
+
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+
+    border: 1px solid;
+    border-radius: var(--space-400);
+    box-sizing: border-box;
+}
+
+.uix-button--back {
+    border-color: var(--color-helper-3);
+    background-color: var(--color-helper-3);
+    color: var(--color-on-surface);
+    padding-bottom: 4px; /* align symbol precisely in the center of the button*/
+}
+
+.uix-button--card--inline {
     border-color: var(--color-helper-3);
     background-color: var(--color-helper-3);
     color: var(--color-on-surface);
 }
 
-.uix-card--link--overall {
-    text-decoration: none;
-    cursor: pointer;
+.uix-button--gallery--close {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+
+    color: var(--color-on-background);
+    border-color: var(--color-on-primary);
+    background-color: var(--color-background);
 }
 /* 
  * Page elements
@@ -338,7 +377,7 @@ a {
 
     border: 1px;
     border-radius: var(--space-100);
-    border-color: var(--color-helper-2);
+    border-color: var(--color-extra-accent1-variant);
     border-style: solid;
     box-sizing: border-box;
 
@@ -435,10 +474,12 @@ a {
 
 #card-equip {
     background-color: var(--color-extra-accent2-variant);
+    border-color: var(--color-extra-accent2-variant);
 }
 
 #card-communication {
     background-color: var(--color-extra-accent3-variant);
+    border-color: var(--color-extra-accent3-variant);
 }
 
 .uix-grid--title {
@@ -503,6 +544,14 @@ a {
     width:100%;
     position:absolute;
 }
+
+
+/* Others */
+
+#spot--properties--header {
+    display: flex;
+    justify-content: space-between;
+}
 img {
     Width:100%;
 }
@@ -546,12 +595,4 @@ img {
     margin: auto;
     display: block;
     width: 100%;
-}
-
-.uix-button--gallery--close {
-    position: absolute;
-    top: 32px;
-    right: 32px;
-    color: var(--color-on-primary);
-    transition: 0.3s;
 }
