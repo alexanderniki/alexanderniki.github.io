@@ -29,10 +29,10 @@
 
     <body>
         <header>
-            <div class="uix-toolbar-main" id="">
-                <div class="uix-button--circle uix-button--back headline-6 uix-card--link--overall" onclick="history.back()">‹</div>
-            </div>
             <div class="page-header" id="page-header--container--spot">
+                <div class="uix-toolbar-main" id="">
+                    <div class="uix-button--circle uix-button--back headline-6 uix-card--link--overall" id="button--back" onclick="adjustBackButton();">‹</div>
+                </div>
                 <span class="body-1">Cанкт-Петербург › Финский залив › Споты</span>
                 <span class="headline-6">Маяк</span>
             </div>
@@ -106,8 +106,8 @@
             </div>
 
             <div class="uix-layout--hbox--wrapped">
-                <div class="uix-card--spot--description-item">
-                    <span class="headline-6">Галерея</span>
+                <div class="uix-card--spot--description-item" id="card--gallery">
+                    <span class="headline-6" id="card--gallery--header">Галерея</span>
                     <div class="uix-card--main" id="">
                         <div id="gallery">
                             <div class="main-img">

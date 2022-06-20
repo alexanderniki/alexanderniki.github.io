@@ -14,25 +14,28 @@
         <script src="dist/app.js"></script>
 
         <!-- Init -->
-        <script>getCurrentTheme();</script>
+        <script>
+            getCurrentTheme();
+            getHistoryLength();
+        </script>
         <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UG-TG3808C32Z"></script>
+        <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UG-TG3808C32Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'UG-TG3808C32Z');
-        </script>
+        </script>-->
 
         <title>Cанкт-Петербург. Серфинг. Спот Атлантис</title>
     </head>
 
     <body>
         <header>
-            <div class="uix-toolbar-main" id="">
-                <div class="uix-button--circle uix-button--back headline-6 uix-card--link--overall" onclick="history.back()">‹</div>
-            </div>
             <div class="page-header" id="page-header--container--spot">
+                <div class="uix-toolbar-main" id="">
+                    <div class="uix-button--circle uix-button--back headline-6 uix-card--link--overall" id="button--back" onclick="adjustBackButton();">‹</div>
+                </div>
                 <span class="body-1">Cанкт-Петербург › Финский залив › Споты</span>
                 <span class="headline-6">Атлантис</span>
             </div>
