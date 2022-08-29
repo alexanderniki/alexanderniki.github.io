@@ -152,7 +152,6 @@
                         "туалет",
                         "гриль-зона",
                         "раздевалки",
-                        "LTE",
                     ],
                 },
         },
@@ -177,7 +176,6 @@
                         "кафе",
                         "проживание",
                         "раздевалки",
-                        "LTE",
                     ],
                 }
         },
@@ -218,17 +216,10 @@
         },
         {
             id: 9,
-            is_active: true,
+            is_active: false,
             name: "Стоячий порог в Кингисеппе",
             code: "ruspbriverking",
             page_link: "spot-riverking.html",
-        },
-        {
-            id: 10,
-            is_active: false,
-            name: "Мыс Флотский - Парковка",
-            code: "ruspbfloparking",
-            page_link: "spot-flo-parking.html",
         },
     ],
 
