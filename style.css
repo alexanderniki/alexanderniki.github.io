@@ -12,9 +12,9 @@
 
 @media (prefers-color-scheme: dark) {
   * {
-    --textcolor: #dadada;
-    --bgcolor: #141414;
-    --highlight: #ffc400;
+    --textcolor: #F8F9FA;
+    --bgcolor: #121a26;
+    --highlight: #40C4FF;
   }
 }
 
