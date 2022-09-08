@@ -52,8 +52,10 @@
             getCurrentTheme();
             getHistoryLength();
         </script>
-        <!-- Google Analytics -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!--
+            Google Analytics
+            Global site tag (gtag.js) - Google Analytics
+        -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG3808C32Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -73,17 +75,25 @@
                 </div>
                 <br>
                 <span class="body-1" id="place-breadcrumbs"><a class="uix-link--header" href="index.html">Cанкт-Петербург</a> › Финский залив › Споты</span>
-                <span class="headline-4">Атлантис</span>
+                <span class="headline-4" id="place-title">Атлантис</span>
+                <script>getPageHeader(instanceState);</script>
                 <span id="place-summary">Основной "домашний" спот для многих питерских серферов.</span>
                 <br>
                 <div class="uix-layout--hbox-dense--wrapped" id="labels"></div>
-                <script>
-                    getSpotLabels(instanceState);
-                </script>
+                <script>getSpotLabels(instanceState);</script>
             </div>
         </header>
 
         <main>
+            <!-- Weather forecast -->
+            <div class="uix-layout--hbox--wrapped">
+                <div class="uix-card--weather--forecast">
+                    <div class="uix-layout--hbox--wrapped" id="weather-data"></div>
+                </div>
+            </div>
+            <script>getWeather();</script>
+            <!-- / Weather forecast -->
+
             <span class="title">Информация</span>
             <div class="uix-layout--hbox--wrapped">
 
@@ -187,8 +197,13 @@
                             <li>680 - маршрутка от м. Проспект Просвещения</li>
                             <li>827 - маршрутка от м. Гражданский проспект</li>
                         </ul>
-            
                         Добраться также можно на электричке с Финляндского вокзала.
+                        <p>Если ехать на автомобиле, то важно помнить про парковку.</p>
+                        <p>Парковка. В жаркие дни, особенно в выходные, парковка практически полностью забита уже к 11-12 часам. 
+                            Время от времени, места все-таки могут появляться. 
+                            Поэтому, спокойно останавливаемся на паркинге там, где можно приткнуться (обычно, такие места есть) и ждем когда кто-то уедет.
+                            Примерно с 13:00 люди понемногу начинают разъезжаться (кому-то жарко, у кого-то дети, а кто-то просто уже накупался и назагорался). 
+                            Примерно с 16:00 становится чуть свободнее и можно находить места без ожидания.</p>
                     </div>
                 </div>
                 <div class="uix-card--spot--description-item">
@@ -218,16 +233,14 @@
                 <div class="uix-card--spot--description-item">
                     <span class="headline-6">Дополнительно</span>
                     <div>
-                        <p>Недалеко от спота есть кайт-станция TakeOff Surf с веб-камерой. По ней можно следить за волнами. Трансляция периодически ломается.</p>
-                        <div class="video-responsive">
-                            <iframe src="https://www.youtube.com/embed/-Aq3KwFvYmg" title="Live SurfCams - TakeOff SurfClub St.Petersburg, Russia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p>Прогноз ветра на <a href="https://www.windguru.cz/235686">Windguru</a> или на <a href="https://neduet.ru/">Neduet.ru</a> в точке "Дюны"</p>
-                        <p>Парковка. В жаркие дни, особенно в выходные, парковка практически полностью забита уже к 11-12 часам. 
-                            Время от времени, места все-таки могут появляться. 
-                            Поэтому, спокойно останавливаемся на паркинге там, где можно приткнуться (обычно, такие места есть) и ждем когда кто-то уедет.
-                            Примерно с 13:00 люди понемногу начинают разъезжаться (кому-то жарко, у кого-то дети, а кто-то просто уже накупался и назагорался). 
-                            Примерно с 16:00 становится чуть свободнее и можно находить места без ожидания.</p>
+                        <p>Web-камеры:</p>
+                        <ul>
+                            <li><a href="https://youtu.be/-Aq3KwFvYmg">кайт-станция TakeOff Surf в Дюнах</a></li>
+                        </ul>
+                        <p>Прогноз ветра:</p>
+                        <ul>
+                            <li><a href="https://www.windguru.cz/235686">Windguru</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
