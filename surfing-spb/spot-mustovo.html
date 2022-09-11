@@ -6,30 +6,52 @@
         <meta charset="utf-8">
 
         <!-- Meta for search -->
-        <meta name="keywords" content="санкт-петербург, питер, спб, серф, серфинг, серф-спот, спот, моторная, ладога, ладожское озеро" />
-        <meta name="description" content="Описание и характеристики серф-спота Бухта Моторная в Санкт-Петербурге на Ладожском озере" />
+        <meta name="keywords" content="санкт-петербург, питер, спб, серф, серфинг, серф-спот, спот, мустово, финский залив" />
+        <meta name="description" content="Описание и характеристики серф-спота Мустово в Санкт-Петербурге на Финском заливе" />
         <meta name="author" content="Alexander Niki" />
         <meta http-equiv="content-language" content="ru" />
 
+        <script type="application/ld+json">
+            {
+                "@context":"http://schema.org/",
+                "@type":"Place",
+                "name": "Серф-спот Мустово",
+                "description": "Спот на пляже в поселке Мустово",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "59.79700115047152",
+                    "longitude": "28.91630020512208"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "Россия",
+                    "addressRegion": "Ленинградская область",
+                    "addressLocality": "поселок Мустово",
+                    "streetAddress": "пляж поселка Мустово"
+                }
+            }
+        </script>
+        
         <!-- Styles -->
         <link id="theme" rel="stylesheet" type="text/css" href="dist/theme-light.css">
         <link rel="stylesheet" type="text/css" href="dist/style.css">
 
         <!-- Scripts -->
-        <script src="dist/app.js"></script>
         <script src="dist/data.js"></script>
+        <script src="dist/app.js"></script>
 
+        <!-- 
+            Init.
+            This code runs before the whole <body> is loaded.
+        -->
         <script>
             const instanceState = {
                 // Basic page parameters
-                spotcode: "ruspbmotor",
+                spotcode: "ruspbmustovo",
             };
             getCurrentTheme();
             getHistoryLength();
         </script>
-
-        <!-- Init -->
-        <script>getCurrentTheme();</script>
         <!-- Google Analytics -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TG3808C32Z"></script>
@@ -40,7 +62,7 @@
             gtag('config', 'G-TG3808C32Z');
         </script>
 
-        <title>Cанкт-Петербург. Серфинг. Бухта Моторная</title>
+        <title>Серфинг. Cанкт-Петербург. Спот Мустово</title>
     </head>
 
     <body>
@@ -51,8 +73,8 @@
                 </div>
                 <br>
                 <span class="body-1" id="place-breadcrumbs"><a class="uix-link--header" href="index.html">Cанкт-Петербург</a> › Финский залив › Споты</span>
-                <span class="headline-4">Бухта Моторная</span>
-                <span id="place-summary"></span>
+                <span class="headline-4">Мустово</span>
+                <span id="place-summary">Спот на пляже в поселке Мустово</span>
                 <br>
                 <div class="uix-layout--hbox-dense--wrapped" id="labels"></div>
                 <script>
@@ -77,7 +99,7 @@
                 <div class="uix-card--spot--description-item">
                     <span class="headline-6">Описание</span>
                     <div>
-                        <p>Песчаный пляж, сосновый лес.</p>
+                        <p>Пляж в поселке Мустово.</p>
                     </div>
                 </div>
                 
@@ -90,7 +112,7 @@
                         <ul class="uix-card--list">
                             <li class="uix-card--list-item">
                                     <div class="uix-card--list-item--secondary-text caption">Тип:</div>
-                                    <div class="uix-card--list-item--primary-text">Не известно</div>
+                                    <div class="uix-card--list-item--primary-text">Beach break</div>
                             </li>
                             <li class="uix-card--list-item">
                                     <div class="uix-card--list-item--secondary-text caption">Направление волны:</div>
@@ -98,7 +120,7 @@
                             </li>
                             <li class="uix-card--list-item">
                                     <div class="uix-card--list-item--secondary-text caption">Дно:</div>
-                                    <div class="uix-card--list-item--primary-text">Песок</div>
+                                    <div class="uix-card--list-item--primary-text">Не известно</div>
                             </li>
                             <li class="uix-card--list-item">
                                     <div class="uix-card--list-item--secondary-text caption">Сложность:</div>
@@ -106,11 +128,11 @@
                             </li>
                             <li class="uix-card--list-item">
                                     <div class="uix-card--list-item--secondary-text caption">Уровень загруженности:</div>
-                                    <div class="uix-card--list-item--primary-text">Низкий</div>
+                                    <div class="uix-card--list-item--primary-text">Не известно</div>
                             </li>
                             <li class="uix-card--list-item">
                                 <div class="uix-card--list-item--secondary-text caption">Угрозы:</div>
-                                <div class="uix-card--list-item--primary-text">Камни (немного)</div>
+                                <div class="uix-card--list-item--primary-text">Не известно</div>
                             </li>
                             <li class="uix-card--list-item">
                                 <div class="uix-card--list-item--secondary-text caption">Качество волн:</div>
@@ -130,9 +152,9 @@
                             <img src="https://img.icons8.com/material-outlined/48/000000/copy.png"/>
                         </button>
                     </div>
-                        Координаты: <span id="spot-location">60.979510, 30.285503</span>
+                        Координаты поселка: <span id="spot-location">59.79700115047152, 28.91630020512208</span>
                     <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1935.550116353076!2d30.28331431603075!3d60.979509982266315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd46b66f05028161f!2zNjDCsDU4JzQ2LjIiTiAzMMKwMTcnMDcuOCJF!5e0!3m2!1sen!2sru!4v1661612080048!5m2!1sen!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22471.866718256704!2d28.900055983194676!3d59.78557534906807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xec28df3a7dd3629f!2zNTnCsDQ3JzQ5LjIiTiAyOMKwNTQnNTguNyJF!5e0!3m2!1sen!2sru!4v1662918330495!5m2!1sen!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -141,7 +163,18 @@
                 <div class="uix-card--spot--description-item" id="card--gallery">
                     <span class="headline-6" id="card--gallery--header">Галерея</span>
                     <div class="uix-card--main" id="">
-                        <p>N/A</p>
+                        <div id="gallery">
+                            <div class="main-img">
+                                <img id="current">
+                            </div>
+                            <div class="images">
+                            </div>
+                        </div>
+                        <div class="uix-popup" id="gallery-modal">
+                            <div class="uix-card--link--overall uix-button--circle headline-6 uix-button--gallery--close">✕</div>
+                            <img class="uix-popup--content" id="gallery-image">
+                        </div>
+                        <script src="dist/gallery.js"></script>
                     </div>
                 </div>
             </div>
@@ -150,13 +183,15 @@
                 <div class="uix-card--spot--description-item">
                     <span class="headline-6">Транспорт</span>
                     <div>
-                        <p>Автомобиль.</p>
+                        <ul>
+                            <li>Автомобиль</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="uix-card--spot--description-item">
                     <span class="headline-6">Правила поведения</span>
                     <div>
-                        <p>N/A</p>
+                        N/A
                     </div>
                 </div>
             </div>
@@ -165,33 +200,29 @@
                 <div class="uix-card--spot--description-item">
                     <span class="headline-6">Дополнительно</span>
                     <div>
-                        <p>Если смотреть с берега, то правее березы в воде очень много камней. По сообщениям участников серф-сообщества, камни там разбросаны по всему дну вплоть до лайнапа.</p>
-                        <p>Не заезжайте на рыхлый песок, даже если он кажется вам твердым - можно застрять.</p>
-                        <p>В целом, если не искать приключений, то дороги на споте неплохие.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
 
             <span class="title">Здесь есть</span>
-            <section id="main-rent">
-                <div class="uix-layout--grid--wrapped">
-                    <div class="uix-card--rent">
-                        <div class="uix-layout--vbox bottom">
-                            <span class="caption typography-uppercase">Прокат</span>
-                            <span class="headline-6 typography-bold">Onego Surfing</span>
-                            <span class="body-1">Доски (софт, хард), гидрокостюмы, лиши</span>
-                        </div>
-                    </div>
-                    <div class="uix-card--rent">
-                        <div class="uix-layout--vbox bottom">
-                            <span class="caption typography-uppercase">Школа</span>
-                            <span class="headline-6 typography-bold">Onego Surfing</span>
-                            <span class="body-1">Уроки серфинга на флэте и на волнах</span>
-                        </div>
+            <div class="uix-layout--hbox">
+                <div class="uix-card--rent">
+                    <div class="uix-layout--vbox bottom">
+                        <span class="caption typography-uppercase">Прокат</span>
+                        <span class="headline-6 typography-bold">Onego Surfing</span>
+                        <span class="body-1">Доски (софт, хард), гидрокостюмы, лиши</span>
                     </div>
                 </div>
-            </section>
-
+                <div class="uix-card--rent">
+                    <div class="uix-layout--vbox bottom">
+                        <span class="caption typography-uppercase">Школа</span>
+                        <span class="headline-6 typography-bold">Onego Surfing</span>
+                        <span class="body-1">Уроки серфинга на флэте и на волнах</span>
+                    </div>
+                </div>
+            </div>
+            
             <span class="title">Другие споты</span>
             <spotlist-component></spotlist-component>
         </main>

@@ -243,6 +243,9 @@
                         city: "Санкт-Петербург",
                         water: "Финский залив",
                     },
+                    labels: [
+                        "LTE",
+                    ],
                 }
         },
         {
@@ -280,7 +283,7 @@
         },
         {
             id: 9,
-            is_active: false,
+            is_active: true,
             name: "Стоячий порог в Кингисеппе",
             code: "ruspbriverking",
             page_link: "spot-riverking.html",
@@ -329,6 +332,70 @@
                         coordinates: "59.929755, 29.055606",
                         lat: 59.929755,
                         long: 29.055606,
+                        map_code: "",  // google maps link here
+                        city: "Санкт-Петербург",
+                        water: "Финский залив",
+                    },
+                }
+        },
+        {
+            id: 11,
+            is_active: false,
+            name: "Сосновый Бор - Мол",
+            code: "ruspbpinerymol",
+            page_link: "spot-pinery-mol.html",
+        },
+        {
+            id: 12,
+            is_active: true,
+            name: "Логи",
+            code: "ruspblogi",
+            page_link: "spot-logi.html",
+            metadata:
+                {
+                    location: 
+                    {
+                        coordinates: "59.830861, 28.504967",
+                        lat: 59.830861,
+                        long: 28.504967,
+                        map_code: "",  // google maps link here
+                        city: "Санкт-Петербург",
+                        water: "Финский залив",
+                    },
+                }
+        },
+        {
+            id: 13,
+            is_active: true,
+            name: "Мустово",
+            code: "ruspbmustovo",
+            page_link: "spot-mustovo.html",
+            metadata:
+                {
+                    location: 
+                    {
+                        coordinates: "59.797001, 28.916300",
+                        lat: 59.797001,
+                        long: 28.916300,
+                        map_code: "",  // google maps link here
+                        city: "Санкт-Петербург",
+                        water: "Финский залив",
+                    },
+                }
+        },
+        {
+            id: 14,
+            is_active: true,
+            name: "Дубки",
+            code: "ruspbdubki",
+            page_link: "spot-dubki.html",
+            metadata:
+                {
+                    location: 
+                    {
+                        coordinates: "59.743198, 28.469812",
+                        lat: 59.743198,
+                        long: 28.469812,
                         map_code: "",  // google maps link here
                         city: "Санкт-Петербург",
                         water: "Финский залив",
