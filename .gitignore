@@ -1,2 +1,17 @@
-# Mac system files
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# custom
 .DS_Store
+__MACOSX
