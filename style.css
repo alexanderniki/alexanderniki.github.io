@@ -1,10 +1,11 @@
-* { margin: 0; padding: 0; box-sizing: border-box;
-  
-  /* Color scheme */
-  
-  --textcolor: #6E778E;
-  --bgcolor: #FAFAFA;
-  --highlight: #00B2FF;
+* {
+    /*margin: 0;*/
+    box-sizing: border-box;
+
+    /* Color scheme */
+    --textcolor: #6E778E;
+    --bgcolor: #FAFAFA;
+    --highlight: #00B2FF;
 
 }
 
@@ -19,57 +20,75 @@
 }
 
 body {
-  font-size: 18px;
-  font-family: "PT Root UI", system-ui, sans-serif;
-  line-height: 1.5;
-  color: var(--textcolor);
-  background: var(--bgcolor);
-  position: relative;
-  max-width: 64em;  /* remove this for a full-width layout */
-  margin: 0 auto;  /* centers the layout */
+    /*width: 100%;*/
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 18px;
+    font-family: "PT Root UI", system-ui, sans-serif;
+    line-height: 1.5;
+    /*color: var(--textcolor);*/
+    color: var(--color-on-surface);
+    /*background: var(--bgcolor);*/
+    background: var(--color-surface);
+    /*position: relative;*/
+    /*max-width: 64em;*/  /* remove this for a full-width layout */
+    /*margin: 0 auto;*/  /* centers the layout */
 }
 
 /* ------- Sections ------- */
 
 section {
-  padding: calc(6em + 5vw) 5vw 8vw 5vw;
+  /*padding: calc(6em + 5vw) 5vw 8vw 5vw;*/
   /* ! Everything below is needed ! */
   display: none;
-  position: absolute;
-  top: 0;
-  min-height: 100vh;
-  width: 100%;
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*min-height: 100vh;*/
+  /*width: 100%;*/
   background: var(--bgcolor);
 }
 
 section:target { /* Show section */
   display: block;
+  /*display: flex;*/
 }
 
 section#home { /* Show #home by default */
   display: block;
+  /*display: flex; */
+}
+
+/*section:not(:target) {
+    display: none;
+}*/
+
+section:target ~ section:first-of-type{
+    display:none;
 }
 
 /* ------- Header ------- */
 
 header {
-  padding: 5vw 5vw 0 5vw;
+  /*padding: 5vw 5vw 0 5vw;*/
   display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
+  flex-direction: column;
+  /*flex-wrap: wrap;/*
+  /*position: absolute;*/
+  /*width: 100%;*/
+  /*z-index: 2;*/
 }
 
 header h1 {
   font-size: 1em;
   flex: 1; /* pushes nav to the right */
   white-space: nowrap;
-  padding: 0 5vw .5em 0;
+  /*padding: 0 5vw .5em 0;*/
 }
 
 nav a:not(:last-of-type) {
-  margin-right: 1.5vw;
+  /*margin-right: 1.5vw;*/
 }
 
 /* ------- General ------- */
@@ -299,7 +318,7 @@ article h2 {
 }
 
 article time {
-  margin-left: .6em;
+  /*margin-left: .6em;*/
   font-size: .8em;
   font-weight: 400;
   opacity: .7;
@@ -436,13 +455,13 @@ article time {
 
 /* ------- Smaller screens ------- */
 
-@media only screen and (max-width: 680px) {
+/*@media only screen and (max-width: 680px) {
   body { font-size: 16px; }
 }
 
 @media only screen and (max-width: 540px) {
   nav { width: 100%; } /* Fix for older webkit versions */
-}
+/*}*/
 
 /* ------- Print ------- */
 
@@ -450,7 +469,7 @@ article time {
   
   nav, .lightbox:target:after { display: none; }
   
-  article, figure, img {
+  /*article,*/ figure, img {
     page-break-inside: avoid;
     break-inside: avoid;
   }
@@ -479,3 +498,110 @@ article time {
   }
     
 }
+
+/* ------- Lunar styles ------- */
+
+.DEBUG {
+    border: 1px #000000 solid;
+}
+
+:root {
+    /* Default color scheme */
+    --textcolor: #6E778E;
+    --bgcolor: #FAFAFA;
+    --highlight: #00B2FF;
+
+    --color-surface: #FEFEFE;
+    --color-on-surface: rgba(0, 0, 0, 0.8);
+    --color-accent-primary: #00B2FF;
+}
+
+/* Dark color scheme */
+@media (prefers-color-scheme: dark) {
+    * {
+        --textcolor: #F8F9FA;
+        --bgcolor: #121a26;
+        --highlight: #40C4FF;
+
+        --color-surface: #101019;
+        --color-on-surface: rgba(255, 255, 255, 0.8);
+        --color-accent-primary: #00B2FF;
+    }
+}
+
+/* LAYOUTS */
+
+    /* MOBILE */
+    @media only screen and (max-width: 480px) {
+        body { 
+            font-size: 16px;
+
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    /* TABLET PORTRAIT */
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+        body { 
+            font-size: 16px;
+
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    /* TABLET PORTRAIT */
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        body { 
+            font-size: 16px;
+
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    /* LAPTOP */
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        body { 
+            font-size: 18px;
+
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    /* DESKTOP */
+    @media only screen and (min-width: 1601px) {
+        body { 
+            font-size: 18px;
+
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }

@@ -1,0 +1,307 @@
+.DEBUG {
+    border: 1px #000000 solid;
+}
+
+
+/* COMMON TYPOGRAPHY */
+    @import url('http://fonts.cdnfonts.com/css/pt-root-ui');
+
+    /* HELPER STYLES */
+        .typography--bold {
+            font-weight: bold;
+        }
+        .typography--uppercase {
+            text-transform: uppercase;
+        }
+
+    /* 
+     * BASIC TYPOGRAPHY STYLES 
+     * https://carbondesignsystem.com/guidelines/typography/overview/
+     */
+        .typography__display {
+            font-size: 3.375rem;
+        }
+        h1 {
+            font-size: 3.0rem;
+            font-weight: lighter;
+            margin: 0px;
+            padding-top: 24px;
+            padding-bottom: 16px;
+        }
+        .typography__h1 {
+            font-size: 3.0rem;
+            margin: 0px;
+            padding-top: 24px;
+            padding-bottom: 16px;
+        }
+        h2 {
+            font-size: 2.625rem;
+        }
+        .typography__h2 {
+            font-size: 2.625rem;
+        }
+        h3 {
+            font-size: 2.25rem;
+        }
+        .typography__h3 {
+            font-size: 2.25rem;
+        }
+        h4 {
+            font-size: 2.0rem;
+        }
+        .typography__h4 {
+            font-size: 2.0rem;
+        }
+        h5 {
+            font-size: 1.75rem;
+        }
+        .typography__h5 {
+            font-size: 1.75rem;
+        }
+        h6 {
+            font-size: 1.5rem;
+        }
+        .typography__h6 {
+            font-size: 1.5rem;
+        }
+        .typography__title {
+            font-size: 1.25rem;
+        }
+        .typography__subtitle {
+            font-size: 1.125rem;
+        }
+        .typography__body {
+            font-size: 1rem;
+        }
+        .typography__body--text {
+            font-size: 1rem;
+            line-height: 150%;
+        }
+        .typography__body1 {
+            font-size: 0.875rem;
+        }
+        .typography__body1--text {
+            font-size: 0.875rem;
+            line-height: 150%;
+        }
+        .typography__caption {
+            font-size: 0.75rem;
+        }
+        .typography__overline {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+        .typography__button__label {
+            font-size: 0.875rem;
+            line-height: 1.0;
+            text-transform: uppercase;
+        }
+
+
+/* COMMON STYLES */
+    body {
+        margin: 0px;
+        padding: 0px;
+
+        font-family: 'PT Root UI', sans-serif;
+        line-height: 1.2;
+    }
+    a {
+        text-decoration: none;
+    }
+    header {
+        padding: 0 16px 0 16px;  /* padding: top right bottom left */
+    }
+    main {}
+    footer{}
+
+    .layout__flex__hbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .flex__hbox--wrapped {
+        flex-wrap: wrap;
+    }
+    .layout__flex__vbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+/* COLOR SCHEMES */
+
+    /* LIGHT */
+    @media (prefers-color-scheme: dark) {
+        * {
+
+        }
+    }
+
+    /* DARK */
+    @media (prefers-color-scheme: light) {
+        :root {
+            --color-primary: #FFFFFF;
+            --color-on-primary: #303030;
+            --color-on-primary-text: rgba(48, 48, 48, 0.8);
+            --color-on-primary-text2: rgba(48, 48, 48, 0.6);
+            --color-on-primary000: #3b3b48; /* Graphite */
+            --color-on-primary-text000: rgba(59, 59, 72, 0.8); /* Graphite */
+            --color-on-primary-text2000: rgba(59, 59, 72, 0.16); /* Graphite */
+            
+            --color-accent-primary: #00b1d2; /* Blue atoll */
+
+            --color-on-accent: #FFFFFF;
+
+            --color-surface: rgba(59, 59, 72, 0.04);
+
+            --color-accent-1: #303030; /* Graphite */
+            --color-accent-1000: #3b3b48; /* Graphite */
+            --color-accent-2: #45b5aa; /* Turquise */
+            --color-accent-3: #000000; /* !TODO */
+        }
+
+        a {
+            color: var(--color-accent-primary);
+        }
+        a.textlink--secondary {
+            opacity: 0.4;
+        }
+
+        body {
+            background-color: var(--color-primary);
+            color: var(--color-on-primary-text);
+        }
+    }
+
+/* LAYOUTS */
+
+    /* MOBILE */
+    @media only screen and (max-width: 480px) {
+        body { 
+            font-size: 16px;
+        }
+        header {
+            padding: 0 16px 0 16px;  /* padding: top right bottom left */
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        
+        .layout__flex__hbox {
+            gap: 8px;
+        }
+
+        .toolbar {
+            height: 56px;
+        }
+    }
+
+    /* TABLET PORTRAIT */
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+        body { 
+            font-size: 16px;
+        }
+        header {
+            padding: 0 16px 0 16px;  /* padding: top right bottom left */
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .layout__flex__hbox {
+            gap: 8px;
+        }
+
+        .toolbar {
+            height: 56px;
+        }
+    }
+
+    /* TABLET LANDSCAPE */
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        body { 
+            font-size: 16px;
+        }
+        header {
+            padding: 0 16px 0 16px;  /* padding: top right bottom left */
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .layout__flex__hbox {
+            gap: 8px;
+        }
+
+        .toolbar {
+            height: 56px;
+        }
+    }
+
+    /* LAPTOP */
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        body { 
+            font-size: 18px;
+        }
+        header {
+            padding: 0 32px 0 32px;  /* padding: top right bottom left */
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        .layout__flex__hbox {
+            gap: 16px;
+        }
+
+        .toolbar {
+            height: 64px;
+        }
+    }
+
+    /* DESKTOP */
+    @media only screen and (min-width: 1601px) {
+        body { 
+            font-size: 18px;
+        }
+        header {
+            padding: 0 32px 0 32px;  /* padding: top right bottom left */
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        .layout__flex__hbox {
+            gap: 16px;
+        }
+
+        .toolbar {
+            height: 64px;
+        }
+    }
