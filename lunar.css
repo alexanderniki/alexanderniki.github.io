@@ -129,6 +129,11 @@
         flex-direction: column;
     }
 
+    .block__highlighted {
+        color: var(--color-primary);
+        background-color: var(--color-on-primary);
+    }
+
 
 /* COLOR SCHEMES */
 
