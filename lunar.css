@@ -135,7 +135,7 @@
     /* DARK */
     @media (prefers-color-scheme: dark) {
         :root {
-            --color-primary: #303034;
+            --color-primary: #29292C;
             --color-on-primary: #FAFAFA;
             --color-secondary: #212124;
             --color-on-secondary: #FAFAFA;
@@ -146,7 +146,7 @@
             --color-accent-danger: #000000;  /* red */
             --color-on-accent: #FAFAFA;
 
-            --color-surface: #FEFEFE;
+            --color-surface: #FAFAFA;
 
             --color-accent-1: #303030; /* Graphite */
             --color-accent-1000: #3b3b48; /* Graphite */
@@ -194,7 +194,7 @@
     @media (prefers-color-scheme: light) {
         :root {
             --color-primary: #FAFAFA;
-            --color-on-primary: #303034;
+            --color-on-primary: #29292C;
             --color-secondary: #212124;
             --color-on-secondary: #FAFAFA;
 
@@ -204,7 +204,7 @@
             --color-accent-danger: #000000;  /* red */
             --color-on-accent: #303034;
 
-            --color-surface: #303034;
+            --color-surface: #29292C;
         }
 
         .elevation-level {
