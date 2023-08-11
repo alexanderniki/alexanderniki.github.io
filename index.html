@@ -65,33 +65,6 @@
                     <a class="hierarchy-low typography__button__label" href="#home">[ ↑ ]</a>
                 </div>
                 <div>
-                    <!--<ul class="list__generic">
-                        <li class="list__item">
-                            <span>Product handbook</span>
-                            <span class="list__item__secondary-text typography__body--text hierarchy-medium">
-                                Russian handbook (like a digital garden) about creating digital products.
-                                Wiki-like collection of structured information about: product design, usability, 
-                                information architecture, interaction design, industrial design and so on.
-                                Think of it as a dictionary containing some connected digital-product-related terms.
-                            </span>
-                            <span class="typography__button__label"><a href="https://www.alexanderniki.name/handbook/">View →</a></span>
-                        </li>
-                        <li class="list__item">
-                            <span>Surfl.guide and Гдеволна.рф</span>
-                            <span class="list__item__secondary-text typography__body--text hierarchy-medium">
-                                Websites about surfing and surfing-related topics in Russia.
-                            </span>
-                            <span class="typography__button__label"><a href="https://гдеволна.рф/">View →</a></span>
-                        </li>
-                        <li class="list__item">
-                            <span>Docsify template</span>
-                            <span class="list__item__secondary-text typography__body--text hierarchy-medium">
-                                A simple template for docsify-based wikis, documentation and digital gardens.
-                            </span>
-                            <span class="typography__button__label"><a href="https://www.alexanderniki.name/docsify-template/docs/">View →</a></span>
-                        </li>
-                    </ul>-->
-
                     <style>
                         .uicard {
                             display: flex;
@@ -208,12 +181,178 @@
                     <a class="hierarchy-low typography__button__label" href="#home">[ ↑ ]</a>
                 </div>
 
-                <p>
+                <style>
+                    /*
+                    * listitem.css
+                    * ui-list--item
+                    */
+
+                    .uicard__base {
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                        gap: 8px;
+
+                        /*justify-content: end;*/
+
+                        /*min-width: 288px;*/
+                        min-height: 192px;
+
+                        padding: 16px;
+                        border: 2px solid;
+                        border-radius: 8px;
+                    }
+
+                    .uilist {
+                        margin: 0px;
+                        padding: 0px;
+                    }
+                    .uilist__item {
+                        margin-bottom: 8px;
+                        width: 100%;
+                        list-style-type: none;
+                        padding: 0px;
+                    }
+
+                    .uilist__item__primary-text {
+                        margin-bottom: 0px;
+                        width: 100%;
+                        padding: 0px;
+
+                        word-wrap: break-word;
+                    }
+
+                    .uilist__item__secondary-text {
+                        margin-bottom: 0px;
+                        width: 100%;
+                        padding: 0px;
+
+                        word-wrap: break-word;
+                    }
+
+                    .uilist__item__overline {
+                        color: var(--color-on-surface-light);
+                        text-transform: uppercase;
+                    }
+                </style>
+
+                <div class="layout__grid__hbox grid__hbox__wrapped" style="padding-bottom: 32px">
+                    <div class="uicard__base">
+                        <p><span class="typography__title">Fediverse</span></p>
+                        <ul class="uilist">
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Mastodon</span>
+                                <span class="uilist__item__primary-text">
+                                    <a rel="me" href="https://techhub.social/@alexanderniki">@alexanderniki@techhub.social</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">Primary mastodon account</span>
+                            </li>
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Pixelfed</span>
+                                <span class="uilist__item__primary-text">
+                                    <a rel="me" href="https://pixelfed.social/@alexanderniki">@alexanderniki@pixelfed.social</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">Some photos about the world around</span>
+                            </li>
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Firefish (former Calckey)</span>
+                                <span class="uilist__item__primary-text">
+                                    <a rel="me" href="ttps://calckey.world/@alexanderniki">@alexanderniki@calckey.world</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">Firefish account</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uicard__base">
+                        <p><span class="typography__title">Messages</span></p>
+                        <ul class="uilist">
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Telegram</span>
+                                <span class="uilist__item__primary-text">
+                                    <a href="https://t.me/alexanderniki">@alexanderniki</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">Primary telegram account</span>
+                            </li>
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Telegram channel</span>
+                                <span class="uilist__item__primary-text">
+                                    <a href="https://t.me/aalexanderniki">alexanderniki is typing...</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">
+                                    My personal channel for friends
+                                </span>
+                            </li>
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Matrix</span>
+                                <span class="uilist__item__primary-text">
+                                    <a href="matrix:@alexanderniki:matrix.org">@alexanderniki:matrix.org</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">[Matrix] account</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uicard__base">
+                        <p><span class="typography__title">Job</span></p>
+                        <ul class="uilist">
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">LinkedIn</span>
+                                <span class="uilist__item__primary-text">
+                                    <a href="https://linkedin.com/in/alexanderniki">Alexander Niki</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">LinkedIn profile</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uicard__base">
+                        <p><span class="typography__title">Other socials</span></p>
+                        <ul class="uilist">
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Instagram</span>
+                                <span class="uilist__item__primary-text">
+                                    <a href="https://instagram.com/alexanderniki">@alexanderniki</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">Instagram</span>
+                            </li>
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Tiktok</span>
+                                <span class="uilist__item__primary-text">
+                                    <a href="https://tiktok.com/alexanderniki">@alexanderniki</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">Tiktok videos</span>
+                            </li>
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Twitter</span>
+                                <span class="uilist__item__primary-text">
+                                    <a href="https://twitter.com/aalexanderniki">@aalexanderniki</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">LinkedIn profile</span>
+                            </li>
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">Facebook</span>
+                                <span class="uilist__item__primary-text">
+                                    <a href="https://facebook.com/aalexanderniki">Alexander Niki</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">LinkedIn profile</span>
+                            </li>
+                            <li class="uilist__item layout__flex__vbox">
+                                <span class="uilist__item__overline typography__overline">VK</span>
+                                <span class="uilist__item__primary-text">
+                                    <a href="https://vk.com/alexanderniki">Alexander Niki</a>
+                                </span>
+                                <span class="uilist__item__secondary-text hierarchy-medium typography__body--text">LinkedIn profile</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!--<p>
                     <span>Fediverse</span>
                     <ul>
                         <li>Mastodon: <a rel="me" href="https://techhub.social/@alexanderniki">@alexanderniki@techhub.social</a></li>
                         <li>Pixelfed: <a href="https://pixelfed.social/@alexanderniki">@alexanderniki@pixelfed.social</a></li>
-                        <li>Calckey: <a href="ttps://calckey.world/@alexanderniki">@alexanderniki@calckey.world</a></li>
+                        <li>Firefish (former Calckey): <a href="ttps://calckey.world/@alexanderniki">@alexanderniki@calckey.world</a></li>
                     </ul>
                 </p>
                 <p>
@@ -238,7 +377,7 @@
                         <li><a href="https://facebook.com/aalexanderniki">Facebook</a></li>
                         <li><a href="https://vk.com/alexanderniki">VK</a></li>
                     </ul>
-                </p>
+                </p>-->
             </section>
         </main>
 
