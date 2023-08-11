@@ -37,6 +37,7 @@
                 <ul class="toolbar toolbar__navigation__main typography__button__label">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://text.tchncs.de/alexanderniki/">Blog</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
@@ -45,10 +46,10 @@
         </header>
 
         <main>
-            <section id="home">
+            <section>
                 <div class="layout__flex__hbox">
                     <h1>Home</h1>
-                    <a class="textlink--secondary typography__button__label" href="#home">[ ↑ ]</a>
+                    <a class="hierarchy-low typography__button__label" href="#home">[ ↑ ]</a>
                 </div>
                 <div>
                     <p>Привет (Hello)!</p>
@@ -61,13 +62,13 @@
             <section id="projects">
                 <div class="layout__flex__hbox">
                     <h1>Projects</h1>
-                    <a class="textlink--secondary typography__button__label" href="#home">[ ↑ ]</a>
+                    <a class="hierarchy-low typography__button__label" href="#home">[ ↑ ]</a>
                 </div>
                 <div>
-                    <ul class="list__generic">
+                    <!--<ul class="list__generic">
                         <li class="list__item">
                             <span>Product handbook</span>
-                            <span class="list__item__secondary-text typography__body--text">
+                            <span class="list__item__secondary-text typography__body--text hierarchy-medium">
                                 Russian handbook (like a digital garden) about creating digital products.
                                 Wiki-like collection of structured information about: product design, usability, 
                                 information architecture, interaction design, industrial design and so on.
@@ -77,19 +78,91 @@
                         </li>
                         <li class="list__item">
                             <span>Surfl.guide and Гдеволна.рф</span>
-                            <span class="list__item__secondary-text typography__body--text">
+                            <span class="list__item__secondary-text typography__body--text hierarchy-medium">
                                 Websites about surfing and surfing-related topics in Russia.
                             </span>
                             <span class="typography__button__label"><a href="https://гдеволна.рф/">View →</a></span>
                         </li>
                         <li class="list__item">
                             <span>Docsify template</span>
-                            <span class="list__item__secondary-text typography__body--text">
+                            <span class="list__item__secondary-text typography__body--text hierarchy-medium">
                                 A simple template for docsify-based wikis, documentation and digital gardens.
                             </span>
                             <span class="typography__button__label"><a href="https://www.alexanderniki.name/docsify-template/docs/">View →</a></span>
                         </li>
-                    </ul>
+                    </ul>-->
+
+                    <style>
+                        .uicard {
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                            flex-shrink: 1;
+                            gap: 8px;
+
+                            justify-content: end;
+
+                            /*min-width: 288px;*/
+                            min-height: 192px;
+
+                            padding: 16px;
+                            border: 2px solid;
+                            border-radius: 8px;
+                        }
+                        .button {
+                            display: flex;
+                            flex-direction: row;
+                            flex-grow: 0;
+                            flex-shrink: 0;
+                            align-items: center;
+                            justify-content: center;
+
+                            padding-left: 16px;
+                            padding-right: 16px;
+                            padding-top: 8px;
+                            padding-bottom: 8px;
+
+                            min-width: 48px;
+                            min-height: 32px;
+
+                            /*background-color: var(--color-secondary);
+                            color: var(--color-primary);*/
+
+                            border-radius: 8px;
+                        }
+                    </style>
+                    <div class="layout__grid__hbox grid__hbox__wrapped">
+                        <div class="uicard">
+                            <span class="uicard__overline typography__overline">Digital garden</span>
+                            <span class="uicard__primary-text">Product design handbook</span>
+                            <span class="uicard__secondary-text hierarchy-low typography__body--text">
+                                Wiki-like handbook (digital garden) about creating digital products.
+                            </span>
+                            <a href="https://www.alexanderniki.name/handbook/" target="_blank">
+                                <span class="uicard__button--link typography__button__label button">View →</span>
+                            </a>
+                        </div>
+                        <div class="uicard">
+                            <span class="uicard__overline typography__overline">Website</span>
+                            <span class="uicard__primary-text">Гдеволна.РФ</span>
+                            <span class="uicard__secondary-text hierarchy-low typography__body--text">
+                                Websites about surfing and surfing-related topics in Russian Federation and Crimea.
+                            </span>
+                            <a href="https://гдеволна.рф/" target="_blank">
+                                <span class="uicard__button--link typography__button__label button">View →</span>
+                            </a>
+                        </div>
+                        <div class="uicard">
+                            <span class="uicard__overline typography__overline">Other</span>
+                            <span class="uicard__primary-text">Docsify template</span>
+                            <span class="uicard__secondary-text hierarchy-low typography__body--text">
+                                A simple template for docsify-based wikis, documentation and digital gardens.
+                            </span>
+                            <a href="https://www.alexanderniki.name/docsify-template/docs/" target="_blank">
+                                <span class="uicard__button--link typography__button__label button">View →</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
             </section>
@@ -97,7 +170,7 @@
             <section id="about">
                 <div class="layout__flex__hbox">
                     <h1>About</h1>
-                    <a class="textlink--secondary typography__button__label" href="#home">[ ↑ ]</a>
+                    <a class="hierarchy-low typography__button__label" href="#home">[ ↑ ]</a>
                 </div>
 
                 <p>Slightly autistic introvert. Love surfing, design and computer science. 
@@ -132,7 +205,7 @@
             <section id="contacts">
                 <div class="layout__flex__hbox">
                     <h1>Contacts</h1>
-                    <a class="textlink--secondary typography__button__label" href="#home">[ ↑ ]</a>
+                    <a class="hierarchy-low typography__button__label" href="#home">[ ↑ ]</a>
                 </div>
 
                 <p>

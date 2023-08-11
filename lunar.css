@@ -5,6 +5,7 @@
 
 /* COMMON TYPOGRAPHY */
     @import url('http://fonts.cdnfonts.com/css/pt-root-ui');
+    @import url('http://fonts.cdnfonts.com/css/pt-mono');
 
     /* HELPER STYLES */
         .typography--bold {
@@ -131,34 +132,39 @@
 
 /* COLOR SCHEMES */
 
-    /* LIGHT */
-    @media (prefers-color-scheme: dark) {
-        * {
-
-        }
-    }
-
     /* DARK */
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
         :root {
-            --color-primary: #FFFFFF;
-            --color-on-primary: #303030;
-            --color-on-primary-text: rgba(48, 48, 48, 0.8);
-            --color-on-primary-text2: rgba(48, 48, 48, 0.6);
-            --color-on-primary000: #3b3b48; /* Graphite */
-            --color-on-primary-text000: rgba(59, 59, 72, 0.8); /* Graphite */
-            --color-on-primary-text2000: rgba(59, 59, 72, 0.16); /* Graphite */
+            --color-primary: #303034;
+            --color-on-primary: #FAFAFA;
+            --color-secondary: #212124;
+            --color-on-secondary: #FAFAFA;
             
             --color-accent-primary: #00b1d2; /* Blue atoll */
+            --color-accent-normal: #000000;  /* green */
+            --color-accent-warning: #000000; /* orange */
+            --color-accent-danger: #000000;  /* red */
+            --color-on-accent: #FAFAFA;
 
-            --color-on-accent: #FFFFFF;
-
-            --color-surface: rgba(59, 59, 72, 0.04);
+            --color-surface: #FEFEFE;
 
             --color-accent-1: #303030; /* Graphite */
             --color-accent-1000: #3b3b48; /* Graphite */
             --color-accent-2: #45b5aa; /* Turquise */
             --color-accent-3: #000000; /* !TODO */
+        }
+
+        .elevation-level {
+            opacity: 0.04;
+        }
+        .hierarchy-normal {
+            opacity: 0.8;
+        }
+        .hierarchy-medium {
+            opacity: 0.6;
+        }
+        .hierarchy-low {
+            opacity: 0.4;
         }
 
         a {
@@ -170,7 +176,65 @@
 
         body {
             background-color: var(--color-primary);
-            color: var(--color-on-primary-text);
+            color: var(--color-on-primary);
+        }
+
+        .uicard {
+            /*background-color: var(--color-secondary);*/
+            color: var(--color-on-primary);
+            border-color: var(--color-on-primary);
+        }
+        .button {
+            color: var(--color-primary);
+            background-color: var(--color-on-primary);
+        }
+    }
+
+    /* LIGHT */
+    @media (prefers-color-scheme: light) {
+        :root {
+            --color-primary: #FAFAFA;
+            --color-on-primary: #303034;
+            --color-secondary: #212124;
+            --color-on-secondary: #FAFAFA;
+
+            --color-accent-primary: #00b1d2; /* Blue atoll */
+            --color-accent-normal: #000000;  /* green */
+            --color-accent-warning: #000000; /* orange */
+            --color-accent-danger: #000000;  /* red */
+            --color-on-accent: #303034;
+
+            --color-surface: #303034;
+        }
+
+        .elevation-level {
+            opacity: 0.04;
+        }
+        .hierarchy-normal {
+            opacity: 0.8;
+        }
+        .hierarchy-medium {
+            opacity: 0.6;
+        }
+        .hierarchy-low {
+            opacity: 0.4;
+        }
+
+        a {
+            color: var(--color-accent-primary);
+        }
+        a.textlink--secondary {
+            opacity: 0.4;
+        }
+
+        body {
+            background-color: var(--color-primary);
+            color: var(--color-on-primary);
+        }
+
+        .button {
+            color: var(--color-primary);
+            background-color: var(--color-on-primary);
         }
     }
 
@@ -200,6 +264,15 @@
         .toolbar {
             height: 56px;
         }
+
+        .layout__grid__hbox {
+            display: grid;
+            gap: 8px;
+        }
+        .grid__hbox__wrapped {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        }
     }
 
     /* TABLET PORTRAIT */
@@ -225,6 +298,15 @@
 
         .toolbar {
             height: 56px;
+        }
+
+        .layout__grid__hbox {
+            display: grid;
+            gap: 8px;
+        }
+        .grid__hbox__wrapped {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
         }
     }
 
@@ -252,6 +334,15 @@
         .toolbar {
             height: 56px;
         }
+
+        .layout__grid__hbox {
+            display: grid;
+            gap: 8px;
+        }
+        .grid__hbox__wrapped {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        }
     }
 
     /* LAPTOP */
@@ -278,6 +369,15 @@
         .toolbar {
             height: 64px;
         }
+
+        .layout__grid__hbox {
+            display: grid;
+            gap: 16px;
+        }
+        .grid__hbox__wrapped {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        }
     }
 
     /* DESKTOP */
@@ -299,6 +399,14 @@
 
         .layout__flex__hbox {
             gap: 16px;
+        }
+        .layout__grid__hbox {
+            display: grid;
+            gap: 16px;
+        }
+        .grid__hbox__wrapped {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
         }
 
         .toolbar {
