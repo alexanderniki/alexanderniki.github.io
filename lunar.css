@@ -140,9 +140,9 @@
     /* DARK */
     @media (prefers-color-scheme: dark) {
         :root {
-            --color-primary: #29292C;
+            --color-primary: rgb(20, 24, 36); /* was #29292C*/
             --color-on-primary: #FAFAFA;
-            --color-secondary: #212124;
+            --color-secondary: rgb(20, 24, 36); /*was #212124*/
             --color-on-secondary: #FAFAFA;
             
             --color-accent-primary: #00b1d2; /* Blue atoll */
@@ -199,8 +199,8 @@
     @media (prefers-color-scheme: light) {
         :root {
             --color-primary: #FAFAFA;
-            --color-on-primary: #29292C;
-            --color-secondary: #212124;
+            --color-on-primary: rgb(20, 24, 36);
+            --color-secondary: rgb(20, 24, 36);
             --color-on-secondary: #FAFAFA;
 
             --color-accent-primary: #00b1d2; /* Blue atoll */
@@ -209,7 +209,7 @@
             --color-accent-danger: #000000;  /* red */
             --color-on-accent: #303034;
 
-            --color-surface: #29292C;
+            --color-surface: rgb(20, 24, 36);
         }
 
         .elevation-level {
