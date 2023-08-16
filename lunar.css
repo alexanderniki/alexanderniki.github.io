@@ -171,6 +171,9 @@
         .hierarchy-low {
             opacity: 0.4;
         }
+        .hierarchy-disabled {
+            opacity: 0.2;
+        }
 
         a {
             color: var(--color-accent-primary);

@@ -23,13 +23,17 @@ hr {
     margin: 0px;
     padding: 0px;
 
-    border: 1px;
+    border: 1px solid;
     /*border-color: var(--color-on-primary-text2);*/
+    border-color: var(--color-on-primary);
 }
 
 header {
-    background-color: var(--color-secondary);
+    /*background-color: var(--color-secondary);
     color: var(--color-on-secondary);
+    margin: 0px;*/
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     margin: 0px;
 }
 

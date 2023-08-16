@@ -32,7 +32,7 @@
             <div class="toolbar toolbar__navigation">
                 <span>Alexander Niki</span>
             </div>
-            <hr class="">
+            <!--<hr class="hierarchy-low">-->
             <nav class="toolbar toolbar__navigation">
                 <ul class="toolbar toolbar__navigation__main typography__button__label">
                     <li><a href="#home">Home</a></li>
@@ -41,7 +41,7 @@
                     <li><a href="https://text.tchncs.de/alexanderniki/">Blog</a></li>
                 </ul>
             </nav>
-            <hr class="">
+            <hr style="opacity: 0.08;">
         </header>
 
         <main>
@@ -57,12 +57,16 @@
                     <h1>About</h1>
                     <a class="hierarchy-low typography__button__label" href="#home">[ ↑ ]</a>
                 </div>
-                <div>
-                    <p>
-                        <a href="https://github.com/alexanderniki">Github</a> / 
+                <div class="layout__flex__hbox flex__hbox--wrapped">
+                    <p class="layout__flex__hbox flex__hbox--wrapped">
+                        <!--<a href="https://github.com/alexanderniki">Github</a> / 
                         <a href="https://codeberg.org/alexanderniki">Codeberg</a> /
                         <a href="https://www.behance.net/alexanderniki">Behance</a> /
-                        <a href="https://dribbble.com/alexanderniki">Dribbble</a>
+                        <a href="https://dribbble.com/alexanderniki">Dribbble</a>-->
+                        <a href="https://github.com/alexanderniki" class="uicard__button--link typography__button__label button">GitHub →</a>
+                        <a href="https://codeberg.org/alexanderniki" class="uicard__button--link typography__button__label button">Codeberg →</a>
+                        <a href="https://www.behance.net/alexanderniki" class="uicard__button--link typography__button__label button">Behance →</a>
+                        <a href="https://dribbble.com/alexanderniki" class="uicard__button--link typography__button__label button">Dribbble →</a>
                     </p>
                 </div>
 
@@ -183,42 +187,58 @@
                     <div class="uicard__base">
                         <style>
                             table {
-                                border:  1px solid var(--color-on-primary);
-                                border-collapse: separate;
+                                width: 100%;
                                 border-spacing: 0px;
-                                border-radius: 6px;
                             }
                             td {
-                                border: 1px solid var(--color-on-primary);
+                                border: 1px solid var(--color-primary);
+                                border-radius: 6px;
                                 width: 50%;
                                 padding: 8px;
                             }
+                            .container__simple {
+                                padding: 0px;
+                                margin: 0px;
+                                border-radius: 6px;
+                            }
                         </style>
                         <p><span class="typography__title">Experience</span></p>
-                        <!--<div class="layout__flex__hbox flex__hbox--wrapped">-->
+                        <div class="container__simple">
                         <table><tbody>
                             <tr>
-                            <td><div class="layout__flex__vbox" style="align-items: center;">
-                                <span class="typography__title">QA</span>
-                                <span class="">6 yrs</span>
+                            <td class=" block__highlighted"><div class="layout__flex__vbox" style="align-items: center;">
+                                <span class="typography__body hierarchy-medium">QA</span>
+                                <div>
+                                    <span class="typography__h6">6</span>
+                                    <span class="typography__body1 hierarchy-medium">yrs</span>
+                                </div>
                             </div></td>
-                            <td><div class="layout__flex__vbox" style="align-items: center;">
-                                <span class="typography__title">SA/BA</span>
-                                <span>5 yrs</span>
+                            <td class=" block__highlighted"><div class="layout__flex__vbox" style="align-items: center;">
+                                <span class="typography__body hierarchy-medium">SA / BA</span>
+                                <div>
+                                    <span class="typography__h6">5</span>
+                                    <span class="typography__body1 hierarchy-medium">yrs</span>
+                                </div>
                             </div></td>
                             </tr>
                             <tr>
-                            <td><div class="layout__flex__vbox" style="align-items: center;">
-                                <span class="typography__title">UX</span>
-                                <span>2 yrs</span>
+                            <td class=" block__highlighted"><div class="layout__flex__vbox" style="align-items: center;">
+                                <span class="typography__body hierarchy-medium">UX</span>
+                                <div>
+                                    <span class="typography__h6">2</span>
+                                    <span class="typography__body1 hierarchy-medium">yrs</span>
+                                </div>
                             </div></td>
-                            <td><div class="layout__flex__vbox" style="align-items: center;">
-                                <span class="typography__title">Others</span>
-                                <span>1 yrs</span>
+                            <td class=" block__highlighted"><div class="layout__flex__vbox" style="align-items: center;">
+                                <span class="typography__body hierarchy-medium">Others</span>
+                                <div>
+                                    <span class="typography__h6">1</span>
+                                    <span class="typography__body1 hierarchy-medium">yrs</span>
+                                </div>
                             </div></td>
                             </tr>
                         </tbody></table>
-                        <!--</div>-->
+                        </div>
                     </div>
                 </div>
 
