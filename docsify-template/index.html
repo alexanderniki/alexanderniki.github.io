@@ -1,0 +1,37 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+    </head>
+    <body>
+        <div id="app">Please wait…</div>
+        <script>
+            window.$docsify = {
+                /** App settings */
+                auto2top: true,
+                loadSidebar: true,  // load _sidebar.md by default
+                loadNavbar: true,  // load _navbar.md by default
+                coverpage: true,  // load _coverpage.md by default
+                //fallbackLanguages: ['ru', 'de'],
+                /** Site settings */
+                name: 'docsify template',
+                //basePath: './',
+                /*nameLink: {
+                    '/ru-ru/': '#/ru-ru/',
+                    '/': '#/',
+                },*/
+                notFoundPage: true,  // load _404.md by default
+                relativePath: true,
+                routerMode: 'history',
+                /** Themes */
+                themeColor: '#212121',
+            };
+        </script>
+        <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    </body>
+</html>
