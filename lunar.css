@@ -151,7 +151,7 @@
             --color-accent-danger: #000000;  /* red */
             --color-on-accent: #FAFAFA;
 
-            --color-surface: #FAFAFA;
+            --color-surface: rgba(255, 255, 255, 0.04); /* #FAFAFA */
 
             --color-accent-1: #303030; /* Graphite */
             --color-accent-1000: #3b3b48; /* Graphite */
@@ -196,6 +196,9 @@
             color: var(--color-primary);
             background-color: var(--color-on-primary);
         }
+        .uisurface {
+            background-color: var(--color-surface);
+        }
     }
 
     /* LIGHT */
@@ -212,7 +215,7 @@
             --color-accent-danger: #000000;  /* red */
             --color-on-accent: #303034;
 
-            --color-surface: rgb(20, 24, 36);
+            --color-surface: rgb(20, 24, 36, 0.08);
         }
 
         .elevation-level {
@@ -243,6 +246,9 @@
         .button {
             color: var(--color-primary);
             background-color: var(--color-on-primary);
+        }
+        .uisurface {
+            background-color: var(--color-surface);
         }
     }
 
