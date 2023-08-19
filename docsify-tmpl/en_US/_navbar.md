@@ -1,7 +1,7 @@
 * Languages
 
   * [English (EN)](/)
-  * [Русский (RU)](../ru-RU/)
+  * [Русский (RU)](/ru-RU/)
 
 * Getting started
 
