@@ -13,4 +13,4 @@
 [GitHub](https://github.com/docsifyjs/docsify/)
 [Get Started](#docsify)
 
-![color](#212121)
+![color](rgba(33,33,33, 0.08))
