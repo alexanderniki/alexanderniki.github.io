@@ -12,3 +12,5 @@
 
 [GitHub](https://github.com/docsifyjs/docsify/)
 [Get Started](#docsify)
+
+![color](#212121)
