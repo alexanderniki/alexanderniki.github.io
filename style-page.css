@@ -62,6 +62,8 @@ footer {
     flex-direction: column;
     gap: 4px;
     padding-bottom: 16px;
+    flex-grow: 1;
+    flex-shrink: 1;
 
     max-width: 960px;
 }

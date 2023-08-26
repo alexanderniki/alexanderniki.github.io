@@ -10,6 +10,7 @@
         <!-- END METADATA -->
 
         <!-- STYLES -->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
             <link rel="stylesheet" href="lunar.css">
             <link rel="stylesheet" href="style-page.css">
         <!-- END STYLES -->
@@ -71,7 +72,7 @@
                 </div>
 
                 <div class="layout__grid__hbox grid__hbox__wrapped">
-                    <div class="uicard__base block__highlighted">
+                    <div class="uicard__base block__highlighted" id="summary__about">
                         <p><span class="typography__title">About</span></p>
                         <div>
                             <p class="typography__body--text">Привет (Hello)!</p>
@@ -86,25 +87,25 @@
                     <div class="uicard__base">
                         <p><span class="typography__title">Interests</span></p>
                         <ul class="uilist">
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
                                 <span class="uicard__overline typography__overline">Programming</span>
                                 <span class="uilist__item__primary-text">
                                     Python, JavaScript, SQL, Swift, Dart/Flutter
                                 </span>
                             </li>
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
                                 <span class="uicard__overline typography__overline">Design</span>
                                 <span class="uilist__item__primary-text">
                                     Usability, Information architecture, Interaction design, Product design
                                 </span>
                             </li>
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
                                 <span class="uicard__overline typography__overline">Aesthetics</span>
                                 <span class="uilist__item__primary-text">
                                     Cyberpunk, solarpunk, lunarpunk, surf, midcentury modern
                                 </span>
                             </li>
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
                                 <span class="uicard__overline typography__overline">Others</span>
                                 <span class="uilist__item__primary-text">
                                     Surfing, open source, DYI, offgrid, AI, Zen
@@ -116,49 +117,22 @@
                     <div class="uicard__base">
                         <p><span class="typography__title">Visited</span></p>
                         <ul class="uilist">
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
+                                <span class="uicard__overline typography__overline">Baltic</span>
                                 <span class="uilist__item__primary-text">
-                                    Estonia
+                                    Estonia, Latvia, Finland, Sweden, Norway
                                 </span>
                             </li>
-                            <li class="uilist__item layout__flex__vbox">
-                                <span class="uilist__item__primary-text">
-                                    Latvia
-                                </span>
-                            </li>
-                            <li class="uilist__item layout__flex__vbox">
-                                <span class="uilist__item__primary-text">
-                                    Finland
-                                </span>
-                            </li>
-                            <li class="uilist__item layout__flex__vbox">
-                                <span class="uilist__item__primary-text">
-                                    Sweden
-                                </span>
-                            </li>
-                            <li class="uilist__item layout__flex__vbox">
-                                <span class="uilist__item__primary-text">
-                                    Norway
-                                </span>
-                            </li>
-                            <li class="uilist__item layout__flex__vbox">
-                                <span class="uilist__item__primary-text">
-                                    Cyprus
-                                </span>
-                            </li>
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
+                                <span class="uicard__overline typography__overline">America</span>
                                 <span class="uilist__item__primary-text">
                                     Dominican Republic
                                 </span>
                             </li>
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
+                                <span class="uicard__overline typography__overline">Others</span>
                                 <span class="uilist__item__primary-text">
-                                    Turkey
-                                </span>
-                            </li>
-                            <li class="uilist__item layout__flex__vbox">
-                                <span class="uilist__item__primary-text">
-                                    Georgia
+                                    Cyprus, Turkey, Georgia
                                 </span>
                             </li>
                         </ul>
@@ -167,17 +141,17 @@
                     <div class="uicard__base">
                         <p><span class="typography__title">Lived in</span></p>
                         <ul class="uilist">
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
                                 <span class="uilist__item__primary-text">
                                     Russia
                                 </span>
                             </li>
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
                                 <span class="uilist__item__primary-text">
                                     Turkey
                                 </span>
                             </li>
-                            <li class="uilist__item layout__flex__vbox">
+                            <li class="list__item layout__flex__vbox">
                                 <span class="uilist__item__primary-text">
                                     Georgia
                                 </span>
@@ -317,7 +291,10 @@
                             <span class="uicard__secondary-text hierarchy-low typography__body--text">
                                 A simple template for docsify-based wikis, documentation and digital gardens
                             </span>
-                            <a href="https://www.alexanderniki.name/docsify-template/docs/" target="_blank">
+                            <a href="https://github.com/alexanderniki/docsify-template" target="_blank">
+                                <span class="typography__button__label">GitHub</span>
+                            </a>
+                            <a href="https://www.alexanderniki.name/docsify-tmpl/" target="_blank">
                                 <span class="uicard__button--link typography__button__label button">View →</span>
                             </a>
                         </div>
@@ -325,10 +302,10 @@
                             <span class="uicard__overline typography__overline">Design</span>
                             <span class="uicard__primary-text">Printable stickers</span>
                             <span class="uicard__secondary-text hierarchy-low typography__body--text">
-                                A collection of tech-related printable stickers
+                                A collection of various printable stickers
                             </span>
                             <a href="https://codeberg.org/alexanderniki/stickers-set" target="_blank">
-                                <span class="uicard__button--link typography__button__label button">View →</span>
+                                <span class="uicard__button--link typography__button__label button">Codeberg →</span>
                             </a>
                         </div>
                     </div>
@@ -351,9 +328,11 @@
                     .uicard__base {
                         display: flex;
                         flex-direction: column;
+                        flex: 1 1 288px;
                         flex-grow: 1;
-                        flex-shrink: 1;
+                        /*flex-shrink: 1;*/
                         gap: 8px;
+                        
 
                         /*justify-content: end;*/
 
@@ -363,6 +342,7 @@
                         padding: 16px;
                         border: 2px solid;
                         border-radius: 8px;
+                        box-sizing: border-box;
 
                         /*border-color: var(--color-surface);*/
                     }
@@ -372,6 +352,7 @@
                         padding: 0px;
                     }
                     .uilist__item {
+                        word-wrap: break-word;
                         margin-bottom: 8px;
                         width: 100%;
                         list-style-type: none;
@@ -394,6 +375,7 @@
                     .uilist__item__overline {
                         color: var(--color-on-surface-light);
                         text-transform: uppercase;
+                        word-wrap: break-word;
                     }
                 </style>
 
