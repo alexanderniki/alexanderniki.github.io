@@ -1,7 +1,7 @@
 * Язык
 
-  * [English (EN)](/)
-  * [Русский (RU)](/ru_RU/)
+  * [English (EN)](/docsify-tmpl/)
+  * [Русский (RU)](/docsify-tmpl/ru_RU/)
 
 * Начало работы
 
