@@ -1,20 +1,5 @@
-* Languages
-
-  * [English (EN)](/docsify-tmpl/)
-  * [Русский (RU)](/docsify-tmpl/ru_RU/)
-
-* Getting started
-
-  * [Quick start](quickstart.md)
-  * [Writing more pages](more-pages.md)
-  * [Custom navbar](custom-navbar.md)
-  * [Cover page](cover.md)
-
-* Configuration
-  * [Configuration](configuration.md)
-  * [Themes](themes.md)
-  * [Using plugins](plugins.md)
-  * [Markdown configuration](markdown.md)
-  * [Language highlight](language-highlight.md)
-
-* [About](about.md)
+* [Главная](/showcase/rec-studio/docsify/)
+* [О студиии](/showcase/rec-studio/docsify/about.md)
+* [Услуги и цены](/showcase/rec-studio/docsify/pricing)
+* [Статьи](/showcase/rec-studio/docsify/blog.md)
+* [Контакты](/showcase/rec-studio/docsify/contacts.md)
