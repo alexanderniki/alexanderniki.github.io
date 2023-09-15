@@ -11,7 +11,7 @@
 
 ## Социальные сети
 
-- VK: [vk.com/kalimba-studio](https://vk.com/studio_kalimbapro)
+- VK: [vk.com/studio_kalimbapro](https://vk.com/studio_kalimbapro)
 - Facebook*: facebook.com/kalimba-studio
 - Youtube: --
 - TikTok: --
