@@ -22,3 +22,8 @@
 - Mastodon: @kalimba@mastodon.world
 - Matrix: @kalimba:matrix.org
 - Perrtube: --
+
+## Как нас найти
+
+- Адрес: 127001, Россия, Санкт-Петербург, ул. Большая Пребольшая, д. 8
+- Время работы: 11:00 - 23:00
