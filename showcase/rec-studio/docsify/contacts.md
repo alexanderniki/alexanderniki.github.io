@@ -11,7 +11,7 @@
 
 ## Социальные сети
 
-- VK: vk.com/kalimba-studio
+- VK: [vk.com/kalimba-studio](https://vk.com/studio_kalimbapro)
 - Facebook*: facebook.com/kalimba-studio
 - Youtube: --
 - TikTok: --
@@ -27,3 +27,5 @@
 
 - Адрес: 127001, Россия, Санкт-Петербург, ул. Большая Пребольшая, д. 8
 - Время работы: 11:00 - 23:00
+
+(*) Facebook признана экстремистской и запрещена на территории РФ.
