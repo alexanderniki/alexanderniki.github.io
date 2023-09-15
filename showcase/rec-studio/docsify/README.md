@@ -1,4 +1,4 @@
-![cover_image](/showcase/rec-studio/docsify/media/cover.png)
+![cover_image](./media/cover.png)
 
 # Студия звукозаписи Kalimba Pro
 Студия звукозаписи, репетиционная база, продюсерский центр.
