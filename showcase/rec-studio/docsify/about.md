@@ -1,3 +1,7 @@
-# About
+# О студии
 
-This is a template site for Docsify-based digital gardens and/of documentation websites.
+## Студия Kalimba Pro
+
+## Фото
+
+## Оборудование
