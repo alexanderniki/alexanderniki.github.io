@@ -1,0 +1,57 @@
+/* lunarscape-extras.css */
+
+.page__section--vh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    min-height: 88vh;
+}
+
+.navigation__main__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    list-style-type: none;
+}
+
+#cover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+#pricing {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.toolbar {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+#studio-map {
+    height: 100%;
+    width: 100%;
+}
+
+#contacts-map {
+    grid-column: 1 / 3;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-accent-primary)
+}
+a:hover {
+    text-decoration: none;
+    color: var(--color-accent-primary)
+}
+a:active {
+    text-decoration: none;
+    color: var(--color-accent-primary)
+}
+a.button--filled:hover {
+    color: var(--color-on-accent);
+}
