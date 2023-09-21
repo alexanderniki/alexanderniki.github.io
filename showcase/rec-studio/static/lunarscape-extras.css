@@ -68,12 +68,20 @@ a.button--filled:hover {
     max-height: 540px;
 }
 
+#gallery__img__current {
+    display: block;
+    object-fit: fill;
+    height: 100%;
+    border-radius: var(--dimension-border-radius);
+}
+
 .gallery__image {
     border: 0px solid #000;
     border-radius: var(--dimension-border-radius);
     overflow: hidden;
 
-    max-width: 192px;
+    min-width: 192px;
+    margin-bottom: 16px;
 }
 
 .gallery__images {

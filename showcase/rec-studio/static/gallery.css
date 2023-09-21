@@ -1,5 +1,5 @@
 img {
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .images {
@@ -7,6 +7,8 @@ img {
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1em 1em;
     margin-top: 1em;*/
+    overflow-x: scroll;
+    scrollbar-color: var(--color-accent-primary-t60) transparent;
 }
 
 @keyframes fadeIn {
