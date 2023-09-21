@@ -731,3 +731,44 @@
     textarea:active {
         background-color: var(--color-accent-secondary-t4);
     }
+
+/* LISTS */
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .list__item {
+        word-wrap: break-word;
+        margin-bottom: 8px;
+        width: 100%;
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    .list__item--vertical {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .list__item__primary-text {
+        margin-bottom: 0px;
+        width: 100%;
+        padding: 0px;
+
+        word-wrap: break-word;
+    }
+    .list__item__secondary-text {
+        margin-bottom: 0px;
+        width: 100%;
+        padding: 0px;
+
+        word-wrap: break-word;
+    }
+    .list__item__overline {
+        color: var(--color-on-surface-light);
+        text-transform: uppercase;
+        word-wrap: break-word;
+    }

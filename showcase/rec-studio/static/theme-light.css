@@ -75,7 +75,7 @@
         --color-extra-white: rgba(255, 255, 255, 1.0);
         --color-extra-black: rgba(0, 0, 0, 1.0);
 
-        --color-extra-brand-yellow: #000000;
+        --color-extra-brand-orange: #FFDE99;
 
     /* SEMANTIC */
         --color-background: var(--color-primary);
@@ -84,5 +84,5 @@
         --color-text-secondary: var(--color-secondary-t60);
         --color-border: var(--color-secondary-t16);
         --color-highlight: var(--color-secondary-t4);
-        --color-link: var(--color-extra-brand-yellow);
+        --color-link: var(--color-extra-brand-orange);
 }

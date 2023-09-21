@@ -10,10 +10,10 @@
     <!-- GOOGLE ANALYTICS -->
 
     <!-- STYLES -->
-    <!--<link rel="stylesheet" href="lunarscape.css">-->
     <link rel="stylesheet" href="lunarscape.css">
     <link rel="stylesheet" href="theme-light.css">
     <link rel="stylesheet" href="lunarscape-extras.css">
+    <link rel="stylesheet" href="gallery.css">
     <style></style>
 
     <title>Студия звукозаписи, репетиционная база и продюсерский центр KalimbaPro</title>
@@ -33,7 +33,7 @@
 
         <!-- COVER -->
         <section class="surface page__section--vh" id="cover">
-            <span>Студия звукозаписи, репетиционная база и продюсерский центр</span>
+            <span>Студия звукозаписи, репетиционная база, продюсерский центр. Саунд-дизайн и инжиниринг.</span>
             <span class="typography__display">KalimbaPro</span>
         </section>
     </header>
@@ -43,50 +43,111 @@
         <!-- ABOUT -->
         <section class="page__section--vh surface" id="about">
             <header class="layout__flex__horizontal">
-                <h1>О студии</h1> <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
+                <h1>О студии</h1> 
+                <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
             </header>
 
             <h2>Студия</h2>
             <h2>Фото</h2>
+            <div class="uix-layout--hbox--wrapped" id="">
+                <div class="uix-card--spot--description-item" id="card--gallery">
+                    <!--<span class="caption-accent" id="card--gallery--header">Галерея</span>-->
+                    <div class="uix-card--main" id="">
+                        <div id="gallery">
+                            <div class="main-img">
+                                <img id="current">
+                            </div>
+                            <div class="images" id="gallery--images"></div>
+                        </div>
+                        <div class="uix-popup" id="gallery-modal">
+                            <div class="uix-card--link--overall 
+                                        uix-button--circle 
+                                        headline-6 
+                                        uix-button--gallery--close">✕</div>
+                            <img class="uix-popup--content" 
+                                id="gallery-image">
+                        </div>
+                        <script src="gallery.js"></script>
+                    </div>
+                </div>
+            </div>
+
+
+
             <h2>Оборудование</h2>
         </section>
 
         <!-- PRICING -->
         <section class="page__section--vh surface" id="pricing">
             <header class="layout__flex__horizontal">
-                <h1>Услуги и цены</h1> <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
+                <h1>Услуги и цены</h1> 
+                <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
             </header>
+
+            <div class="layout__grid__horizontal grid__horizontal--wrapped">
+                <div class="card card--vertical card--outlined">
+                    <p><span class="typography__title">Звукозапись и аранжировка</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">Описание</span></p>
+                    <p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>
+                </div>
+                <div class="card card--vertical card--outlined">
+                    <p><span class="typography__title">Аренда студии</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">Описание</span></p>
+                    <p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>
+                </div>
+                <div class="card card--vertical card--outlined">
+                    <p><span class="typography__title">Аренда инструментов</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">Описание</span></p>
+                    <p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>
+                </div>
+                <div class="card card--vertical card--outlined">
+                    <p><span class="typography__title">Музыкальный менеджмент</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">Описание</span></p>
+                    <p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>
+                </div>
+                <div class="card card--vertical card--outlined">
+                    <p><span class="typography__title">Звукоподготовка помещений</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">Описание</span></p>
+                    <p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>
+                </div>
+                <div class="card card--vertical card--outlined">
+                    <p><span class="typography__title">Психорелаксное набухивание</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">Описание</span></p>
+                    <p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>
+                </div>
+            </div>
         </section>
 
         <!-- CONTACS -->
         <section class="page__section--vh surface" id="contacts">
             <header class="layout__flex__horizontal">
-                <h1>Контакты</h1> <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
+                <h1>Контакты</h1> 
+                <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
             </header>
             <div class="layout__grid__horizontal grid__horizontal--wrapped">
                 <div class="card card--vertical card--outlined" id="contacts-basic">
-                    <span>Основные</span>
+                    <p><span class="typography__title">Основные</span></p>
                     <ul class="list">
-                        <li class="list__item layout__flex__vertical">
-                            <span class="uicard__overline typography__overline">Email</span>
-                            <span class="uilist__item__primary-text">
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">Email</span>
+                            <span class="list__item__primary-text">
                                 <a href="mailto:hello@kalimba.studio">hello@kalimba.studio</a>
                             </span>
                         </li>
-                        <li class="list__item layout__flex__vertical">
-                            <span class="uicard__overline typography__overline">Телефон</span>
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">Телефон</span>
                             <span class="list__item__primary-text">
-                                <a href="tel:+79999876543">+7 (999) 987-65-43</a>
+                                <a href="tel:+79219410195">+7 (921) 941-01-95</a>
                             </span>
                         </li>
-                        <li class="list__item layout__flex__vertical">
-                            <span class="uicard__overline typography__overline">Telegram</span>
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">Telegram</span>
                             <span class="list__item__primary-text">
                                 +7 (999) 987-65-43
                             </span>
                         </li>
-                        <li class="list__item layout__flex__vertical">
-                            <span class="uicard__overline typography__overline">WhatsApp</span>
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">WhatsApp</span>
                             <span class="list__item__primary-text">
                                 +7 (999) 987-65-43
                             </span>
@@ -94,18 +155,65 @@
                     </ul>
                 </div>
                 <div class="card card--vertical card--outlined" id="contacts-social">
-                    <span>Социальные сети</span>
+                    <p><span class="typography__title">Социальные сети</span></p>
+                    <ul class="list">
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">VK</span>
+                            <span class="list__item__primary-text">
+                                <a href="https://vk.com/studio_kalimbapro">studio_kalimbapro</a>
+                            </span>
+                        </li>
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">Facebook</span>
+                            <span class="list__item__primary-text">
+                                <a href="">--</a>
+                            </span>
+                        </li>
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">YouTube</span>
+                            <span class="list__item__primary-text">
+                                <a href="">--</a>
+                            </span>
+                        </li>
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">TikTok</span>
+                            <span class="list__item__primary-text">
+                                <a href="">--</a>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
                 <div class="card card--vertical card--outlined" id="contacts-fediverse">
-                    <span>Fediverse</span>
+                    <p><span class="typography__title">Fediverse</span></p>
+                    <ul class="list">
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">Mastodon</span>
+                            <span class="list__item__primary-text">
+                                <a href="">--</a>
+                            </span>
+                        </li>
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">Matrix</span>
+                            <span class="list__item__primary-text">
+                                <a href="">--</a>
+                            </span>
+                        </li>
+                        <li class="list__item list__item--vertical">
+                            <span class="list__item__overline typography__overline">PeerTube</span>
+                            <span class="list__item__primary-text">
+                                <a href="">--</a>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
                 <div class="card card--vertical card--outlined" id="contacts-address">
-                    <span>Как нас найти</span>
-                    <span>Адрес: 127001, Россия, Санкт-Петербург, ул. Большая Пребольшая, д. 8</span>
-                    <span>Время работы: 11:00 - 23:00</span>
+                    <p><span class="typography__title">Как нас найти</span></p>
+                    <p><span>Адрес: 127001, Россия, Санкт-Петербург, ул. Большая Пребольшая, д. 8</span></p>
+                    <p><span>Время работы: 11:00 - 23:00</span></p>
                 </div>
                 <div class="surface surface--outlined" id="contacts-map">
-                    <img src="assets/placeholder-map.png" id="studio-map">
+                    <!--<img src="assets/placeholder-map.png" id="studio-map">-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1998.850734006029!2d30.329461712689817!3d59.93461897480843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDU2JzA0LjYiTiAzMMKwMTknNTUuNCJF!5e0!3m2!1sen!2sge!4v1695324688307!5m2!1sen!2sge" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -113,7 +221,7 @@
     </main>
 
     <footer role="contentinfo" class="surface layout__flex__vertical typography__caption">
-        <span>Made with ❤ and 🤟 in Saint-Petersburg, Russia</span>
+        <span>Made with ❤ and 🤟 in Saint-Petersburg, Russia.</span>
         <span>Est. 2023</span>
         <span>Designed and developed by <a href="https://www.alexanderniki.name">alexanderniki</a> using <a href="https://codeberg.org/alexanderniki/lunarscape-css">lunarscape.css</a></span>
     </footer>

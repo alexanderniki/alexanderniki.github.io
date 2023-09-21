@@ -38,20 +38,22 @@
 
 #contacts-map {
     grid-column: 1 / 3;
+    padding: 0px;
+    overflow: hidden;
 }
 
 a {
     text-decoration: none;
-    color: var(--color-accent-primary)
+    color: var(--color-link);
 }
 a:hover {
     text-decoration: none;
-    color: var(--color-accent-primary)
+    color: var(--color-link);
 }
 a:active {
     text-decoration: none;
-    color: var(--color-accent-primary)
+    color: var(--color-link);
 }
 a.button--filled:hover {
-    color: var(--color-on-accent);
+    color: var(--color-link);
 }
