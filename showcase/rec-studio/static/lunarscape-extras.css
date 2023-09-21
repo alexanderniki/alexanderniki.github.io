@@ -57,3 +57,25 @@ a:active {
 a.button--filled:hover {
     color: var(--color-link);
 }
+
+
+.gallery__img__main {
+    border: 0px solid #000;
+    border-radius: var(--dimension-border-radius);
+    overflow: hidden;
+
+    max-width: 960px;
+    max-height: 540px;
+}
+
+.gallery__image {
+    border: 0px solid #000;
+    border-radius: var(--dimension-border-radius);
+    overflow: hidden;
+
+    max-width: 192px;
+}
+
+.gallery__images {
+    justify-content: flex-start;
+}

@@ -4,7 +4,7 @@
  */
 
 // Gererating images array
-let spots = data.spots;
+/*let spots = data.spots;
 let uicontainer = document.getElementById("gallery--images");
 let currentImg = document.getElementById("current");
 for (let item in spots) {
@@ -18,13 +18,13 @@ for (let item in spots) {
             uicontainer.appendChild(image);
         }
     }
-}
+}*/
 
 
 // Generating current image
 
 
-let current = document.getElementById("current");
+let current = document.getElementById("gallery__img__current");
 let opacity = 0.6;
 let imgs = document.querySelectorAll(".img");
 
@@ -50,7 +50,7 @@ imgs.forEach(img => {
 var modal = document.getElementById("gallery-modal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("current");
+var img = document.getElementById("gallery__img__current");
 var modalImg = document.getElementById("gallery-image");
 /* Don't need caption right now */
 // var captionText = document.getElementById("caption");

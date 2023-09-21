@@ -49,28 +49,26 @@
 
             <h2>Студия</h2>
             <h2>Фото</h2>
-            <div class="uix-layout--hbox--wrapped" id="">
-                <div class="uix-card--spot--description-item" id="card--gallery">
-                    <!--<span class="caption-accent" id="card--gallery--header">Галерея</span>-->
-                    <div class="uix-card--main" id="">
-                        <div id="gallery">
-                            <div class="main-img">
-                                <img id="current">
-                            </div>
-                            <div class="images" id="gallery--images"></div>
-                        </div>
-                        <div class="uix-popup" id="gallery-modal">
-                            <div class="uix-card--link--overall 
-                                        uix-button--circle 
-                                        headline-6 
-                                        uix-button--gallery--close">✕</div>
-                            <img class="uix-popup--content" 
-                                id="gallery-image">
-                        </div>
-                        <script src="gallery.js"></script>
+                <div class=" layout__flex__vertical" id="gallery">
+                    <div class="gallery__img__main">
+                        <img id="gallery__img__current" src="assets/studio-gallery-img-1.jpeg">
+                    </div>
+                    <div class="images layout__flex__horizontal" id="gallery--images">
+                        <img class="img gallery__image" src="assets/studio-gallery-img-1.jpeg">
+                        <img class="img gallery__image" src="assets/studio-gallery-img-2.jpeg">
+                        <img class="img gallery__image" src="assets/studio-gallery-img-3.jpeg">
+                        <img class="img gallery__image" src="assets/studio-gallery-img-4.jpeg">
                     </div>
                 </div>
-            </div>
+                <!--<div class="uix-popup" id="gallery-modal">
+                    <div class="uix-card--link--overall 
+                                uix-button--circle 
+                                headline-6 
+                                uix-button--gallery--close">✕</div>
+                    <img class="uix-popup--content" 
+                        id="gallery-image">
+                </div>-->
+                <script src="gallery.js"></script>
 
 
 
