@@ -22,16 +22,23 @@
 <body>
     
     <header>
-        <nav role="navigation" class="toolbar">
+        <nav role="navigation" class="toolbar" id="navigation-main">
             <script src="navigation.js"></script>
             <div class="toolbar__container" id="toolbar-container-mob">
-                <a href="#" onclick="toggleMainNav();" class="typography__button__label" id="button-navigation-toggle">Menu</a>
+                <!--<a href="javascript:void(0)" onclick="toggleMainNav();" class="typography__button__label" id="button-navigation-toggle">Menu</a>-->
+                <!--<a href="">-->
+                    <div class="menuicon__container" onclick="toggleNavigationIcon(this); toggleMainNav();">
+                        <div class="menuicon__bar1"></div>
+                        <div class="menuicon__bar2"></div>
+                        <div class="menuicon__bar3"></div>
+                    </div>
+                <!--</a>-->
             </div>
-            <ul class="navigation__main__items toolbar__container" id="toolbar-container">
-                <li><a href="#home" class="typography__button__label">Главная</a></li>
-                <li><a href="#about" class="typography__button__label">О студии</a></li>
-                <li><a href="#pricing" class="typography__button__label">Услуги и цены</a></li>
-                <li><a href="#contacts" class="typography__button__label">Контакты</a></li>
+            <ul class="toolbar__container" id="toolbar-container">
+                <li><a href="#home" class="typography__button__label" onclick="closeNavbar();">Главная</a></li>
+                <li><a href="#about" class="typography__button__label" onclick="closeNavbar();">О студии</a></li>
+                <li><a href="#pricing" class="typography__button__label" onclick="closeNavbar();">Услуги и цены</a></li>
+                <li><a href="#contacts" class="typography__button__label" onclick="closeNavbar();">Контакты</a></li>
             </ul>
         </nav>
 
@@ -42,7 +49,7 @@
         </section>
     </header>
 
-    <main role="main" id="">
+    <main role="main" id="app-main" onclick="closeNavbar();">
 
         <!-- ABOUT -->
         <section class="page__section--vh surface" id="about">

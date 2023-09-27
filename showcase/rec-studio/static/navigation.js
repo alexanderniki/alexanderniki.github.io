@@ -4,19 +4,25 @@ function toggleMainNav() {
     let container = document.getElementById("toolbar-container");
     let opened = false;
 
-    console.log("Buton: " + button);
-    console.log("Container: " + container);
-    console.log("Is opened: " + opened);
-
-    console.log(container.style.display);
-
-    if (container.style.display === "flex") {
-        container.style.display = "none";
-        opened = false;
+    if (container.className === "toolbar__container") {
+        container.className += " displayed";
+        opened = true;
     }
     else {
-        container.style.display = "flex";
-        opened = true;
+        container.className = "toolbar__container";
+        opened = false;
     }
 
 }
+
+function closeNavbar() {
+    let container = document.getElementById("toolbar-container");
+    container.className = "toolbar__container";
+}
+
+/**
+ * Navigation icons
+ */
+function toggleNavigationIcon(x) {
+    x.classList.toggle("change");
+  }
