@@ -23,7 +23,11 @@
     
     <header>
         <nav role="navigation" class="toolbar">
-            <ul class="navigation__main__items toolbar__container">
+            <script src="navigation.js"></script>
+            <div class="toolbar__container" id="toolbar-container-mob">
+                <a href="#" onclick="toggleMainNav();" class="typography__button__label" id="button-navigation-toggle">Menu</a>
+            </div>
+            <ul class="navigation__main__items toolbar__container" id="toolbar-container">
                 <li><a href="#home" class="typography__button__label">Главная</a></li>
                 <li><a href="#about" class="typography__button__label">О студии</a></li>
                 <li><a href="#pricing" class="typography__button__label">Услуги и цены</a></li>
@@ -32,13 +36,13 @@
         </nav>
 
         <!-- COVER -->
-        <section class="surface page__section--vh" id="cover">
+        <section class="surface page__section--vh" id="home">
             <span>Студия звукозаписи, репетиционная база, продюсерский центр. Саунд-дизайн и инжиниринг.</span>
             <span class="typography__display">KalimbaPro</span>
         </section>
     </header>
 
-    <main role="main" id="home">
+    <main role="main" id="">
 
         <!-- ABOUT -->
         <section class="page__section--vh surface" id="about">

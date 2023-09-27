@@ -11,9 +11,9 @@
 
 .navigation__main__items {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     gap: 16px;
 
     list-style-type: none;
@@ -87,3 +87,105 @@ a.button--filled:hover {
 .gallery__images {
     justify-content: flex-start;
 }
+
+
+
+/* ADAPTIVE LAYOUTS */
+
+    /* MOBILE */
+    @media only screen and (max-width: 480px) {
+        .navigation__main__items {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        #button-navigation-toggle {
+        }
+        #toolbar-container {
+            display: none;
+        }
+        #toolbar-container-mob {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            border: 1px solid #FFF;
+            min-height: 56px;
+        }
+    }
+
+/* TABLET PORTRAIT */
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+        .navigation__main__items {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            padding: 8px;
+        }
+        #toolbar-container {
+            display: none;
+        }
+        #toolbar-container-mob {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            border: 1px solid #FFF;
+            min-height: 56px;
+        }
+    }
+
+/* TABLET LANDSCAPE */
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        .navigation__main__items {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #button-navigation-toggle {
+            display: none;
+        }
+        #toolbar-container {
+            display: flex;
+        }
+        #toolbar-container-mob {
+            display: none;
+        }
+    }
+
+/* LAPTOP */
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        .navigation__main__items {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #button-navigation-toggle {
+            display: none;
+        }
+        #toolbar-container {
+            display: flex;
+        }
+    }
+
+/* DESKTOP */
+    @media only screen and (min-width: 1601px) {
+        .navigation__main__items {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #button-navigation-toggle {
+            display: none;
+        }
+        #toolbar-container {
+            display: flex;
+        }
+    }

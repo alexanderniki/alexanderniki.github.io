@@ -529,13 +529,14 @@
 
 /* TOOLBARS */
     .toolbar {
-        height: 56px;
         background-color: var(--color-accent-primary);
         color: var(--color-on-accent);
 
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        min-height: 56px;
     }
     .toolbar__container {
         padding-left: var(--container-padding);
