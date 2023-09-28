@@ -224,7 +224,7 @@ a.button--filled:hover {
   
     /* Rotate first bar */
     .change .menuicon__bar1 {
-        transform: translate(0, 8px) rotate(-45deg);
+        transform: translate(0, 4px) rotate(-45deg);
     }
   
     /* Fade out the second bar */
@@ -232,5 +232,5 @@ a.button--filled:hover {
   
     /* Rotate last bar */
     .change .menuicon__bar3 {
-        transform: translate(0, -8px) rotate(45deg);
+        transform: translate(0, -4px) rotate(45deg);
     }
