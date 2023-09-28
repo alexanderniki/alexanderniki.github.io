@@ -27,7 +27,7 @@
             <div class="toolbar__container" id="toolbar-container-mob">
                 <!--<a href="javascript:void(0)" onclick="toggleMainNav();" class="typography__button__label" id="button-navigation-toggle">Menu</a>-->
                 <!--<a href="">-->
-                    <div class="menuicon__container" onclick="toggleNavigationIcon(this); toggleMainNav();">
+                    <div class="menuicon__container" onclick="toggleNavigationIcon(this); toggleMainNav();" id="menu-icon">
                         <div class="menuicon__bar1"></div>
                         <div class="menuicon__bar2"></div>
                         <div class="menuicon__bar3"></div>
@@ -35,10 +35,10 @@
                 <!--</a>-->
             </div>
             <ul class="toolbar__container" id="toolbar-container">
-                <li><a href="#home" class="typography__button__label" onclick="closeNavbar();">Главная</a></li>
-                <li><a href="#about" class="typography__button__label" onclick="closeNavbar();">О студии</a></li>
-                <li><a href="#pricing" class="typography__button__label" onclick="closeNavbar();">Услуги и цены</a></li>
-                <li><a href="#contacts" class="typography__button__label" onclick="closeNavbar();">Контакты</a></li>
+                <li><a href="#home" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Главная</a></li>
+                <li><a href="#about" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">О студии</a></li>
+                <li><a href="#pricing" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Услуги и цены</a></li>
+                <li><a href="#contacts" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Контакты</a></li>
             </ul>
         </nav>
 

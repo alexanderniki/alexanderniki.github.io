@@ -24,5 +24,7 @@ function closeNavbar() {
  * Navigation icons
  */
 function toggleNavigationIcon(x) {
-    x.classList.toggle("change");
+    let elem = document.getElementById("menu-icon");
+    //x.classList.toggle("change");
+    elem.classList.toggle("change");
   }
