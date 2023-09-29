@@ -17,7 +17,7 @@ p {
 }
 
 .cover {
-    background-color: rgba(255, 255, 255, 0.04);
+    /*background-color: rgba(255, 255, 255, 0.04);*/
 }
 
 footer {
@@ -48,8 +48,12 @@ footer a:visited {
 #about {
     /*background-color: rgba(255, 239, 204, 1.0);*/    
     border-radius: 0px;
-    background-color: rgba(255, 239, 204, 1.0);
-    color: var(--color-primary);
+    background-color: rgba(255, 255, 255, 0.08);
+    /*color: var(--color-primary);*/
+}
+#pricing {
+    background-color: rgba(7, 145, 146, 1.0);
+    border-radius: 0px;
 }
 
 .toolbar {
