@@ -17,14 +17,14 @@ p {
 }
 
 .cover {
-    /*background-color: rgba(255, 255, 255, 0.04);*/
+    background-color: rgba(255, 255, 255, 0.04);
 }
 
 footer {
-    background-color: rgba(255, 239, 204, 1.0);
-    color: var(--color-primary);
+    background-color: rgba(1, 146, 201, 1.0);
+    color: var(--color-secondary);
 }
-footer a {
+/*footer a {
     color: var(--color-accent-primary);
 }
 footer a:hover {
@@ -35,7 +35,7 @@ footer a:active {
 }
 footer a:visited {
     color: var(--color-accent-primary);
-}
+}*/
 
 #contacts {
     /*background-color: rgba(255, 255, 255, 0.04);
@@ -46,10 +46,10 @@ footer a:visited {
 }
 
 #about {
-    /*background-color: rgba(255, 239, 204, 1.0);*/
-    background-color: rgba(1, 146, 201, 1.0);
-    color: var(--color-secondary);
+    /*background-color: rgba(255, 239, 204, 1.0);*/    
     border-radius: 0px;
+    background-color: rgba(255, 239, 204, 1.0);
+    color: var(--color-primary);
 }
 
 .toolbar {
