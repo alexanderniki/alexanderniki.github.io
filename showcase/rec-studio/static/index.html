@@ -35,10 +35,10 @@
                 <!--</a>-->
             </div>
             <ul class="toolbar__container" id="toolbar-container">
-                <li><a href="#home" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Главная</a></li>
+                <li><a href="index.html" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Главная</a></li>
                 <li><a href="#about" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">О студии</a></li>
+                <li><a href="#equipment" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Оборудование</a></li>
                 <li><a href="#pricing" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Услуги и цены</a></li>
-                <li><a href="#contacts" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Контакты</a></li>
             </ul>
         </nav>
 
@@ -111,15 +111,123 @@
         <!-- EQUIPMENT -->
         <section class="page__section--vh surface" id="equipment">
             <h1>Оборудование</h1>
-            <p class="typography__body--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Vestibulum finibus tincidunt feugiat. Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit. Maecenas accumsan purus ut sapien ullamcorper, a feugiat 
-                risus imperdiet. Sed accumsan, turpis ac euismod sollicitudin, odio eros porttitor 
-                ante, id rhoncus lorem sapien eget arcu. Duis diam ante, eleifend id risus nec, 
-                lacinia blandit augue. Pellentesque quis blandit mauris, ac dapibus diam. Donec 
-                aliquam fermentum justo, sed dapibus dolor tincidunt in. Pellentesque porttitor euismod 
-                ipsum, et interdum massa viverra sit amet. Mauris consectetur pulvinar ante, a malesuada 
-                urna molestie in. In metus ligula, aliquet quis eros vel, laoreet sagittis neque.</p>
+            <p class="typography__body--text">У нас есть все необходимое для того, чтобы сделать запись комфортной и высококачественной.</p>
+            <div class="layout__grid__horizontal grid__horizontal--wrapped">
+                <div class="card vcard top outlined">
+                    <span class="typography__title">Программное обеспечение</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <ul>
+                            <li>Ableton Live</li>
+                            <li>Avid Pro Tools</li>
+                            <li>Native Instruments Guitar Rig</li>
+                            <li>Guitar Pro</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Звуковая карта</span>
+                    <span class="typography__title">Arturia MiniFuse 4 Black</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <ul>
+                            <li>производство: Франция</li>
+                            <li>аудиоинтерфейс 4 входа / 4 выхода</li>
+                            <li>поддержка 24 бит / 192 кГц</li>
+                            <li>диапазон 20 Гц – 20000 Гц</li>
+                            <li>соотношение сигнал/шум, дБ: 110</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Наушники</span>
+                    <span class="typography__title">AKG K92</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Мониторные наушники закрытого типа</span>
+                        <ul>
+                            <li>производство: Австрия</li>
+                            <li>размер динамика: 40 мм</li>
+                            <li>чувствительность, дБ SPL/В: 113</li>
+                            <li>импеданс: 32 Ом</li>
+                            <li>диапазон: 16 Гц – 22000 Гц</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Наушники</span>
+                    <span class="typography__title">AKG K240 MKII</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Полуоткрытые студийные наушники, с мембранами XXL-Varimotion</span>
+                        <ul>
+                            <li>производство: Австрия</li>
+                            <li>размер динамика: 60 мм</li>
+                            <li>чувствительность, дБ SPL/В: 91</li>
+                            <li>импеданс: 55 Ом</li>
+                            <li>диапазон: 15 Гц – 25000 Гц</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Наушники</span>
+                    <span class="typography__title">Beyerdynamic DT 770 Pro 250 Ohm</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Мониторные наушники закрытого типа</span>
+                        <ul>
+                            <li>размер динамика: 50 мм</li>
+                            <li>чувствительность, дБ SPL/В: 96</li>
+                            <li>импеданс: 250 Ом</li>
+                            <li>частотный диапазон: 5 Гц – 35000 Гц</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Микрофон</span>
+                    <span class="typography__title">AKG P220</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Студийный конденсаторный микрофон</span>
+                        <ul>
+                            <li>производство: Австрия</li>
+                            <li>частотная характеристика: 20 Гц - 20000 Гц</li>
+                            <li>диаграмма направленности: кардиоида</li>
+                            <li>чувствительность: 18 мВ / Па</li>
+                            <li>сопротивление: 200 Ом</li>
+                            <li>макс. уровень звукового давления SPL: 135/155 дБ</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Звуковая система</span>
+                    <span class="typography__title">Behringer B2030A</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Студийные мониторы</span>
+                        <ul>
+                            <li>производство: Германия</li>
+                            <li>количество полос: 2</li>
+                            <li>АЧХ: 50 Гц - 21 000 Гц</li>
+                            <li>усилители: 75 Вт и 35 Вт</li>
+                            <li>особенности ВЧ-драйвера: 0,75-дюймов; экстремально высокая разрешающая
+                                способность; охлаждение ферромагнитной жидкостью</li>
+                            <li>особенности НЧ-драйвера: 6,75-дюймовый вуфер; специальная полипропиленовая
+                                мембрана; алюминиевое шасси, устойчивое к деформации</li>
+                            <li>кроссовер: активный, реализованы фильтры Линквитца-Райли 4-го порядка, частота
+                                раздела 2 кГц</li>
+                            <li>электромагнитное экранирование</li>
+                            <li>входное сопротивление серво-балансных аудиовходов XLR и 1/4-дюймовых TRS: 10
+                                кОм</li>
+                            <li>входной уровень аудиовходов (максимальный): +22 дБ</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Коммутация</span>
+                    <span class="typography__title">Кабели BESPECO</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <ul>
+                            <li>экранированные</li>
+                            <li>позолоченные коннекторы</li>
+                            <li>проводник из бескислородной меди</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         </section>
 
         <!-- PRICING -->

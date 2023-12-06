@@ -21,7 +21,8 @@ p {
 }
 
 footer {
-    background-color: #002533;
+    /*background-color: #002533;*/
+    background-color: rgba(7, 145, 146, 1.0);
     color: var(--color-secondary);
 }
 /*footer a {
@@ -37,14 +38,6 @@ footer a:visited {
     color: var(--color-accent-primary);
 }*/
 
-#contacts {
-    /*background-color: rgba(255, 255, 255, 0.04);
-    background-color: rgba(9, 194, 195, 1.0);
-    background-color: rgba(7, 145, 146, 1.0);*/
-    /*background-color: rgba(1, 146, 201, 1.0);*/
-    border-radius: 0px;
-}
-
 #about {
     /*background-color: rgba(255, 239, 204, 1.0);*/    
     border-radius: 0px;
@@ -52,7 +45,8 @@ footer a:visited {
     /*color: var(--color-primary);*/
 }
 #pricing {
-    background-color: rgba(7, 145, 146, 1.0);
+    /*background-color: rgba(7, 145, 146, 1.0);*/
+    background-color: rgba(255, 255, 255, 0.08);
     border-radius: 0px;
 }
 
@@ -67,7 +61,6 @@ footer a:visited {
 }
 
 #contacts-map {
-    /*grid-column: 1 / 2;*/
     padding: 0px;
     overflow: hidden;
     min-height: 288px;
