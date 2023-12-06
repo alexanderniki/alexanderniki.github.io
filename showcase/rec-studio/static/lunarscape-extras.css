@@ -21,7 +21,7 @@ p {
 }
 
 footer {
-    background-color: rgba(1, 146, 201, 1.0);
+    background-color: #002533;
     color: var(--color-secondary);
 }
 /*footer a {
@@ -206,6 +206,10 @@ a.button--filled:hover {
 
 /* LAPTOP */
     @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        .section-wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
         .navigation__main__items {
             flex-direction: row;
             align-items: center;
@@ -230,6 +234,10 @@ a.button--filled:hover {
 
 /* DESKTOP */
     @media only screen and (min-width: 1601px) {
+        .section-wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
         #button-navigation-toggle {
             display: none;
         }

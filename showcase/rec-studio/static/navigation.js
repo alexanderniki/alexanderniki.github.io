@@ -18,6 +18,7 @@ function toggleMainNav() {
 function closeNavbar() {
     let container = document.getElementById("toolbar-container");
     container.className = "toolbar__container";
+    toggleNavigationIcon(0);
 }
 
 /**
@@ -25,6 +26,5 @@ function closeNavbar() {
  */
 function toggleNavigationIcon(x) {
     let elem = document.getElementById("menu-icon");
-    //x.classList.toggle("change");
     elem.classList.toggle("change");
   }
