@@ -74,8 +74,9 @@
  */
 
 /* BASIC TYPOGRAPHY */
-    @import url('http://fonts.cdnfonts.com/css/pt-root-ui');
-    @import url('http://fonts.cdnfonts.com/css/pt-mono');
+    @import url('https://fonts.cdnfonts.com/css/pt-root-ui');
+    @import url('https://fonts.cdnfonts.com/css/pt-mono');
+    @import url('https://fonts.cdnfonts.com/css/noto-sans');
 
     body {
         font-family: 'PT Root UI', sans-serif;

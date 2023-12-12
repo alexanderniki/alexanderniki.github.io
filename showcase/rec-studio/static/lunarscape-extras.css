@@ -38,6 +38,18 @@ footer a:visited {
     color: var(--color-accent-primary);
 }*/
 
+#home {
+    
+}
+#home__container {
+    align-items: center;
+    justify-content: center;
+}
+#home__logo {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
 #about {
     /*background-color: rgba(255, 239, 204, 1.0);*/    
     border-radius: 0px;
@@ -148,6 +160,26 @@ a.button--filled:hover {
             flex-grow: 1;
             flex-shrink: 1;
         }
+        #home__container__logo {
+            /*background: no-repeat center url(assets/logo-512.png);
+            background-size: 50%;*/
+            display: none
+        }
+        #home:before {
+            content: ""; 
+            position: absolute; 
+            top: 0px; 
+            right: 0px; 
+            bottom: 0px; 
+            left: 0px; 
+            /* Specify the background image to be used */ 
+            background-image: url('assets/logo-512.png'); 
+            background-size: 50%;
+            background-repeat: no-repeat; 
+            background-position: center;
+            /* Specify the background image opacity */ 
+            opacity: 0.2; 
+        }
     }
 
 /* TABLET PORTRAIT */
@@ -176,6 +208,26 @@ a.button--filled:hover {
             flex-grow: 1;
             flex-shrink: 1;
         }
+        #home__container__logo {
+            /*background: no-repeat center url(assets/logo-512.png);
+            background-size: 50%;*/
+            display: none
+        }
+        #home:before {
+            content: ""; 
+            position: absolute; 
+            top: 0px; 
+            right: 0px; 
+            bottom: 0px; 
+            left: 0px; 
+            /* Specify the background image to be used */ 
+            background-image: url('assets/logo-512.png'); 
+            background-size: 50%;
+            background-repeat: no-repeat; 
+            background-position: center;
+            /* Specify the background image opacity */ 
+            opacity: 0.2; 
+        }
     }
 
 /* TABLET LANDSCAPE */
@@ -194,6 +246,26 @@ a.button--filled:hover {
         }
         #toolbar-container-mob {
             display: none;
+        }
+        #home__container__logo {
+            /*background: no-repeat center url(assets/logo-512.png);
+            background-size: 50%;*/
+            display: none
+        }
+        #home:before {
+            content: ""; 
+            position: absolute; 
+            top: 0px; 
+            right: 0px; 
+            bottom: 0px; 
+            left: 0px; 
+            /* Specify the background image to be used */ 
+            background-image: url('assets/logo-512.png'); 
+            background-size: 50%;
+            background-repeat: no-repeat; 
+            background-position: center;
+            /* Specify the background image opacity */ 
+            opacity: 0.2; 
         }
     }
 
@@ -223,6 +295,9 @@ a.button--filled:hover {
         #toolbar-container-mob {
             display: none;
         }
+        #grid__equipment {
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        }
     }
 
 /* DESKTOP */
@@ -245,6 +320,9 @@ a.button--filled:hover {
         }
         #toolbar-container-mob {
             display: none;
+        }
+        #grid__equipment {
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         }
     }
 
