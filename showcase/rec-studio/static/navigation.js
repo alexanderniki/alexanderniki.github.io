@@ -1,5 +1,4 @@
 function toggleMainNav() {
-    console.log("TOGGLE NAVIGATION");
     let button = document.getElementById("button-navigation-toggle");
     let container = document.getElementById("toolbar-container");
     let opened = false;
@@ -18,7 +17,8 @@ function toggleMainNav() {
 function closeNavbar() {
     let container = document.getElementById("toolbar-container");
     container.className = "toolbar__container";
-    toggleNavigationIcon(0);
+    //toggleNavigationIcon(0);
+    resetNavigationIcon();
 }
 
 /**
@@ -27,4 +27,9 @@ function closeNavbar() {
 function toggleNavigationIcon(x) {
     let elem = document.getElementById("menu-icon");
     elem.classList.toggle("change");
-  }
+}
+
+function resetNavigationIcon() {
+    let elem = document.getElementById("menu-icon");
+    elem.classList.remove("change");
+}

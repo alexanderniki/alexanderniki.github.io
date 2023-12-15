@@ -61,9 +61,9 @@
     <main role="main" id="app-main" onclick="closeNavbar();">
 
         <!-- ABOUT -->
-        <section class="page__section--vh surface" id="about">
+        <section class="surface page__section--vh" id="about">
             <header class="box hbox">
-                <h1 class="typography--bold typography--uppercase" id="header__about">О студии</h1> 
+                <h1 class="" id="header__about">О студии</h1> 
                 <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
             </header>
 
@@ -78,48 +78,51 @@
                 ipsum, et interdum massa viverra sit amet. Mauris consectetur pulvinar ante, a malesuada 
                 urna molestie in. In metus ligula, aliquet quis eros vel, laoreet sagittis neque.</p>
             
-                <div class="layout__flex__vertical" style="">
-                    <!-- Slideshow container -->
-                    <div class="gallery__slideshow__container">
-                        <!-- Full-width images with number and caption text -->
-                        <div class="gallery__slides fade">
-                            <div class="gallery__counter__text">1 / 4</div>
-                            <img src="assets/studio-gallery-img-1.jpeg" alt="" style="width:100%">
-                            <div class="gallery__caption__text">Caption Text</div>
+                <div>
+                    <div style="display: inline-block;">
+                        <!-- Slideshow container -->
+                        <div class="gallery__slideshow__container">
+                            <!-- Full-width images with number and caption text -->
+                            <div class="gallery__slides fade">
+                                <div class="gallery__counter__text">1 / 4</div>
+                                <img src="assets/studio-gallery-img-1.jpeg" alt="" style="width:100%">
+                                <!--<div class="gallery__caption__text">Caption Text</div>-->
+                            </div>
+                            <div class="gallery__slides fade">
+                                <div class="gallery__counter__text">2 / 4</div>
+                                <img src="assets/studio-gallery-img-2.jpeg" alt="" style="width:100%">
+                                <!--<div class="gallery__caption__text">Caption Text</div>-->
+                            </div>
+                            <div class="gallery__slides fade">
+                                <div class="gallery__counter__text">3 / 4</div>
+                                <img src="assets/studio-gallery-img-3.jpeg" alt="" style="width:100%">
+                                <!--<div class="gallery__caption__text">Caption Text</div>-->
+                            </div>
+                            <div class="gallery__slides fade">
+                                <div class="gallery__counter__text">4 / 4</div>
+                                <img src="assets/studio-gallery-img-4.jpeg" alt="" style="width:100%">
+                                <!--<div class="gallery__caption__text">Caption Text</div>-->
+                            </div>
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         </div>
-                        <div class="gallery__slides fade">
-                            <div class="gallery__counter__text">2 / 4</div>
-                            <img src="assets/studio-gallery-img-2.jpeg" alt="" style="width:100%">
-                            <div class="gallery__caption__text">Caption Text</div>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center"> <!--  style="text-align:center;" -->
+                            <span class="gallery__slideshow__dot" onclick="currentSlide('1')"></span>
+                            <span class="gallery__slideshow__dot" onclick="currentSlide('2')"></span>
+                            <span class="gallery__slideshow__dot" onclick="currentSlide('3')"></span>
+                            <span class="gallery__slideshow__dot" onclick="currentSlide('4')"></span>
                         </div>
-                        <div class="gallery__slides fade">
-                            <div class="gallery__counter__text">3 / 4</div>
-                            <img src="assets/studio-gallery-img-3.jpeg" alt="" style="width:100%">
-                            <div class="gallery__caption__text">Caption Text</div>
-                        </div>
-                        <div class="gallery__slides fade">
-                            <div class="gallery__counter__text">4 / 4</div>
-                            <img src="assets/studio-gallery-img-4.jpeg" alt="" style="width:100%">
-                            <div class="gallery__caption__text">Caption Text</div>
-                        </div>
-                        <!-- Next and previous buttons -->
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <script src="gallery.js"></script>
                     </div>
-                    <!-- The dots/circles -->
-                    <div> <!--  style="text-align:center;" -->
-                        <span class="gallery__slideshow__dot" onclick="currentSlide('1')"></span>
-                        <span class="gallery__slideshow__dot" onclick="currentSlide('2')"></span>
-                        <span class="gallery__slideshow__dot" onclick="currentSlide('3')"></span>
-                        <span class="gallery__slideshow__dot" onclick="currentSlide('4')"></span>
-                    </div>
-                    <script src="gallery.js"></script>
                 </div>
         </section>
 
         <!-- EQUIPMENT -->
         <section class="page__section--vh surface" id="equipment">
-            <h1 class="typography--bold typography--uppercase" id="header__equipment">Оборудование</h1>
+            <h1 class="" id="header__equipment">Оборудование</h1>
             <p class="typography__body--text">У нас есть все необходимое для того, чтобы сделать запись комфортной и высококачественной.</p>
             <div class="layout__grid__horizontal grid__horizontal--wrapped" id="grid__equipment">
                 <div class="card vcard top outlined">
@@ -253,7 +256,7 @@
         <!-- PRICING -->
         <section class="page__section--vh surface" id="pricing">
             <header class="layout__flex__horizontal">
-                <h1 class="typography--bold typography--uppercase" id="header__pricing">Услуги и цены</h1> 
+                <h1 class="" id="header__pricing">Услуги и цены</h1> 
                 <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
             </header>
 
@@ -311,7 +314,7 @@
     
     </main>
 
-    <footer role="contentinfo" class="surface layout__flex__vertical box vbox dense typography__caption" id="footer">
+    <footer role="contentinfo" class="surface box vbox" id="footer">
         <!-- Contacts and map -->
         <div class="layout__grid__horizontal grid__horizontal--wrapped">
             <div class="card vcard top outlined" id="contacts-address">
@@ -342,9 +345,11 @@
             </div>
         </div>
         <!-- Footer info -->
-        <span>Made with ❤ and 🤟 in Saint-Petersburg, Russia.</span>
-        <span>Est. 2023</span>
-        <span>Designed and developed by <a href="https://www.alexanderniki.name">alexanderniki</a></span>
+        <div class="box vbox dense typography__caption">
+            <span>Made with ❤ and 🤟 in Saint-Petersburg, Russia.</span>
+            <span>Est. 2023</span>
+            <span>Designed and developed by <a href="https://www.alexanderniki.name">alexanderniki</a></span>
+        </div>
     </footer>
 
 </body>

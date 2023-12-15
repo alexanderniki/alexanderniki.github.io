@@ -76,7 +76,6 @@
 /* BASIC TYPOGRAPHY */
     @import url('https://fonts.cdnfonts.com/css/pt-root-ui');
     @import url('https://fonts.cdnfonts.com/css/pt-mono');
-    @import url('https://fonts.cdnfonts.com/css/noto-sans');
 
     body {
         font-family: 'PT Root UI', sans-serif;
@@ -284,10 +283,6 @@
                 body {
                     font-size: 16px;
                 }
-                header {}
-                main{}
-                footer {}
-                nav {}
             
             /* FLEX && GRID LAYOUTS */
                 .layout__flex__vertical {

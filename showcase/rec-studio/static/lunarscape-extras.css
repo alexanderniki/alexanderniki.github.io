@@ -22,8 +22,10 @@ p {
 
 footer {
     /*background-color: #002533;*/
-    background-color: rgba(7, 145, 146, 1.0);
+    /*background-color: rgba(7, 145, 146, 1.0);*/
+    background-color: var(--color-accent-secondary-t40);
     color: var(--color-secondary);
+    border-radius: 0px;
 }
 /*footer a {
     color: var(--color-accent-primary);
