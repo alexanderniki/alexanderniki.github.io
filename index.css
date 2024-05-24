@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+/* Basic */
+    body {
+        font-family: 'Exo 2', 'JetBrains Mono', sans-serif;
+        font-weight: 300;
+        line-height: 2.0;
+        background-color: #FDFDFD;
+        color: #30303F;
+    }
+    a {
+        color: #0099FF;
+        text-decoration: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+
+
+/* Keywords highlight */
+    .yaml_syntax_highlight_keyword {
+        color: #FF8000;
+    }
+    .yaml_syntax_highlight_keyword_nested {
+        color: #88888F;
+    }
+    .yaml_syntax_highlight_comment {
+        color: #88888F;
+        font-style: italic;
+    }
+    .yaml_syntax_highlight_braces {
+        color: #D0D0D0;
+    }
+
+
+/* Adaptive */
+    @media (max-width: 480px) {
+        /* Mobile */
+        body {
+            font-size: 14px;
+        }
+        main {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+        /* Tablet Portrait */
+        body {
+            font-size: 14px;
+        }
+        main {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+        /* Tablet Landscape */
+        body {
+            font-size: 16px;
+        }
+        main {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        /* Laptop */
+        body {
+            font-size: 16px;
+        }
+        main {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
+    @media only screen and (min-width: 1601px) {
+        /* Desktop */
+        body {
+            font-size: 16px;
+        }
+        main {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }
