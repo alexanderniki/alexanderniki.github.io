@@ -1,0 +1,23 @@
+.debug {
+    border: 1px solid red;
+}
+
+/* Keywords highlight */
+    .syntax_highlight_keyword {
+        color: #FF8000;
+    }
+    .syntax_highlight_keyword_nested {
+        color: #88888F;
+    }
+    .syntax_highlight_comment {
+        color: #88888F;
+        font-style: italic;
+    }
+    .syntax_highlight_braces {
+        color: #D0D0D0;
+    }
+
+/* Elements */
+    ul {
+        list-style-type: none;
+    }
