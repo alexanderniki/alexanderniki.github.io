@@ -169,6 +169,7 @@
         .section__container--content {
             max-width: 960px;
             margin: 0 auto;
+            width: 100%;
             padding-top: var(--dimension-intersection-space);
             padding-bottom: var(--dimension-intersection-space);
         }
@@ -203,6 +204,7 @@
         .section__container--content {
             max-width: 1280px;
             margin: 0 auto;
+            width: 100%;
             padding-top: var(--dimension-intersection-space);
             padding-bottom: var(--dimension-intersection-space);
         }
@@ -311,16 +313,16 @@
         /*padding: 0;*/
     }
     .main__container {
-        align-items: center;
-        justify-content: center;
+        /*align-items: center;*/
+        /*justify-content: center;*/
     }
     .section__container--content {
-        justify-content: center;
+        /*justify-content: center;*/
     }
     .section__container--cover {
         width: 100%;
         min-height: var(--dimension-section-height);
-        justify-content: center;
+        /*justify-content: center;*/
     }
     .footer__container {
         color: var(--color-background);
