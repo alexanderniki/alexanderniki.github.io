@@ -90,8 +90,15 @@
             font-size: 24px;
         }
         .section__container--content {
-            padding-top: 16px;
-            padding-bottom: 16px;
+            padding: 16px;
+        }
+        .footer__container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .header__container {
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
 /* TABLET PORTRAIT */
@@ -106,8 +113,15 @@
             font-size: 24px;
         }
         .section__container--content {
-            padding-top: 16px;
-            padding-bottom: 16px;
+            padding: 16px;
+        }
+        .footer__container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .header__container {
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
 /* TABLET LANDSCAPE */
@@ -122,8 +136,15 @@
             font-size: 24px;
         }
         .section__container--content {
-            padding-top: var(--dimension-intersection-space);
-            padding-bottom: var(--dimension-intersection-space);
+            padding: var(--dimension-intersection-space);
+        }
+        .footer__container {
+            padding-left: var(--dimension-intersection-space);
+            padding-right: var(--dimension-intersection-space);
+        }
+        .header__container {
+            padding-left: var(--dimension-intersection-space);
+            padding-right: var(--dimension-intersection-space);
         }
     }
 /* LAPTOP */
@@ -155,6 +176,10 @@
             max-width: 960px;
             margin: 0 auto;
         }
+        .header__container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
     }
 /* DESKTOP */
     @media only screen and (min-width: 1601px) {
@@ -182,6 +207,10 @@
             padding-bottom: var(--dimension-intersection-space);
         }
         .footer__container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .header__container {
             max-width: 1280px;
             margin: 0 auto;
         }
