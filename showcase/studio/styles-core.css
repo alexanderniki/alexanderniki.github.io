@@ -12,11 +12,13 @@
  * COLORS
 ---------------------------------------------------------------------------- */
 :root {
-    --color-background: #FDFDFD;
-    --color-text-primary: #30303F;
-    --color-text-secondary: #88888F;
-    --color-text-disabled: #D0D0D0;
-    --color-text-link: #0099FF;
+    --color-background: rgb(1, 74, 101);
+    --color-text-primary: rgba(255, 255, 255, 0.8);
+    --color-text-secondary: rgba(255, 255, 255, 0.6);
+    --color-text-disabled: rgba(255, 255, 255, 0.2);
+    --color-text-link: #67BEDF;
+    --color-accent-primary: #6BDADB;
+    --color-accent-secondary: rgba(255, 63, 51, 1.0);
 }
 
 /* ----------------------------------------------------------------------------
@@ -61,6 +63,9 @@
     }
     .typography__text--accent {
         color: var(--color-accent);
+    }
+    .typography__text--accent-secondary {
+        color: var(--color-accent-secondary);
     }
     h1.typography__display {
         font-weight: 300;
@@ -147,6 +152,7 @@
             margin: 0 auto;
         }
         .section__container--content {
+            width: 100%;
             max-width: 960px;
             margin: 0 auto;
             /*padding-top: var(--dimension-intersection-space);
@@ -178,6 +184,7 @@
             margin: 0 auto;
         }
         .section__container--content {
+            width: 100%;
             max-width: 1280px;
             margin: 0 auto;
             /*padding-top: var(--dimension-intersection-space);
@@ -203,6 +210,7 @@
         font-family: 'Exo 2', 'JetBrains Mono', sans-serif;
         font-weight: 300;
         line-height: 2.0;
+        word-break: break-word;
 
         background-color: var(--color-background);
         color: var(--color-text-primary);
@@ -222,7 +230,7 @@
         padding: 0;
 
         min-height: 56px;
-        background-color: var(--color-text-primary);
+        background-color: rgba(0,0,0,0.24);
     }
     section {
         margin: 0;
@@ -285,13 +293,13 @@
         padding: var(--dimension-intersection-space);
     }
     .main__container {
-        padding: var(--dimension-intersection-space);
-        align-items: center;
-        justify-content: center;
+        /*align-items: center;*/
+        /*justify-content: center;*/
     }
     .section__container--content {
-        width: 100%;
-        justify-content: center;
+        /*width: 100%;*/
+        /*justify-content: center;*/
+        padding: var(--dimension-intersection-space);
     }
     .section__container--cover {
         width: 100%;
@@ -300,7 +308,6 @@
     }
     .footer__container {
         padding: var(--dimension-intersection-space);
-        color: var(--color-background);
         justify-content: center;
     }
 
@@ -309,6 +316,9 @@
 ---------------------------------------------------------------------------- */
 /* BASIC ELEMENTS */
     a {
-        text-decoration: none;
+        text-decoration: underline;
         color: var(--color-text-link);
+    }
+    li::marker {
+        color: var(--color-accent-primary);
     }

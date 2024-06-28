@@ -16,7 +16,12 @@
     .syntax_highlight_braces {
         color: #D0D0D0;
     }
-
+#studio-about {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+#studio-instruments {
+    background-color: rgba(255, 255, 255, 0.16);
+}
 #studio-map-container {
     /*width: 100%;*/
     min-height: 288px;
