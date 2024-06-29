@@ -322,3 +322,20 @@
     li::marker {
         color: var(--color-accent-primary);
     }
+    .linkbutton {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 0;
+        flex-shrink: 1;
+
+        min-height: 48px;
+        padding: 8px 24px;
+
+        text-decoration: none;
+        color: var(--color-text-primary);
+        background-color: var(--color-accent-secondary);;
+        border: 0px solid var(--color-accent-secondary);
+        border-radius: 48px;
+    }
