@@ -1,0 +1,88 @@
+:root {
+
+    /* ACCENTS SYSTEM */
+        /* SUCCESS */
+            --color-accent-success: #14B82B;
+            --color-on-accent-success: #FFFFFF;
+            --color-accent-success-container: #D1FAD7;
+            --color-on-accent-success-container: #052E0B;
+        /* INFO */
+            --color-accent-info: blue;
+            --color-on-accent-info: white;
+            --color-accent-info-container: blue;
+            --color-on-accent-info-container: white;
+        /* WARNING */
+            --color-accent-warning: #CC6100;
+            --color-on-accent-warning: #FFFFFF;
+            --color-accent-warning-container: #FFE4CC;
+            --color-on-accent-warning-container: #331800;
+        /* DANGER */
+            --color-accent-danger: #CC0E00;
+            --color-on-accent-dander: #FFFFFF;
+            --color-accent-danger-container: #FFCFCC;
+            --color-on-accent-danger-scontainer: #330300;
+    
+        --color-on-accent: #FFFFFF;
+
+    /* PRIMARY */
+        --color-primary: rgba(1, 74, 101, 1.0);
+        --color-primary-t80: rgba(1, 74, 101, 0.8);
+        --color-primary-t60: rgba(1, 74, 101, 0.6);
+        --color-primary-t40: rgba(1, 74, 101, 0.4);
+        --color-primary-t20: rgba(1, 74, 101, 0.2);
+        --color-primary-t16: rgba(1, 74, 101, 0.16);
+        --color-primary-t8: rgba(1, 74, 101, 0.08);
+        --color-primary-t4: rgba(1, 74, 101, 0.04);
+        --color-on-primary: rgba(255, 255, 255, 1.0);
+    /* SECONDARY */
+        --color-secondary: rgba(255, 255, 255, 1.0);
+        --color-secondary-t80: rgba(255, 255, 255, 0.8);
+        --color-secondary-t60: rgba(255, 255, 255, 0.6);
+        --color-secondary-t40: rgba(255, 255, 255, 0.4);
+        --color-secondary-t20: rgba(255, 255, 255, 0.2);
+        --color-secondary-t16: rgba(255, 255, 255, 0.16);
+        --color-secondary-t8: rgba(255, 255, 255, 0.08);
+        --color-secondary-t4: rgba(255, 255, 255, 0.04);
+        --color-on-secondary: rgba(255, 255, 255, 1.0);
+
+    /* ACCENT */
+        /* PRIMARY */
+            --color-accent-primary: rgba(1, 146, 201, 1.0);
+            --color-accent-primary-t80: rgba(1, 146, 201, 0.8);
+            --color-accent-primary-t60: rgba(1, 146, 201, 0.6);
+            --color-accent-primary-t40: rgba(1, 146, 201, 0.4);
+            --color-accent-primary-t20: rgba(1, 146, 201, 0.2);
+            --color-accent-primary-t16: rgba(1, 146, 201, 0.16);
+            --color-accent-primary-t8: rgba(1, 146, 201, 0.08);
+            --color-accent-primary-t4: rgba(1, 146, 201, 0.04);
+            --color-on-accent-primary: rgba(255, 255, 255, 1.0);
+            --color-accent-primary-container: rgba(204, 251, 255, 1.0);
+            -color-on-accent-primary-container: rgba(0, 37, 51, 1.0);
+        /* SECONDARY */
+            --color-accent-secondary: rgba(9, 194, 195, 1.0);
+            --color-accent-secondary-t80: rgba(9, 194, 195, 0.8);
+            --color-accent-secondary-t60: rgba(9, 194, 195, 0.6);
+            --color-accent-secondary-t40: rgba(9, 194, 195, 0.4);
+            --color-accent-secondary-t20: rgba(9, 194, 195, 0.2);
+            --color-accent-secondary-t16: rgba(9, 194, 195, 0.16);
+            --color-accent-secondary-t8: rgba(9, 194, 195, 0.08);
+            --color-accent-secondary-t4: rgba(9, 194, 195, 0.04);
+            --color-on-accent-secondary: rgba(255, 255, 255, 1.0);
+            --color-accent-secondary-container: rgba(206, 252, 253, 1.0);
+            --color-on-accent-secondary-container: rgba(2, 48, 49, 1.0);
+
+    /* EXTRAS */
+        --color-extra-white: rgba(255, 255, 255, 1.0);
+        --color-extra-black: rgba(0, 0, 0, 1.0);
+
+        --color-extra-brand-orange: #FFDE99;
+
+    /* SEMANTIC */
+        --color-background: var(--color-primary);
+        --color-surface: #B0B0B0;
+        --color-text-primary: var(--color-secondary-t80);
+        --color-text-secondary: var(--color-secondary-t60);
+        --color-border: var(--color-secondary-t16);
+        --color-highlight: var(--color-secondary-t4);
+        --color-link: var(--color-extra-brand-orange);
+}

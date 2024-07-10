@@ -1,0 +1,358 @@
+<html>
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- SCRIPTS -->
+
+    <!-- GOOGLE ANALYTICS -->
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="lunarscape.css">
+    <link rel="stylesheet" href="theme-light.css">
+    <link rel="stylesheet" href="lunarscape-extras.css">
+    <link rel="stylesheet" href="gallery.css">
+    <style></style>
+
+    <title>Студия звукозаписи, репетиционная база и продюсерский центр KalimbaPro</title>
+</head>
+
+<body>
+    
+    <header>
+        <nav role="navigation" class="toolbar" id="navigation-main">
+            <script src="navigation.js"></script>
+            <div class="toolbar__container" id="toolbar-container-mob">
+                <!--<a href="javascript:void(0)" onclick="toggleMainNav();" class="typography__button__label" id="button-navigation-toggle">Menu</a>-->
+                <!--<a href="">-->
+                    <div class="menuicon__container" onclick="toggleNavigationIcon(this); toggleMainNav();" id="menu-icon">
+                        <div class="menuicon__bar1"></div>
+                        <!--<div class="menuicon__bar2"></div>-->
+                        <div class="menuicon__bar3"></div>
+                    </div>
+                <!--</a>-->
+            </div>
+            <ul class="toolbar__container" id="toolbar-container">
+                <li><a href="index.html" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Главная</a></li>
+                <li><a href="#about" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">О студии</a></li>
+                <li><a href="#equipment" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Оборудование</a></li>
+                <li><a href="#pricing" class="typography__button__label" onclick="closeNavbar(); toggleNavigationIcon(this);">Услуги и цены</a></li>
+            </ul>
+        </nav>
+
+        <!-- COVER -->
+        <section class="surface page__section--vh cover" id="home">
+            <div class="box hbox wrapped" id="home__container">
+                <div class="box vbox dense">
+                    <span>Студия звукозаписи, репетиционная база, продюсерский центр.</span>
+                    <span>Саунд-дизайн и инжиниринг.</span>
+                    <span class="typography__display typography--bold typography--uppercase" id="header__text">KalimbaPro</span>
+                </div>
+                <div class="" id="home__container__logo">
+                    <img src="assets/logo-512.png" alt="" id="home__logo">
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+    <main role="main" id="app-main" onclick="closeNavbar();">
+
+        <!-- ABOUT -->
+        <section class="surface page__section--vh" id="about">
+            <header class="box hbox">
+                <h1 class="" id="header__about">О студии</h1> 
+                <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
+            </header>
+
+            
+            <div class="typography__body--text box vbox dense" style="max-width: 960px;">
+                <span>Студия KalimbaPro – это то место, где вы не только сможете записать песню, 
+                вокальную или инструментальную партии и сделать аранжировку.</span>
+                <span>Это студия, которая поможет осуществить ваши творческие задумки, мечты и фантазии. 
+                Мы не просто создаем качественную музыкальную продукцию. Мы формируем образ, рождаем настроение, 
+                пробуждаем вдохновение и помогаем воплотить замысел в жизнь.</span>
+                <span>Продвинутый артист или новичок – вы всегда можете прийти к нам в студию, поработать над своими идеями, 
+                поиграть с друзьями или даже устроить маленький семейный концерт.</span>
+                <span>Также мы можем придумать звуковое оформление и сценарий для любого мероприятия, праздника или шоу.</span>
+            </div>
+            
+                <div>
+                    <div style="display: inline-block;">
+                        <!-- Slideshow container -->
+                        <div class="gallery__slideshow__container">
+                            <!-- Full-width images with number and caption text -->
+                            <div class="gallery__slides fade">
+                                <div class="gallery__counter__text">1 / 4</div>
+                                <img src="assets/studio-gallery-img-1.jpeg" alt="" style="width:100%">
+                                <!--<div class="gallery__caption__text">Caption Text</div>-->
+                            </div>
+                            <div class="gallery__slides fade">
+                                <div class="gallery__counter__text">2 / 4</div>
+                                <img src="assets/studio-gallery-img-2.jpeg" alt="" style="width:100%">
+                                <!--<div class="gallery__caption__text">Caption Text</div>-->
+                            </div>
+                            <div class="gallery__slides fade">
+                                <div class="gallery__counter__text">3 / 4</div>
+                                <img src="assets/studio-gallery-img-3.jpeg" alt="" style="width:100%">
+                                <!--<div class="gallery__caption__text">Caption Text</div>-->
+                            </div>
+                            <div class="gallery__slides fade">
+                                <div class="gallery__counter__text">4 / 4</div>
+                                <img src="assets/studio-gallery-img-4.jpeg" alt="" style="width:100%">
+                                <!--<div class="gallery__caption__text">Caption Text</div>-->
+                            </div>
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center"> <!--  style="text-align:center;" -->
+                            <span class="gallery__slideshow__dot" onclick="currentSlide('1')"></span>
+                            <span class="gallery__slideshow__dot" onclick="currentSlide('2')"></span>
+                            <span class="gallery__slideshow__dot" onclick="currentSlide('3')"></span>
+                            <span class="gallery__slideshow__dot" onclick="currentSlide('4')"></span>
+                        </div>
+                        <script src="gallery.js"></script>
+                    </div>
+                </div>
+        </section>
+
+        <!-- EQUIPMENT -->
+        <section class="page__section--vh surface" id="equipment">
+            <h1 class="" id="header__equipment">Оборудование</h1>
+            <p class="typography__body--text">У нас есть все необходимое для того, чтобы сделать запись комфортной и высококачественной.</p>
+            <div class="layout__grid__horizontal grid__horizontal--wrapped" id="grid__equipment">
+                <div class="card vcard top outlined">
+                    <span class="typography__title">Программное обеспечение</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <ul>
+                            <li>Ableton Live</li>
+                            <li>Avid Pro Tools</li>
+                            <li>Native Instruments Guitar Rig</li>
+                            <li>Guitar Pro</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Звуковая карта</span>
+                    <span class="typography__title">Arturia MiniFuse 4 Black</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <ul>
+                            <li>производство: Франция</li>
+                            <li>аудиоинтерфейс 4 входа / 4 выхода</li>
+                            <li>поддержка 24 бит / 192 кГц</li>
+                            <li>диапазон 20 Гц – 20000 Гц</li>
+                            <li>соотношение сигнал/шум, дБ: 110</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Наушники</span>
+                    <span class="typography__title">AKG K92</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Мониторные наушники закрытого типа</span>
+                        <ul>
+                            <li>производство: Австрия</li>
+                            <li>размер динамика: 40 мм</li>
+                            <li>чувствительность, дБ SPL/В: 113</li>
+                            <li>импеданс: 32 Ом</li>
+                            <li>диапазон: 16 Гц – 22000 Гц</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Наушники</span>
+                    <span class="typography__title">AKG K240 MKII</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Полуоткрытые студийные наушники, с мембранами XXL-Varimotion</span>
+                        <ul>
+                            <li>производство: Австрия</li>
+                            <li>размер динамика: 60 мм</li>
+                            <li>чувствительность, дБ SPL/В: 91</li>
+                            <li>импеданс: 55 Ом</li>
+                            <li>диапазон: 15 Гц – 25000 Гц</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Наушники</span>
+                    <span class="typography__title">Beyerdynamic DT 770 Pro 250 Ohm</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Мониторные наушники закрытого типа</span>
+                        <ul>
+                            <li>размер динамика: 50 мм</li>
+                            <li>чувствительность, дБ SPL/В: 96</li>
+                            <li>импеданс: 250 Ом</li>
+                            <li>частотный диапазон: 5 Гц – 35000 Гц</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Микрофон</span>
+                    <span class="typography__title">AKG P220</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Студийный конденсаторный микрофон</span>
+                        <ul>
+                            <li>производство: Австрия</li>
+                            <li>частотная характеристика: 20 Гц - 20000 Гц</li>
+                            <li>диаграмма направленности: кардиоида</li>
+                            <li>чувствительность: 18 мВ / Па</li>
+                            <li>сопротивление: 200 Ом</li>
+                            <li>макс. уровень звукового давления SPL: 135/155 дБ</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Звуковая система</span>
+                    <span class="typography__title">Behringer B2030A</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <span>Студийные мониторы</span>
+                        <ul>
+                            <li>производство: Германия</li>
+                            <li>количество полос: 2</li>
+                            <li>АЧХ: 50 Гц - 21 000 Гц</li>
+                            <li>усилители: 75 Вт и 35 Вт</li>
+                            <li>особенности ВЧ-драйвера: 0,75-дюймов; экстремально высокая разрешающая
+                                способность; охлаждение ферромагнитной жидкостью</li>
+                            <li>особенности НЧ-драйвера: 6,75-дюймовый вуфер; специальная полипропиленовая
+                                мембрана; алюминиевое шасси, устойчивое к деформации</li>
+                            <li>кроссовер: активный, реализованы фильтры Линквитца-Райли 4-го порядка, частота
+                                раздела 2 кГц</li>
+                            <li>электромагнитное экранирование</li>
+                            <li>входное сопротивление серво-балансных аудиовходов XLR и 1/4-дюймовых TRS: 10
+                                кОм</li>
+                            <li>входной уровень аудиовходов (максимальный): +22 дБ</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Коммутация</span>
+                    <span class="typography__title">Кабели BESPECO</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <ul>
+                            <li>экранированные</li>
+                            <li>позолоченные коннекторы</li>
+                            <li>проводник из бескислородной меди</li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="card vcard top outlined">
+                    <span class="typography__overline">Видео</span>
+                    <span class="typography__title">Камера GoPro Hero 8 Black</span>
+                    <span class="typography__body1--text hierarchy-medium">
+                        <ul>
+                            <li>разрешение: 12 MP</li>
+                            <li>съемка: 4K/60fps, 2.7K/120fps and 1080/240fps</li>
+                            <li>кодеки: H.264 и H.265</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section class="page__section--vh surface" id="pricing">
+            <header class="layout__flex__horizontal">
+                <h1 class="" id="header__pricing">Услуги и цены</h1> 
+                <a href="#home" class="hierarchy-low typography__overline">[ ↑ ]</a>
+            </header>
+
+            <div class="layout__grid__horizontal grid__horizontal--wrapped">
+                <div class="card vcard bottom outlined">
+                    <p><span class="typography__title">Звукозапись и аранжировка</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum finibus tincidunt feugiat.
+                    </span></p>
+                    <!--<p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>-->
+                </div>
+                <div class="card vcard bottom outlined">
+                    <p><span class="typography__title">Аренда студии</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum finibus tincidunt feugiat.
+                    </span></p>
+                    <!--<p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>-->
+                </div>
+                <div class="card vcard bottom outlined">
+                    <p><span class="typography__title">Аренда инструментов</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum finibus tincidunt feugiat.
+                    </span></p>
+                    <!--<p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>-->
+                </div>
+                <div class="card vcard bottom outlined">
+                    <p><span class="typography__title">Музыкальный менеджмент</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum finibus tincidunt feugiat.
+                    </span></p>
+                    <!--<p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>-->
+                </div>
+                <div class="card vcard bottom outlined">
+                    <p><span class="typography__title">Звукоподготовка помещений</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum finibus tincidunt feugiat.
+                    </span></p>
+                    <!--<p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>-->
+                </div>
+                <div class="card vcard bottom outlined">
+                    <p><span class="typography__title">Психорелаксное набухивание</span></p>
+                    <p><span class="typography__body1--text hierarchy-medium">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Vestibulum finibus tincidunt feugiat.
+                    </span></p>
+                    <!--<p>Цена: <span class="hierarchy-low">от</span> <span class="typography__h1">0</span> <span class="hierarchy-low">руб.</span></p>-->
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer role="contentinfo" class="surface box vbox" id="footer">
+        <!-- Contacts and map -->
+        <div class="layout__grid__horizontal grid__horizontal--wrapped">
+            <div class="card vcard top outlined" id="contacts-address">
+                <p><span class="typography__title">Как нас найти</span></p>
+                <p>
+                    <span class="hierarchy-medium">Адрес: </span>
+                    <span class="typography__body--text">127001, Россия, Санкт-Петербург, ул. Большая Пребольшая, д. 8</span>
+                </p>
+                <p>
+                    <span class="hierarchy-medium">Время работы: </span>
+                    <span class="typography__body--text">11:00 - 23:00</span>
+                </p>
+                <p>
+                    <span class="hierarchy-medium">Телефон, Telegram, WhatsApp: </span>
+                    <span class="typography__body--text"><a href="tel:+79219410195">+7 (921) 941-01-95</a></span>
+                </p>
+                <p>
+                    <span class="hierarchy-medium">Email:</span>
+                    <span class="typography__body--text"><a href="mailto:info@kalimbapro.ru">info@kalimbapro.ru</a></span>
+                </p>
+                <p>
+                    <span class="hierarchy-medium">Vk:</span>
+                    <span class="typography__body--text"><a href="https://vk.com/studio_kalimbapro">studio_kalimbapro</a></span>
+                </p>
+            </div>
+            <div class="surface outlined" id="contacts-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1998.850734006029!2d30.329461712689817!3d59.93461897480843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDU2JzA0LjYiTiAzMMKwMTknNTUuNCJF!5e0!3m2!1sen!2sge!4v1695324688307!5m2!1sen!2sge" width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- Footer info -->
+        <div class="box vbox dense typography__caption">
+            <span>Made with ❤ and 🤟 in Saint-Petersburg, Russia.</span>
+            <span>Est. 2023</span>
+            <span>Designed and developed by <a href="https://www.alexanderniki.name">alexanderniki</a></span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+/* lunarscape-extras.css */
+p {
+    margin-left: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-top: 4px;
+    padding: 0px;
+}
+
+.page__section--vh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    min-height: 88vh;
+}
+
+.cover {
+    /*background-color: rgba(255, 255, 255, 0.04);*/
+}
+
+footer {
+    /*background-color: #002533;*/
+    /*background-color: rgba(7, 145, 146, 1.0);*/
+    background-color: var(--color-accent-secondary-t40);
+    color: var(--color-secondary);
+    border-radius: 0px;
+}
+/*footer a {
+    color: var(--color-accent-primary);
+}
+footer a:hover {
+    color: var(--color-accent-primary);
+}
+footer a:active {
+    color: var(--color-accent-primary);
+}
+footer a:visited {
+    color: var(--color-accent-primary);
+}*/
+
+#home {
+    
+}
+#home__container {
+    align-items: center;
+    justify-content: center;
+}
+#home__logo {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+#about {
+    /*background-color: rgba(255, 239, 204, 1.0);*/    
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.08);
+    /*color: var(--color-primary);*/
+}
+#pricing {
+    /*background-color: rgba(7, 145, 146, 1.0);*/
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 0px;
+}
+
+.toolbar {
+    background-color: #002533;
+    z-index: 1;
+}
+
+#studio-map {
+    height: 100%;
+    width: 100%;
+}
+
+#contacts-map {
+    padding: 0px;
+    overflow: hidden;
+    min-height: 288px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+a:hover {
+    text-decoration: none;
+    color: var(--color-link);
+}
+a:active {
+    text-decoration: none;
+    color: var(--color-link);
+}
+a.button--filled:hover {
+    color: var(--color-link);
+}
+
+
+.gallery__img__main {
+    border: 0px solid #000;
+    border-radius: var(--dimension-border-radius);
+    overflow: hidden;
+
+    max-width: 960px;
+    max-height: 540px;
+}
+
+#gallery__img__current {
+    display: block;
+    object-fit: fill;
+    height: 100%;
+    border-radius: var(--dimension-border-radius);
+}
+
+.gallery__image {
+    border: 0px solid #000;
+    border-radius: var(--dimension-border-radius);
+    overflow: hidden;
+
+    min-width: 192px;
+    margin-bottom: 16px;
+}
+
+.gallery__images {
+    justify-content: flex-start;
+}
+
+#navigation-main {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    width: 100%;
+}
+
+
+
+/* ADAPTIVE LAYOUTS */
+
+    /* MOBILE */
+    @media only screen and (max-width: 480px) {
+        .toolbar__container {
+            display: none;
+        }
+        #toolbar-container {
+            list-style: none;
+            flex-grow: 1;
+            flex-shrink: 1;
+            gap: 8px;
+        }
+        #toolbar-container-mob {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            min-height: 56px;
+        }
+        .toolbar__container.displayed {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        #home__container__logo {
+            /*background: no-repeat center url(assets/logo-512.png);
+            background-size: 50%;*/
+            display: none
+        }
+        #home:before {
+            content: ""; 
+            position: absolute; 
+            top: 0px; 
+            right: 0px; 
+            bottom: 0px; 
+            left: 0px; 
+            /* Specify the background image to be used */ 
+            background-image: url('assets/logo-512.png'); 
+            background-size: 50%;
+            background-repeat: no-repeat; 
+            background-position: center;
+            /* Specify the background image opacity */ 
+            opacity: 0.2; 
+        }
+    }
+
+/* TABLET PORTRAIT */
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+        .toolbar__container {
+            display: none;
+        }
+        #toolbar-container {
+            list-style: none;
+            flex-grow: 1;
+            flex-shrink: 1;
+            gap: 8px;
+        }
+        #toolbar-container-mob {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            min-height: 56px;
+        }
+        .toolbar__container.displayed {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        #home__container__logo {
+            /*background: no-repeat center url(assets/logo-512.png);
+            background-size: 50%;*/
+            display: none
+        }
+        #home:before {
+            content: ""; 
+            position: absolute; 
+            top: 0px; 
+            right: 0px; 
+            bottom: 0px; 
+            left: 0px; 
+            /* Specify the background image to be used */ 
+            background-image: url('assets/logo-512.png'); 
+            background-size: 50%;
+            background-repeat: no-repeat; 
+            background-position: center;
+            /* Specify the background image opacity */ 
+            opacity: 0.2; 
+        }
+    }
+
+/* TABLET LANDSCAPE */
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        #button-navigation-toggle {
+            display: none;
+        }
+        #toolbar-container {
+            display: flex;
+            list-style: none;
+            gap: 16px;
+
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #toolbar-container-mob {
+            display: none;
+        }
+        #home__container__logo {
+            /*background: no-repeat center url(assets/logo-512.png);
+            background-size: 50%;*/
+            display: none
+        }
+        #home:before {
+            content: ""; 
+            position: absolute; 
+            top: 0px; 
+            right: 0px; 
+            bottom: 0px; 
+            left: 0px; 
+            /* Specify the background image to be used */ 
+            background-image: url('assets/logo-512.png'); 
+            background-size: 50%;
+            background-repeat: no-repeat; 
+            background-position: center;
+            /* Specify the background image opacity */ 
+            opacity: 0.2; 
+        }
+    }
+
+/* LAPTOP */
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        .section-wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .navigation__main__items {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #button-navigation-toggle {
+            display: none;
+        }
+        #toolbar-container {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #toolbar-container-mob {
+            display: none;
+        }
+        #grid__equipment {
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        }
+    }
+
+/* DESKTOP */
+    @media only screen and (min-width: 1601px) {
+        .section-wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        #button-navigation-toggle {
+            display: none;
+        }
+        #toolbar-container {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        #toolbar-container-mob {
+            display: none;
+        }
+        #grid__equipment {
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        }
+    }
+
+
+/* NAVIGATION ICONS */
+    .menuicon__container {
+        display: inline-block;
+        cursor: pointer;
+    }
+  
+    .menuicon__bar1, .menuicon__bar2, .menuicon__bar3 {
+        width: 24px;
+        height: 2px;
+        background-color: #FFF;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+  
+    /* Rotate first bar */
+    .change .menuicon__bar1 {
+        transform: translate(0, 4px) rotate(-45deg);
+    }
+  
+    /* Fade out the second bar */
+    /*.change .menuicon__bar2 {opacity: 0;}*/
+  
+    /* Rotate last bar */
+    .change .menuicon__bar3 {
+        transform: translate(0, -4px) rotate(45deg);
+    }
