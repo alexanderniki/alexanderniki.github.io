@@ -1,0 +1,36 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta charset="UTF-8" />
+
+        <!-- Theme styles -->
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"/>
+            <!-- Custom theme styles -->
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+                    body {
+                        font-family: "Exo 2", sans-serif;
+                    }
+                </style>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script>
+            window.$docsify = {
+                name: '「alexanderniki」',
+                homepage: 'home.md',
+                loadSidebar: true,
+                loadNavbar: true,
+                basePath: '/garden/',
+                relativePath: true,
+                themeColor: '#0099FF',
+                fallbackLanguages: ['ru-ru'],
+            };
+        </script>
+        <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    </body>
+</html>
