@@ -68,10 +68,19 @@
     - Magniti
 
 
-## Taxi
+## Transport
+
+### Taxi
 
 - Bolt
 - Yandex.Go
+
+### Car rental
+
+- [Alamo](https://www.alamo.ge/)
+- [Rentmotors](https://www.rentmotors.ru/)
+- [Naniko](https://naniko.com/)
+- [Europcar](https://www.europcar.com/)
 
 
 ## Food
