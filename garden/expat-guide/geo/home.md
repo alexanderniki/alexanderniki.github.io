@@ -66,6 +66,10 @@
     - Spar
     - Nikora
     - Magniti
+    - Ori Nabiji
+- Markets
+	- Deserters' bazar
+	- [Lilo Mall](https://www.lilomall.ge/)
 
 
 ## Transport
