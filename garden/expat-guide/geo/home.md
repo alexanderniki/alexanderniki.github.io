@@ -59,6 +59,7 @@
 	- [Jysk](https://jysk.ge/)
 	- [Gorgia](https://gorgia.ge/)
 	- [Domino](https://www.domino.com.ge/)
+	- [Lilo Mall](https://www.lilomall.ge/)
 - Offline groceries stores
     - Carrefour
     - AgroHub
@@ -69,7 +70,6 @@
     - Ori Nabiji
 - Markets
 	- Deserters' bazar
-	- [Lilo Mall](https://www.lilomall.ge/)
 
 
 ## Transport
