@@ -123,3 +123,10 @@
 
 - [TKT](https://tkt.ge)
 - [Biletebi](https://biletebi.ge/)
+
+
+## Bus companies
+
+- [Metro Georgia](https://metrogeorgia.ge/)
+- [Citybus](https://citybus.ge/)
+- [Omnibus Express](https://omnibusexpress.ge/)
