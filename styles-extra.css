@@ -5,3 +5,15 @@ nav > ul {
 li::marker {
     color: #FF3F33;
 }
+
+
+fieldset {
+    border-radius: 8px;
+    border-color: var(--color-background-surface-secondary);
+    border-width: 1px;
+}
+
+fieldset > legend {
+    padding-left: 16px;
+    padding-right: 16px;
+}
