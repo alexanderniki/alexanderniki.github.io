@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://alexanderniki.name/styles-core.css">
+        <link rel="stylesheet" href="https://alexanderniki.name/styles-extra.css">
+
+        <title>How to create swap file on linux - Digital Garden</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="main__container box column">
+                <section>
+                    <div class="section__container--content">
+                <h1 id="how-to-create-swap-file-on-linux">How to create swap file on linux</h1>
+<p>Step-by-step guide about how to create a swap file on Linux. </p>
+<p>Before using the guide, login as the Root user. Or use sudo.</p>
+<h2 id="step-1-create-storage-file">Step 1. Create storage file</h2>
+<p>Type the following command to create 512MB swap file (1024 * 512MB = 524288 block size):</p>
+<pre><code>dd if=/dev/zero of=/swapfile bs=1024 count=524288
+</code></pre>
+<p>Where</p>
+<ul>
+<li>if=/dev/zero : read from /dev/zero file. /dev/zero is a special file in that provides as many null characters to build storage file called /swapfile</li>
+<li>of=/swapfile : read from /dev/zero write stoage file to /swapfile</li>
+<li>bs=1024 : read and write 1024 BYTES bytes at a time.</li>
+<li>count=524288 : copy only 523288 <strong>BLOCKS</strong> input blocks.</li>
+</ul>
+<h2 id="step-2-set-up-a-linux-swap-area">Step 2. Set up a Linux swap area</h2>
+<p>Type the following command to set up a Linux swap area in a file:</p>
+<pre><code># mkswap /swapfile
+</code></pre>
+<p>Setup correct file permission for security reasons, enter:</p>
+<pre><code># chown root:root /swapfile
+# chmod 0600 /swapfile
+</code></pre>
+<p>A world-readable swap file is a huge local vulnerability. The above command makes sure only root user can read/write to the file. Finally, activate /swapfile swap space immediately, enter:</p>
+<pre><code># swapon /swapfile
+</code></pre>
+<p>To activate /swapfile after Linux system reboot, add entry to /etc/fstab file. Open this file using a text editor such as nano:</p>
+<pre><code># nano /etc/fstab
+</code></pre>
+<p>Append the following line:</p>
+<pre><code>/swapfile swap swap defaults 0 0
+</code></pre>
+<h2 id="step-3-verify-swap-is-activated">Step 3. Verify swap is activated</h2>
+<p>Simply use the free command:</p>
+<pre><code>$ free -m
+</code></pre>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+
+</html>

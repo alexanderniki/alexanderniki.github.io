@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://alexanderniki.name/styles-core.css">
+        <link rel="stylesheet" href="https://alexanderniki.name/styles-extra.css">
+
+        <title>Python3 cheat sheet - Digital Garden</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="main__container box column">
+                <section>
+                    <div class="section__container--content">
+                <h1 id="python3-cheat-sheet">Python3 cheat sheet</h1>
+<h2 id="style">Style</h2>
+<pre><code class="language-python">
+# Variables
+
+counter = 0
+my_counter = 0
+my_other_counter = 0
+
+# Functions
+
+def work(): ...
+
+def do_something(): ...
+
+def do_something_else(): ...
+
+# Classes
+
+class FooClass: ...
+
+</code></pre>
+<h2 id="variables">Variables</h2>
+<h3 id="declaration">Declaration</h3>
+<pre><code class="language-python">a = 1         # integer
+b = 1.1       # float
+c = 1 + 2j    # complex number (a + bi)
+d = &quot;python&quot;  # string
+e = True      # boolean (True / False)
+
+# With type hints (3.6+)
+
+a: int = 1
+b: float = 1.1
+c: complex = 1 + 2j
+d: str = &quot;python&quot;
+e: bool = True
+</code></pre>
+<h3 id="falsy-and-empty-values">Falsy and empty values</h3>
+<pre><code class="language-python">a = None
+b = 0
+c = &quot;&quot;
+d = []
+</code></pre>
+<h3 id="type-convertion">Type convertion</h3>
+<pre><code class="language-python">int(x)
+float(x) 
+bool(x) 
+str(x)
+</code></pre>
+<h3 id="strings">Strings</h3>
+<pre><code class="language-python">x = &quot;Python&quot;
+len(x)
+x[0]
+x[-1]
+x[0:3]
+
+# Formatted strings
+name = f&quot;{first} {last}&quot;
+
+# Escape sequences
+\&quot; \’ \\ \n
+
+# String methods
+x.upper()
+x.lower()
+x.title()
+x.strip()
+x.find(&quot;p&quot;)
+x.replace(&quot;a&quot;, &quot;b&quot;)
+&quot;a&quot; in x
+</code></pre>
+<h2 id="control-flow">Control flow</h2>
+<h3 id="conditional-statements">Conditional statements</h3>
+<pre><code class="language-python">if x == 1:
+    print(&quot;a&quot;)
+elif x == 2:
+    print(&quot;b&quot;)
+else:
+    print(&quot;c&quot;)
+
+# Ternary operator 
+x = &quot;a&quot; if n &gt; 1 else &quot;b&quot;
+
+# Chaining comparison operators
+if 18 &lt;= age &lt; 65:
+    ...
+</code></pre>
+<h3 id="loops">Loops</h3>
+<pre><code class="language-python">for n in range(1, 10):
+    print(n)
+
+while n &lt; 10:
+    print(n)
+    n += 1
+</code></pre>
+<h2 id="functions">Functions</h2>
+<pre><code class="language-python">def increment(number, by=1):
+    return number + by
+
+# Keyword arguments 
+increment(2, by=1)
+
+# Variable number of arguments 
+def multiply(*numbers): 
+    for number in numbers: 
+        print(number) 
+
+
+multiply(1, 2, 3, 4)
+
+# Variable number of keyword arguments 
+def save_user(**user): ...
+
+save_user(id=1, name=&quot;username&quot;)
+
+
+# With type hints (3.6+)
+
+def increment(number: float, by: float = 1.0) -&gt; float:
+    return number + by
+
+
+def do_something() -&gt; None:  # When the function returns nothing
+    ...
+</code></pre>
+<h2 id="exceptions">Exceptions</h2>
+<pre><code class="language-python">
+# Handling Exceptions 
+try:
+    do_something()
+except (ValueError, ZeroDivisionError):
+    do_something_else()
+else: 
+    ...  # no exceptions raised
+finally:
+    do_cleanup()  # cleanup code
+
+# Raising exceptions
+if x &lt; 1: raise ValueError(&quot;...&quot;)
+
+# The with statement 
+with open(&quot;file.txt&quot;) as file:
+    ...
+
+</code></pre>
+<h2 id="classes">Classes</h2>
+<pre><code class="language-python">class Point:
+
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def draw(self):
+        ...
+
+
+# Instance and class attributes
+class Point:
+
+    default_color = &quot;red&quot;
+
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+
+# Instance and class methods
+class Point:
+
+    def draw(self):
+        ...
+
+    @classmethod
+    def zero(cls):
+        return cls(0, 0)
+
+
+# Private members 
+class Point:
+
+    def __init__(self, x):
+        self.__x = x
+
+
+# Properties 
+class Point:
+
+    def __init__(self, x):
+        self.__x = x
+
+    @property
+    def x(self):
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        self.__x = value
+
+
+# Inheritance
+
+class FileStream(Stream):
+
+    def open(self):
+        super().open()
+
+
+# Multiple inheritance 
+class FlyingFish(Flyer, Swimmer):
+    ...
+</code></pre>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+
+</html>

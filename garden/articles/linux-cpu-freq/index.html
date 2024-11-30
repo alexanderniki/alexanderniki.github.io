@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://alexanderniki.name/styles-core.css">
+        <link rel="stylesheet" href="https://alexanderniki.name/styles-extra.css">
+
+        <title>How to determine current CPU frequency on Linux - Digital Garden</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="main__container box column">
+                <section>
+                    <div class="section__container--content">
+                <h1 id="how-to-determine-current-cpu-frequency-on-linux">How to determine current CPU frequency on Linux</h1>
+<p>Here is a little note about how to determine current CPU frequency in Linux.</p>
+<h2 id="simple-way">Simple way</h2>
+<p>Open your terminal emulator and type:</p>
+<pre><code>$ cat /proc/cpuinfo | grep MHz
+</code></pre>
+<p>After that, you'll see something like</p>
+<pre><code>cpu MHz     : 932.128
+cpu MHz     : 1000.354
+cpu MHz     : 998.950
+cpu MHz     : 858.709
+</code></pre>
+<h2 id="more-complex-way">More complex way</h2>
+<p>First of all, install "cpufrequtils" package. For example, in Ubuntu:</p>
+<pre><code>$ sudo apt install cpufrequtils
+</code></pre>
+<p>Then, just use "cpufreq-info" command.</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+
+</html>
