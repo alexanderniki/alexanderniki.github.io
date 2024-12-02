@@ -392,3 +392,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+pre {
+    margin: 0;
+    padding: 16px;
+
+    font-family: "JetBrains Mono", monospace;
+}
+
+code {
+    /**/
+}
