@@ -1,7 +1,8 @@
 /* Slideshow container */
 .gallery__slideshow__container {
-    max-width: 960px;
+    max-width: 1280px;
     position: relative;
+    aspect-ratio: 16 / 9;
 
     border: 0px solid #000;
     border-radius: 8px;
@@ -95,3 +96,61 @@
         opacity: 1
     }
 }
+
+
+/* ADAPTIVE LAYOUTS */
+
+    /* MOBILE */
+    @media only screen and (max-width: 480px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 3 / 2;
+        }
+        .gallery__slides img {
+            aspect-ratio: 3 / 2;
+        }
+    }
+
+    /* TABLET PORTRAIT */
+    @media only screen and (min-width: 481px) and (max-width: 768px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 3 / 2;
+        }
+        .gallery__slides img {
+            aspect-ratio: 3 / 2;
+        }
+    }
+
+    /* TABLET LANDSCAPE */
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 3 / 2;
+        }
+        .gallery__slides img {
+            aspect-ratio: 3 / 2;
+        }
+    }
+
+    /* LAPTOP */
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 16 / 9;
+        }
+        .gallery__slides img {
+            aspect-ratio: 16 / 9;
+        }
+    }
+
+    /* DESKTOP */
+    @media only screen and (min-width: 1601px) {
+        /* ... */
+        .gallery__slideshow__container {
+            aspect-ratio: 16 / 9;
+        }
+        .gallery__slides img {
+            aspect-ratio: 16 / 9;
+        }
+    }
